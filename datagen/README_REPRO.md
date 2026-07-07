@@ -120,11 +120,31 @@ runs often relied more heavily on post-rollout trajectory and correctness QC.
 
 ## Question Augmentation
 
-Question augmentation happens before rollout:
+Question augmentation happens before rollout. Use the parameterized runner:
 
-- `augment_batch1.py`
-- `augment_batch2.py`
-- `augment_batch3.py`
+```bash
+export DIMCODE_API_KEY="..."
+export DIMCODE_BASE_URL="https://dimcode.cn/v1"
+export MODEL="deepseek-v4-pro"
+
+python augment_questions.py \
+  <seed_questions.jsonl> \
+  <augmented_questions.jsonl> \
+  --concurrency 16 \
+  --variants 3 \
+  --resume
+```
+
+Input rows should contain:
+
+```json
+{
+  "question": "...",
+  "domain": "...",
+  "server": "...",
+  "target_tools": ["..."]
+}
+```
 
 Prompts:
 
@@ -142,25 +162,6 @@ Each seed normally produces up to:
 
 ```text
 2 augmentation modes * 3 variants = 6 questions
-```
-
-Current batch scripts:
-
-| Script | Seed input | Output | Notes |
-|---|---|---|---|
-| `augment_batch1.py` | `questions_batch1_rollout.jsonl` | `questions_batch1_augmented.jsonl` | early one-shot script |
-| `augment_batch2.py` | `questions_batch2_rollout.jsonl` | `questions_batch2_augmented.jsonl` | early one-shot script |
-| `augment_batch3.py` | `questions_10k_c_dedup.jsonl` | `questions_batch3_augmented.jsonl` | resumable, env-configurable, append mode |
-
-For batch3:
-
-```bash
-export DIMCODE_API_KEY="..."
-export DIMCODE_BASE_URL="https://dimcode.cn/v1"
-export MODEL="deepseek-v4-pro"
-export AUGMENT_CONC=16
-export AUGMENT_NVAR=3
-python augment_batch3.py
 ```
 
 ## Real MCP Rollout
