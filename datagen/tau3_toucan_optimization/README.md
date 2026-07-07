@@ -94,7 +94,7 @@ The final data has two branches:
 The generated branch also calls the general Toucan datagen scripts:
 
 ```text
-/data/scripts/Toucan/datagen/rollout_batch2.py
+/data/scripts/Toucan/datagen/run_mcp_rollout.py
 /data/scripts/Toucan/datagen/traj_qc_rule.py
 /data/scripts/Toucan/datagen/traj_qc_llm.py
 /data/scripts/Toucan/datagen/traj_qc_correctness.py
@@ -210,7 +210,7 @@ bash scripts/run_generated_rollout_qc.sh \
 This wrapper calls:
 
 ```text
-/data/scripts/Toucan/datagen/rollout_batch2.py
+/data/scripts/Toucan/datagen/run_mcp_rollout.py
 /data/scripts/Toucan/datagen/traj_qc_rule.py
 /data/scripts/Toucan/datagen/traj_qc_llm.py
 /data/scripts/Toucan/datagen/traj_qc_correctness.py

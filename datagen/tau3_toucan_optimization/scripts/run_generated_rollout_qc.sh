@@ -18,7 +18,7 @@ echo "prefix:    ${PREFIX}"
 echo "rollout concurrency: ${ROLLOUT_CONC}"
 echo "qc concurrency:      ${QC_CONC}"
 
-${PY} rollout_batch2.py "${QUESTIONS}" "${PREFIX}_trajectories.jsonl" "${ROLLOUT_CONC}"
+${PY} run_mcp_rollout.py "${QUESTIONS}" "${PREFIX}_trajectories.jsonl" "${ROLLOUT_CONC}"
 ${PY} traj_qc_rule.py "${PREFIX}_trajectories.jsonl" "${PREFIX}_rulepass.jsonl"
 ${PY} traj_qc_llm.py "${PREFIX}_rulepass.jsonl" "${PREFIX}_scored.jsonl" "${QC_CONC}"
 ${PY} traj_qc_correctness.py "${PREFIX}_scored.jsonl" "${PREFIX}_correctness_scored.jsonl" "${QC_CONC}"

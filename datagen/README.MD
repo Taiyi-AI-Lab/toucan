@@ -13,7 +13,7 @@ current flow is:
 
 Legacy Qwen/OpenAI agent trajectory scripts, multi-turn experiments, and replay
 regeneration utilities were removed from this directory. The maintained
-trajectory path is `rollout_batch2.py` plus the `traj_qc_*` scripts.
+trajectory path is `run_mcp_rollout.py` plus the `traj_qc_*` scripts.
 
 ## Environment
 
@@ -156,7 +156,7 @@ Each seed normally produces up to:
 Run real MCP/Smithery trajectories:
 
 ```bash
-python rollout_batch2.py <questions.jsonl> <out_trajectories.jsonl> <concurrency>
+python run_mcp_rollout.py <questions.jsonl> <out_trajectories.jsonl> <concurrency>
 ```
 
 Input rows should contain:
@@ -180,7 +180,7 @@ Output rows contain raw rollout trajectories with:
 - `target_tools`;
 - `_qid` when available.
 
-`rollout_batch2.py` resumes by skipping already-seen `(question, server)` pairs
+`run_mcp_rollout.py` resumes by skipping already-seen `(question, server)` pairs
 in the output file.
 
 ## Trajectory QC
@@ -303,7 +303,7 @@ bash tau3_toucan_optimization/scripts/run_generated_rollout_qc.sh \
 Internally it runs:
 
 ```text
-rollout_batch2.py
+run_mcp_rollout.py
 traj_qc_rule.py
 traj_qc_llm.py
 traj_qc_correctness.py
@@ -338,7 +338,7 @@ Top-level maintained pipeline scripts:
 - `step2.2_completion_quality_check.sh`
 - `step2.3_process_completion.py`
 - `augment_questions.py`
-- `rollout_batch2.py`
+- `run_mcp_rollout.py`
 - `traj_qc_rule.py`
 - `traj_qc_llm.py`
 - `traj_qc_select.py`

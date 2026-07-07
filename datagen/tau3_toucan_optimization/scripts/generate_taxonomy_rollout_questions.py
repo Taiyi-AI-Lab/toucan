@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate executable Toucan rollout questions from tau3 failure specs.
 
-Output rows are directly compatible with /data/scripts/Toucan/datagen/rollout_batch2.py:
+Output rows are directly compatible with /data/scripts/Toucan/datagen/run_mcp_rollout.py:
   {"server": ..., "question": ..., "target_tools": [...], "domain": ...}
 """
 

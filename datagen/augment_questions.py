@@ -4,7 +4,7 @@
 Input rows should contain at least:
   {"question": "...", "server": "...", "domain": "...", "target_tools": [...]}
 
-The output rows keep the rollout-ready fields expected by rollout_batch2.py.
+The output rows keep the rollout-ready fields expected by run_mcp_rollout.py.
 """
 
 import argparse

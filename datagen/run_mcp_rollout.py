@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
-"""对问题做 rollout:deepseek 连真实 Smithery(18-key池)执行工具,存 think。
+"""对问题做 rollout:LLM 连真实 Smithery(18-key池)执行工具,存 think。
 断点续跑;运行时熔断:某server连续连接失败>=THRESH次自动拉黑并持久化,后续秒跳过。
-用法: python rollout_batch2.py <questions.jsonl> <out.jsonl> [concurrency]
+用法: python run_mcp_rollout.py <questions.jsonl> <out.jsonl> [concurrency]
+
+LLM config:
+  LLM_BASE_URL / DIMCODE_BASE_URL, default https://dimcode.cn/v1
+  LLM_API_KEY / DIMCODE_API_KEY / DEEPSEEK_API_KEY
+  MODEL, default deepseek-v4-pro
 """
 import asyncio, base64, json, os, sys, time
 from contextlib import AsyncExitStack
@@ -11,11 +16,16 @@ from openai import AsyncOpenAI
 HERE=os.path.dirname(os.path.abspath(__file__))
 POOL=json.load(open(f"{HERE}/smithery_api_pool.json"))["api_pool"]
 CFG=base64.b64encode(json.dumps({"debug":False}).encode()).decode()
-llm=AsyncOpenAI(
-    base_url=os.environ.get("DIMCODE_BASE_URL", "https://dimcode.cn/v1"),
-    api_key=os.environ.get("DIMCODE_API_KEY") or os.environ.get("DEEPSEEK_API_KEY"),
-)
-MODEL="deepseek-v4-pro"; MAX_TURNS=10; ITEM_TIMEOUT=240
+LLM_BASE_URL=os.environ.get("LLM_BASE_URL") or os.environ.get("DIMCODE_BASE_URL") or "https://dimcode.cn/v1"
+LLM_API_KEY=os.environ.get("LLM_API_KEY") or os.environ.get("DIMCODE_API_KEY") or os.environ.get("DEEPSEEK_API_KEY")
+if not LLM_API_KEY:
+    raise RuntimeError("missing LLM_API_KEY/DIMCODE_API_KEY/DEEPSEEK_API_KEY")
+llm=AsyncOpenAI(base_url=LLM_BASE_URL,api_key=LLM_API_KEY)
+MODEL=os.environ.get("MODEL","deepseek-v4-pro")
+MAX_TURNS=int(os.environ.get("MAX_TURNS","10"))
+ITEM_TIMEOUT=int(os.environ.get("ITEM_TIMEOUT","240"))
+LLM_MAX_TOKENS=int(os.environ.get("LLM_MAX_TOKENS","4000"))
+LLM_TEMPERATURE=float(os.environ.get("LLM_TEMPERATURE","0.6"))
 # 运行时熔断
 DEADFILE=f"{HERE}/dead_servers.json"
 DEAD=set(json.load(open(DEADFILE))) if os.path.exists(DEADFILE) else set()
@@ -42,7 +52,7 @@ async def rollout_one(q,ki):
         if not oai: return {"error":"no_tools"}
         msgs=[{"role":"user","content":q["question"]}]
         for turn in range(MAX_TURNS):
-            resp=await llm.chat.completions.create(model=MODEL,messages=msgs,tools=oai,max_tokens=4000,temperature=0.6)
+            resp=await llm.chat.completions.create(model=MODEL,messages=msgs,tools=oai,max_tokens=LLM_MAX_TOKENS,temperature=LLM_TEMPERATURE)
             m=resp.choices[0].message; reason=getattr(m,"reasoning_content",None) or ""; tcs=m.tool_calls or []
             arec={"role":"assistant","reasoning_content":reason,"content":m.content or ""}
             am={"role":"assistant","content":m.content or ""}
@@ -76,7 +86,7 @@ async def main():
                 _r=json.loads(l); done.add((_r.get("question"),_r.get("server")))
             except: pass
     todo=[q for q in qs if (q.get("question"),q.get("server")) not in done]
-    print(f"总 {len(qs)}, 已完成 {len(done)}, 待跑 {len(todo)}, 并发 {CONC}, 初始黑名单 {len(DEAD)}",flush=True)
+    print(f"总 {len(qs)}, 已完成 {len(done)}, 待跑 {len(todo)}, 并发 {CONC}, 模型 {MODEL}, 初始黑名单 {len(DEAD)}",flush=True)
     sem=asyncio.Semaphore(CONC); lock=asyncio.Lock(); fout=open(OUT,"a"); cnt=[0,0,0]  # done, ok, skipped
 
     def persist_dead():
