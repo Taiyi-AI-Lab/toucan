@@ -56,7 +56,7 @@ def validate(path):
 
 def main():
     if len(sys.argv) < 2:
-        raise SystemExit("Usage: python scripts/04_validate_ms_swift.py <jsonl> [<jsonl>...]")
+        raise SystemExit("Usage: python scripts/validate_ms_swift.py <jsonl> [<jsonl>...]")
     failed = False
     for arg in sys.argv[1:]:
         c, examples = validate(arg)
@@ -69,4 +69,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -22,7 +22,7 @@ ${PY} rollout_batch2.py "${QUESTIONS}" "${PREFIX}_trajectories.jsonl" "${ROLLOUT
 ${PY} traj_qc_rule.py "${PREFIX}_trajectories.jsonl" "${PREFIX}_rulepass.jsonl"
 ${PY} traj_qc_llm.py "${PREFIX}_rulepass.jsonl" "${PREFIX}_scored.jsonl" "${QC_CONC}"
 ${PY} traj_qc_correctness.py "${PREFIX}_scored.jsonl" "${PREFIX}_correctness_scored.jsonl" "${QC_CONC}"
-${PY} "${PKG}/scripts/12_select_correctness_passed.py" \
+${PY} "${PKG}/scripts/select_correctness_passed.py" \
   "${PREFIX}_correctness_scored.jsonl" \
   "${PREFIX}_correct_mostly.jsonl"
 
@@ -31,15 +31,11 @@ DROP_GIVEUP_FINAL=1 ${PY} build_toucan_datagen_sft_answerqc.py \
   "${PKG}/data/generated_tau3_style_ms_swift_sft" \
   40960
 
-${PY} "${PKG}/scripts/13_export_generated_clean_sft.py" \
+${PY} "${PKG}/scripts/export_generated_clean_sft.py" \
   "${PKG}/data/generated_tau3_style_ms_swift_sft" \
   "${PKG}/data/generated_tau3_style_clean_sft.jsonl"
 
 cd "$PKG"
-${PY} scripts/04_validate_ms_swift.py data/generated_tau3_style_clean_sft.jsonl
-${PY} scripts/15_make_toucan_deepseek_strict_v2_mix.py
-${PY} scripts/04_validate_ms_swift.py \
-  data/toucan_optimized_mix_deepseek_strict_v2/all_train_sft.jsonl \
-  data/toucan_optimized_mix_deepseek_strict_v2/all_eval_sft.jsonl
+${PY} scripts/validate_ms_swift.py data/generated_tau3_style_clean_sft.jsonl
 
 echo "DONE"

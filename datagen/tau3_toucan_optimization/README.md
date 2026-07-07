@@ -1,139 +1,79 @@
-# Tau3-Oriented Toucan Data Optimization
+# Tau3-Oriented Toucan Optimization
 
-This folder contains code and derived data for optimizing only the Toucan side of
-the training mix toward stricter tau3-style tool-state-machine behavior.
+This folder contains the final tau3-oriented Toucan data optimization pipeline.
+It uses tau3 failure analysis to improve Toucan training data without copying
+tau3 benchmark tasks, tool names, entities, IDs, or database facts.
 
-The observed issue is distributional, not a simple format bug: the trained
-Toucan data has domain labels such as `airline`, `retail`, `telecom`, and
-`banking_knowledge`, but its concrete MCP tools and procedures do not overlap
-with tau3-bench. The scripts here turn the tau3 failure analysis into a
-supervision plan and extract harder Toucan samples that better resemble
-procedure-sensitive tool use.
+The final clean package contains:
 
-## Layout
+```text
+2031 existing Toucan hard-subset SFT rows
+  79 generated tau3-style Toucan SFT rows
+----
+2110 total rows
+```
 
-- `data/tau3_failure_analysis_final.jsonl`
-  - DeepSeek per-failed-trajectory analysis for tau3-bench failed cases.
-- `data/tau3_failure_taxonomy.json`
-  - Coarse failure buckets, per-domain counts, examples, and reward-signal
-    summary.
-- `data/tau3_failure_generation_specs.jsonl`
-  - One generation spec per failed tau3 trajectory. These are not copied tau3
-    trajectories; they are instructions for producing Toucan-style hard cases
-    that exercise the same failure modes.
-- `data/tau3_tool_overlap.json`
-  - Tool-name overlap audit between tau3 eval and the Toucan training mix.
-- `data/toucan_hard_subset_with_metadata.jsonl`
-  - Heuristic-selected high-value Toucan examples with metadata preserved. Kept
-    only as an audit baseline.
-- `data/toucan_hard_subset_sft.jsonl`
-  - The same heuristic-selected examples stripped to top-level `messages`.
-- `data/toucan_hard_subset_manifest.json`
-  - Counts and heuristic selection criteria.
-- `data/deepseek_toucan_scores.jsonl`
-  - DeepSeek's per-sample judgment for every Toucan trajectory.
-- `data/deepseek_toucan_hard_subset_with_metadata.jsonl`
-  - DeepSeek-selected high-value Toucan examples with score/reason metadata.
-- `data/deepseek_toucan_hard_subset_sft.jsonl`
-  - DeepSeek-selected examples stripped to top-level `messages`, suitable for
-    ms-swift.
-- `data/deepseek_toucan_hard_subset_manifest.json`
-  - Score histogram, selected counts, and domain/skill distribution.
+## What This Pipeline Does
+
+1. Summarize tau3 failed trajectories into abstract failure modes.
+2. Turn those failure modes into generation specs.
+3. Select high-value existing Toucan trajectories with DeepSeek.
+4. Generate new Toucan/Smithery rollout questions from the taxonomy.
+5. Roll out those generated questions on real MCP servers.
+6. Run trajectory-quality and answer-correctness QC.
+7. Apply the final tau-style v4 DeepSeek review.
+8. Validate the resulting ms-swift SFT files.
+
+The optimization targets tau-style behaviors:
+
+- policy and procedure following;
+- state and eligibility checks before write actions;
+- safe tool-backed mutation;
+- grounded calculation;
+- correct tool ordering;
+- multi-turn correction and user pushback handling;
+- grounded completion or refusal.
 
 ## Scripts
 
-Run from this directory on `gpu01`.
+Run scripts from this directory on `gpu01`.
 
-```bash
-python scripts/01_build_failure_taxonomy.py
-python scripts/02_select_toucan_hard_subset.py     # heuristic baseline only
-python scripts/03_build_generation_specs.py
-python scripts/06_audit_tau3_tool_overlap.py
-python scripts/08_deepseek_select_toucan_hard_subset.py --concurrency 256 --max-tokens 2048
-python scripts/04_validate_ms_swift.py data/deepseek_toucan_hard_subset_sft.jsonl
-python scripts/09_make_toucan_deepseek_mix.py
-python scripts/04_validate_ms_swift.py \
-  data/toucan_optimized_mix_deepseek_v1/all_train_sft.jsonl \
-  data/toucan_optimized_mix_deepseek_v1/all_eval_sft.jsonl
-```
+| Script | Purpose |
+|---|---|
+| `scripts/common.py` | Shared paths, JSONL helpers, message normalization, and tool-call parsing. |
+| `scripts/build_failure_taxonomy.py` | Build abstract tau3 failure buckets from DeepSeek failure analysis. |
+| `scripts/build_generation_specs.py` | Convert failure buckets into generation specs for new Toucan questions. |
+| `scripts/select_toucan_hard_subset.py` | Use DeepSeek to select existing Toucan trajectories with tau-style value. |
+| `scripts/generate_taxonomy_rollout_questions.py` | Generate rollout-ready Toucan/Smithery questions from taxonomy specs. |
+| `scripts/run_generated_rollout_qc.sh` | Roll out generated questions and run rule, LLM, correctness, and SFT conversion steps. |
+| `scripts/select_correctness_passed.py` | Keep generated trajectories with `correct`/`mostly_correct` answers and completeness >= 4. |
+| `scripts/export_generated_clean_sft.py` | Merge generated per-domain ms-swift outputs into one clean SFT file. |
+| `scripts/final_tau_style_review.py` | Final strict tau-style v4 DeepSeek review for both existing and generated branches. |
+| `scripts/validate_ms_swift.py` | Validate final JSONL files for ms-swift agent message format. |
 
-To build the stricter v2 subset, keep all score-5 samples and second-pass
-review score-4 samples with DeepSeek:
-
-```bash
-python scripts/14_deepseek_strict_v2_review.py --concurrency 256
-python scripts/04_validate_ms_swift.py data/deepseek_toucan_hard_subset_strict_v2_sft.jsonl
-python scripts/15_make_toucan_deepseek_strict_v2_mix.py
-python scripts/04_validate_ms_swift.py \
-  data/toucan_optimized_mix_deepseek_strict_v2/all_train_sft.jsonl \
-  data/toucan_optimized_mix_deepseek_strict_v2/all_eval_sft.jsonl
-```
-
-To create new tau3-style Toucan question specs for the normal rollout/QC
-pipeline:
-
-```bash
-python scripts/07_generate_tau3_style_questions_deepseek.py \
-  --out data/generated_tau3_style_question_specs.jsonl \
-  --concurrency 32
-```
-
-To create executable rollout questions and real tool-backed trajectories from
-the tau3 failure taxonomy:
-
-```bash
-# Generate questions that include server + target_tools and can be fed directly
-# to the existing Toucan rollout runner.
-python scripts/10_generate_tau3_taxonomy_rollout_questions.py \
-  --out data/generated_tau3_style_rollout_questions.jsonl \
-  --per-spec 1 \
-  --concurrency 128
-
-# Run real Smithery rollout, trajectory QC, answer-correctness QC, ms-swift
-# conversion, and rebuild the Toucan optimized mix.
-bash scripts/11_run_generated_rollout_qc.sh \
-  data/generated_tau3_style_rollout_questions.jsonl \
-  data/generated_tau3_style \
-  128 \
-  128
-```
-
-To apply an extra strict DeepSeek filter to generated trajectories before using
-them in the final mix:
-
-```bash
-python scripts/16_deepseek_strict_filter_generated.py --concurrency 128
-DROP_GIVEUP_FINAL=1 python /data/scripts/Toucan/datagen/build_toucan_datagen_sft_answerqc.py \
-  data/generated_tau3_style_x5_strict_correct_mostly.jsonl \
-  data/generated_tau3_style_ms_swift_sft_strict \
-  40960
-python scripts/13_export_generated_clean_sft.py \
-  data/generated_tau3_style_ms_swift_sft_strict \
-  data/generated_tau3_style_clean_sft_strict.jsonl
-python scripts/17_make_toucan_deepseek_strict_v2_genstrict_mix.py
-```
-
-The final mix builder expects future generated/QC-passed data in:
+## Final Outputs
 
 ```text
-data/generated_tau3_style_clean_sft.jsonl
+data/deepseek_toucan_hard_subset_tau_style_v4_sft.jsonl
+data/generated_tau3_style_clean_sft_tau_style_v4.jsonl
+data/tau_style_v4_manifest.json
 ```
 
-`generated_tau3_style_question_specs.jsonl` is intentionally not used for SFT
-directly. Those generated questions still need rollout, trajectory-quality QC,
-answer-correctness QC, and conversion to ms-swift. If the clean generated SFT
-file is absent, the mix builder still creates a first optimized mix using
-existing clean Toucan plus weighted hard-subset oversampling.
+The upload package is:
 
-## Design
+```text
+data/hf_upload_clean_branch_2110/
+```
 
-The optimization target is not to memorize tau3-bench. It is to increase the
-density of:
+It contains:
 
-- policy/procedure decisions,
-- write-tool action trajectories,
-- identity/eligibility checks before mutation,
-- refund/order/reservation/account state transitions,
-- amount/fee/interest calculations,
-- multi-turn corrections and user intent changes,
-- efficient telecom troubleshooting.
+```text
+toucan_hard_2031_sft.jsonl
+toucan_generated_79_sft.jsonl
+toucan_2110_sft.jsonl
+manifest.json
+README.md
+manual_review/
+```
+
+For the exact reproduction commands, see `README_REPRO.md`.

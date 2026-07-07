@@ -1,38 +1,15 @@
-# Tau3-Oriented Toucan Optimization Reproduction Guide
+# Reproducing the Tau3-Oriented Toucan Data
 
-This directory contains the tau3-oriented Toucan optimization pipeline. Its
-purpose is not to copy tau3 benchmark data. Instead, it uses tau3 failure
-analysis to increase the density of Toucan training examples that teach
-tau-style behavior:
+This guide reproduces the final tau3-oriented Toucan SFT data. The pipeline is
+failure-informed, not benchmark-copying: tau3 failed trajectories are used only
+to derive abstract failure modes and skills.
 
-- policy/procedure following;
-- state and eligibility checks before mutation;
-- safe write actions;
-- grounded calculations;
-- correct tool ordering;
-- multi-turn correction and user pushback handling;
-- tool-backed completion or refusal.
-
-The final clean branch upload used:
+Final expected count:
 
 ```text
-2031 initial hard-subset SFT rows
-  79 generated tau3-style SFT rows
-----
-2110 total rows
-```
-
-Final upload package:
-
-```text
-/data/scripts/Toucan/datagen/tau3_toucan_optimization/data/hf_upload_clean_branch_2110/
-```
-
-Final source files:
-
-```text
-data/deepseek_toucan_hard_subset_tau_style_v4_sft.jsonl
-data/generated_tau3_style_clean_sft_tau_style_v4.jsonl
+2031 data/deepseek_toucan_hard_subset_tau_style_v4_sft.jsonl
+  79 data/generated_tau3_style_clean_sft_tau_style_v4.jsonl
+2110 total
 ```
 
 ## Environment
@@ -45,7 +22,7 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate toucan
 ```
 
-Use environment variables for API credentials:
+Configure API access:
 
 ```bash
 export DIMCODE_BASE_URL="https://dimcode.cn/v1"
@@ -54,7 +31,7 @@ export DEEPSEEK_API_KEY="$DIMCODE_API_KEY"
 export MODEL="deepseek-v4-pro"
 ```
 
-The common paths and helpers are in:
+Shared paths and helper functions live in:
 
 ```text
 scripts/common.py
@@ -67,46 +44,40 @@ TAU3_BASE=/data/datasets/tau3-bench-eval/qwen36_27b_universe_toucan_v9_ckpt324-2
 TOUCAN_SOURCE=/data/scripts/Toucan/datagen/answer_qc_passed_ms_swift_sft_v2
 ```
 
-## Final Pipeline Overview
+## Pipeline Summary
 
-The final 2110 rows came from two branches:
+The final data has two branches:
 
-1. existing Toucan answer-QC-passed data, filtered into a tau3-relevant hard subset;
-2. newly generated tau3-style questions, rolled out on real MCP servers, QCed, and
-   then filtered by the same tau-style v4 review.
+1. existing Toucan answer-QC-passed data filtered for tau-style value;
+2. newly generated tau3-style Toucan questions that pass real rollout, trajectory
+   QC, answer correctness QC, and final tau-style review.
 
-The most important scripts for the final data are:
-
-```text
-scripts/01_build_failure_taxonomy.py
-scripts/03_build_generation_specs.py
-scripts/08_deepseek_select_toucan_hard_subset.py
-scripts/10_generate_tau3_taxonomy_rollout_questions.py
-scripts/11_run_generated_rollout_qc.sh
-scripts/12_select_correctness_passed.py
-scripts/13_export_generated_clean_sft.py
-scripts/20_tau_style_v4_review.py
-scripts/common.py
-```
-
-The general Toucan rollout/QC scripts called by this pipeline live one directory
-up:
+Main scripts:
 
 ```text
-/data/scripts/Toucan/datagen/rollout_batch2.py
-/data/scripts/Toucan/datagen/traj_qc_rule.py
-/data/scripts/Toucan/datagen/traj_qc_llm.py
-/data/scripts/Toucan/datagen/traj_qc_correctness.py
-/data/scripts/Toucan/datagen/build_toucan_datagen_sft_answerqc.py
+scripts/build_failure_taxonomy.py
+scripts/build_generation_specs.py
+scripts/select_toucan_hard_subset.py
+scripts/generate_taxonomy_rollout_questions.py
+scripts/run_generated_rollout_qc.sh
+scripts/final_tau_style_review.py
+scripts/validate_ms_swift.py
 ```
 
-## Step 1: Build tau3 Failure Taxonomy
+The generated branch also calls:
+
+```text
+scripts/select_correctness_passed.py
+scripts/export_generated_clean_sft.py
+```
+
+## Step 1: Build the Failure Taxonomy
 
 ```bash
-python scripts/01_build_failure_taxonomy.py
+python scripts/build_failure_taxonomy.py
 ```
 
-Inputs:
+Input:
 
 ```text
 data/tau3_failure_analysis_final.jsonl
@@ -119,13 +90,14 @@ data/tau3_failure_taxonomy.json
 data/tau3_failure_taxonomy_by_item.jsonl
 ```
 
-This step summarizes failed tau3 trajectories into abstract failure modes. It
-does not copy tau3 tasks into training data.
+This step summarizes tau3 failed trajectories into abstract failure modes such
+as policy/state mistakes, incorrect tool ordering, incomplete completion,
+looping, and unsupported final answers.
 
 ## Step 2: Build Generation Specs
 
 ```bash
-python scripts/03_build_generation_specs.py
+python scripts/build_generation_specs.py
 ```
 
 Input:
@@ -140,24 +112,14 @@ Output:
 data/tau3_failure_generation_specs.jsonl
 ```
 
-Each spec contains:
-
-- source tau3 domain;
-- coarse failure bucket;
-- primary failure type;
-- root cause to target;
-- expected behavior to teach;
-- actual behavior to avoid;
-- domain-specific skills to exercise;
-- quality constraints.
-
-These specs are used only as abstract supervision for generating new Toucan
-questions.
+Each generation spec records the source domain, failure bucket, root cause,
+expected behavior to teach, behavior to avoid, and domain-specific skills to
+exercise.
 
 ## Step 3: Select Existing Toucan Hard Subset
 
 ```bash
-python scripts/08_deepseek_select_toucan_hard_subset.py \
+python scripts/select_toucan_hard_subset.py \
   --concurrency 256 \
   --max-tokens 2048
 ```
@@ -178,25 +140,14 @@ data/deepseek_toucan_hard_subset_sft.jsonl
 data/deepseek_toucan_hard_subset_manifest.json
 ```
 
-This is a DeepSeek-based tau3 generalization-value filter. It scores existing
-Toucan trajectories for hard tau-style behaviors such as policy/state reasoning,
-action verification, write-tool use, and grounded calculation.
+This DeepSeek pass scores existing Toucan trajectories for tau-style
+generalization value: policy/state reasoning, action verification, write-tool
+use, grounded calculation, hard tool sequencing, and multi-turn correction.
 
-The final pipeline later starts from:
-
-```text
-data/deepseek_toucan_hard_subset_with_metadata.jsonl
-```
-
-not from the older heuristic baseline.
-
-## Step 4: Generate New tau3-Style Rollout Questions
-
-The final generated-question branch used the taxonomy-driven rollout-question
-generator:
+## Step 4: Generate New Rollout Questions
 
 ```bash
-python scripts/10_generate_tau3_taxonomy_rollout_questions.py \
+python scripts/generate_taxonomy_rollout_questions.py \
   --specs data/tau3_failure_generation_specs.jsonl \
   --out data/generated_tau3_style_rollout_questions_x5.jsonl \
   --per-spec 5 \
@@ -209,52 +160,34 @@ Output:
 data/generated_tau3_style_rollout_questions_x5.jsonl
 ```
 
-The generator:
+The generator maps tau3 domains to real Toucan/Smithery server pools, filters
+dead servers, shortlists relevant tools, and asks DeepSeek to create natural
+Toucan-style user questions. It forbids copying tau3 tool names, entities, IDs,
+and benchmark facts.
 
-- maps tau3 domains to real Toucan/Smithery server pools;
-- filters dead/recent-dead servers;
-- shortlists tools using spec/tool text matching;
-- asks DeepSeek to create natural user questions;
-- requires exact `target_tools` from the provided server tools;
-- forbids copying tau3 tool names, entities, IDs, and benchmark facts.
-
-With 127 specs and `--per-spec 5`, this produced:
-
-```text
-635 rollout questions
-```
-
-Domain distribution:
-
-```text
-banking_knowledge: 425
-retail:            110
-airline:            50
-telecom:            50
-```
+With 127 specs and `--per-spec 5`, this produces 635 rollout questions.
 
 ## Step 5: Rollout and QC Generated Questions
 
-Run:
-
 ```bash
-bash scripts/11_run_generated_rollout_qc.sh \
+bash scripts/run_generated_rollout_qc.sh \
   data/generated_tau3_style_rollout_questions_x5.jsonl \
   data/generated_tau3_style_x5 \
   128 \
   128
 ```
 
-This calls the general Toucan pipeline:
+This wrapper calls the general Toucan datagen pipeline:
 
 ```text
-rollout_batch2.py
-traj_qc_rule.py
-traj_qc_llm.py
-traj_qc_correctness.py
-scripts/12_select_correctness_passed.py
-build_toucan_datagen_sft_answerqc.py
-scripts/13_export_generated_clean_sft.py
+/data/scripts/Toucan/datagen/rollout_batch2.py
+/data/scripts/Toucan/datagen/traj_qc_rule.py
+/data/scripts/Toucan/datagen/traj_qc_llm.py
+/data/scripts/Toucan/datagen/traj_qc_correctness.py
+scripts/select_correctness_passed.py
+/data/scripts/Toucan/datagen/build_toucan_datagen_sft_answerqc.py
+scripts/export_generated_clean_sft.py
+scripts/validate_ms_swift.py
 ```
 
 Important outputs:
@@ -273,25 +206,14 @@ The correctness selector keeps only:
 - `correct` or `mostly_correct`;
 - completeness score >= 4.
 
-This produced:
+The final run produced 111 generated rows before the final tau-style v4 review.
 
-```text
-data/generated_tau3_style_x5_correct_mostly.jsonl  # 111 rows
-```
-
-The 111 are not raw generated questions. They are questions whose rollouts passed
-trajectory and answer correctness QC.
-
-## Step 6: Final tau-style v4 Review
-
-The final strict curator is:
+## Step 6: Final Tau-Style Review
 
 ```bash
-python scripts/20_tau_style_v4_review.py \
+python scripts/final_tau_style_review.py \
   --concurrency 256
 ```
-
-This is the final selection step for both branches.
 
 Inputs:
 
@@ -322,44 +244,22 @@ generated branch:     111 reviewed ->   79 kept
 total:                               2110 kept
 ```
 
-The v4 prompt keeps only examples that are grounded, complete or correctly
-stopped, meaningful for tau-style behavior, and safe for SFT.
+The review keeps grounded, complete, tau-style-relevant trajectories and rejects
+shallow lookups, unsupported answers, incomplete tool work, unneeded follow-up
+offers, bad data, and low-relevance samples.
 
-Keep categories include:
-
-- `keep_policy_state`;
-- `keep_action_verification`;
-- `keep_grounded_calculation`;
-- `keep_hard_tool_sequence`;
-- `keep_multi_turn_correction`;
-- `keep_required_confirmation`;
-- `keep_customer_service_completion`.
-
-Reject categories include:
-
-- `reject_shallow`;
-- `reject_unsupported`;
-- `reject_external_workaround`;
-- `reject_incomplete`;
-- `reject_unneeded_followup`;
-- `reject_tool_failure`;
-- `reject_low_tau3_relevance`;
-- `reject_bad_data`.
-
-## Step 7: Validate SFT
-
-Validate outputs:
+## Step 7: Validate Final SFT Files
 
 ```bash
-python scripts/04_validate_ms_swift.py \
+python scripts/validate_ms_swift.py \
   data/deepseek_toucan_hard_subset_tau_style_v4_sft.jsonl \
   data/generated_tau3_style_clean_sft_tau_style_v4.jsonl
 ```
 
-The validator checks ms-swift agent-format compatibility and catches role/tool
-format issues before training.
+The validator checks JSONL structure, message roles, tool-call payloads, and
+final assistant turns for ms-swift agent-format compatibility.
 
-## Step 8: Build the 2110-row Upload Package
+## Step 8: Final Package
 
 The final package currently exists at:
 
@@ -378,50 +278,15 @@ README.md
 manual_review/
 ```
 
-The combined file is simply:
+The combined file is:
 
 ```text
-deepseek_toucan_hard_subset_tau_style_v4_sft.jsonl
-+ generated_tau3_style_clean_sft_tau_style_v4.jsonl
-= toucan_2110_sft.jsonl
+data/deepseek_toucan_hard_subset_tau_style_v4_sft.jsonl
++ data/generated_tau3_style_clean_sft_tau_style_v4.jsonl
+= data/hf_upload_clean_branch_2110/toucan_2110_sft.jsonl
 ```
-
-The package manifest records:
-
-```json
-{
-  "total_rows": 2110,
-  "files": {
-    "toucan_2110_sft.jsonl": 2110,
-    "toucan_hard_2031_sft.jsonl": 2031,
-    "toucan_generated_79_sft.jsonl": 79
-  }
-}
-```
-
-## Scripts Not on the Final 2110 Path
-
-These are useful historical experiments or baselines, but they were not the main
-source of the final 2110-row clean package:
-
-```text
-scripts/02_select_toucan_hard_subset.py
-scripts/05_make_toucan_optimized_mix.py
-scripts/07_generate_tau3_style_questions_deepseek.py
-scripts/09_make_toucan_deepseek_mix.py
-scripts/14_deepseek_strict_v2_review.py
-scripts/15_make_toucan_deepseek_strict_v2_mix.py
-scripts/16_deepseek_strict_filter_generated.py
-scripts/17_make_toucan_deepseek_strict_v2_genstrict_mix.py
-scripts/18_deepseek_strict_filter_hard_subset.py
-```
-
-They can be inspected for audit history, but a clean reproduction of the final
-2110 should follow the numbered steps above.
 
 ## Reproduction Checklist
-
-Before training or uploading, confirm:
 
 ```bash
 wc -l \
@@ -430,12 +295,12 @@ wc -l \
 
 cat data/tau_style_v4_manifest.json
 
-python scripts/04_validate_ms_swift.py \
+python scripts/validate_ms_swift.py \
   data/deepseek_toucan_hard_subset_tau_style_v4_sft.jsonl \
   data/generated_tau3_style_clean_sft_tau_style_v4.jsonl
 ```
 
-Expected final counts:
+Expected:
 
 ```text
 2031 data/deepseek_toucan_hard_subset_tau_style_v4_sft.jsonl
@@ -443,14 +308,12 @@ Expected final counts:
 2110 total
 ```
 
-## Important Notes
+## Notes
 
-- This is failure-informed generation, not benchmark memorization.
-- tau3 failed examples are used only to derive abstract failure modes and skills.
-- Generated questions must pass real rollout and answer correctness QC before
-  training.
-- The final v4 review intentionally starts from the broader DeepSeek hard subset,
-  not from the earlier strict-v3 subset, so earlier over-strict filters do not
-  hide recoverable data.
-- Keep all intermediate review files. The final 2110 rows are much easier to
-  audit when the review JSONL and manifest are preserved.
+- Do not train directly from generated questions.
+- Generated questions must pass real MCP rollout, trajectory QC, answer
+  correctness QC, and final tau-style review.
+- The final v4 review starts from the broader DeepSeek hard subset instead of
+  earlier over-strict intermediate filters.
+- Keep review JSONL and manifests with any future release so the data remains
+  auditable.

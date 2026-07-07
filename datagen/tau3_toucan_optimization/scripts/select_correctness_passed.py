@@ -11,7 +11,7 @@ PASS = {"correct", "mostly_correct"}
 
 def main():
     if len(sys.argv) < 3:
-        raise SystemExit("Usage: python scripts/12_select_correctness_passed.py <correctness_scored.jsonl> <out.jsonl>")
+        raise SystemExit("Usage: python scripts/select_correctness_passed.py <correctness_scored.jsonl> <out.jsonl>")
     src, out = sys.argv[1], sys.argv[2]
     stats = Counter()
     with open(src, encoding="utf-8") as f, open(out, "w", encoding="utf-8") as w:

@@ -8,7 +8,7 @@ from pathlib import Path
 
 def main():
     if len(sys.argv) < 3:
-        raise SystemExit("Usage: python scripts/13_export_generated_clean_sft.py <sft_dir> <out.jsonl>")
+        raise SystemExit("Usage: python scripts/export_generated_clean_sft.py <sft_dir> <out.jsonl>")
     sft_dir = Path(sys.argv[1])
     out = Path(sys.argv[2])
     files = sorted(p for p in sft_dir.glob("*_clean_sft.jsonl") if not p.name.startswith("all_"))

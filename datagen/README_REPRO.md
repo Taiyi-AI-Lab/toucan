@@ -260,7 +260,7 @@ Labels:
 For generated tau3-style runs, the selector is:
 
 ```bash
-python tau3_toucan_optimization/scripts/12_select_correctness_passed.py \
+python tau3_toucan_optimization/scripts/select_correctness_passed.py \
   <correctness_scored.jsonl> \
   <correct_mostly.jsonl>
 ```
@@ -296,7 +296,7 @@ The converter:
 The later generated tau3-style pipeline is wrapped by:
 
 ```bash
-bash tau3_toucan_optimization/scripts/11_run_generated_rollout_qc.sh \
+bash tau3_toucan_optimization/scripts/run_generated_rollout_qc.sh \
   <questions.jsonl> \
   <output_prefix> \
   128 \
@@ -310,9 +310,9 @@ rollout_batch2.py
 traj_qc_rule.py
 traj_qc_llm.py
 traj_qc_correctness.py
-tau3_toucan_optimization/scripts/12_select_correctness_passed.py
+tau3_toucan_optimization/scripts/select_correctness_passed.py
 build_toucan_datagen_sft_answerqc.py
-tau3_toucan_optimization/scripts/13_export_generated_clean_sft.py
+tau3_toucan_optimization/scripts/export_generated_clean_sft.py
 ```
 
 ## Output Naming Convention
