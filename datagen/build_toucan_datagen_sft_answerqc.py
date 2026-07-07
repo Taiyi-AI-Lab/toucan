@@ -28,7 +28,7 @@ NO-FOLD policy:
   visible assistant content stays after </think>, before tool_call
 
 Usage:
-  python build_toucan_datagen_sft.py trajectories_batch2.jsonl out_dir [MAX_LEN] [LIMIT]
+  python build_toucan_datagen_sft_answerqc.py trajectories_batch2.jsonl out_dir [MAX_LEN] [LIMIT]
 
 If swift is importable, examples longer than MAX_LEN are filtered by the qwen3_5
 agent template. If swift is unavailable, conversion still runs without length
