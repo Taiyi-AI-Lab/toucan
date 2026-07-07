@@ -1,0 +1,2594 @@
+{
+  "meta": {
+    "desc": "benchmark 域 → 所需能力(都要)→ Smithery server 替代品(择一,已记全 deployed)",
+    "url_template": "https://server.smithery.ai/{qualifiedName}/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}",
+    "note": "每个 domain 下 required_capabilities 的每个能力都需要(连各挑一个);alternatives 是该能力下所有可用替代。useCount 高=稳。连前建议 initialize 探活。"
+  },
+  "mcp_universe": {
+    "repository_management": {
+      "required_capabilities": {
+        "github_repo": [
+          {
+            "name": "nitrofire-q/gread",
+            "useCount": 10436,
+            "type": "community",
+            "desc": "Gives your AI access to the source code of all public github",
+            "url": "https://server.smithery.ai/nitrofire-q/gread/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "github",
+            "useCount": 3637,
+            "type": "official",
+            "desc": "Connect your AI agents to GitHub — manage repos, issues, PRs",
+            "url": "https://server.smithery.ai/github/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "vercel/grep",
+            "useCount": 305,
+            "type": "official",
+            "desc": "Search millions of public GitHub repositories for real-world",
+            "url": "https://server.smithery.ai/vercel/grep/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "deepwiki",
+            "useCount": 157,
+            "type": "official",
+            "desc": "Explore GitHub repository documentation by topic to quickly ",
+            "url": "https://server.smithery.ai/deepwiki/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "bitbucket",
+            "useCount": 85,
+            "type": "official",
+            "desc": "Host Git repos with built-in CI/CD pipelines and pull reques",
+            "url": "https://server.smithery.ai/bitbucket/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "davidcho/ca-building-code-mcp",
+            "useCount": 45,
+            "type": "community",
+            "desc": "Access and search comprehensive Canadian building regulation",
+            "url": "https://server.smithery.ai/davidcho/ca-building-code-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "gitlab",
+            "useCount": 42,
+            "type": "official",
+            "desc": "A web-based DevOps lifecycle tool that provides a Git reposi",
+            "url": "https://server.smithery.ai/gitlab/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ink/ink",
+            "useCount": 32,
+            "type": "community",
+            "desc": "Deploy and manage cloud services, git repositories, and data",
+            "url": "https://server.smithery.ai/ink/ink/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "labsofuniverse/legacy-mcp-analyzer",
+            "useCount": 30,
+            "type": "community",
+            "desc": "Analyzes C++ codebases via AST parsing to build comprehensiv",
+            "url": "https://server.smithery.ai/labsofuniverse/legacy-mcp-analyzer/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "eliottreich/taskbounty",
+            "useCount": 17,
+            "type": "community",
+            "desc": "TaskBounty is where AI coding agents fix GitHub bugs and rai",
+            "url": "https://server.smithery.ai/eliottreich/taskbounty/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "docfork/docfork",
+            "useCount": 14,
+            "type": "official",
+            "desc": "Search and retrieve documentation from GitHub repositories a",
+            "url": "https://server.smithery.ai/docfork/docfork/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "srotzin-adqm/hive-origin",
+            "useCount": 10,
+            "type": "community",
+            "desc": "Stamp creative works, code, and content with post-quantum co",
+            "url": "https://server.smithery.ai/srotzin-adqm/hive-origin/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "nexgendata-apify/github-mcp-server",
+            "useCount": 4,
+            "type": "community",
+            "desc": "Repo statistics, trending lookups, code-search queries, and ",
+            "url": "https://server.smithery.ai/nexgendata-apify/github-mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "gitwhy-cli/gitwhy",
+            "useCount": 2,
+            "type": "community",
+            "desc": "The shared AI context engine for git — save, search, and sha",
+            "url": "https://server.smithery.ai/gitwhy-cli/gitwhy/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "eren-solutions/mcp-security-audit",
+            "useCount": 1,
+            "type": "community",
+            "desc": "AI-powered code security auditor. Scans GitHub repos for vul",
+            "url": "https://server.smithery.ai/eren-solutions/mcp-security-audit/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "securityscan-api/securityscan",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Scans GitHub repositories and skills for vulnerabilities lik",
+            "url": "https://server.smithery.ai/securityscan-api/securityscan/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "evozim-hv/repo-to-rag",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Repo-to-RAG is a premium micro-service from the M2MCent fact",
+            "url": "https://server.smithery.ai/evozim-hv/repo-to-rag/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "jackalope-digital/moxie-docs",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Repos indexed with Moxie Docs can use our MCP to let agents ",
+            "url": "https://server.smithery.ai/jackalope-digital/moxie-docs/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "repage/repage",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Your AI assistant writes a gorgeous HTML report, dashboard, ",
+            "url": "https://server.smithery.ai/repage/repage/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "OjasKord/hs-code-classifier-mcp-server",
+            "useCount": 0,
+            "type": "official",
+            "desc": "HS code classifier. Classifies products to official HS tarif",
+            "url": "https://server.smithery.ai/OjasKord/hs-code-classifier-mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "evozim-hv/legacy-migrator",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Legacy-Code-Migrator is a premium micro-service from the M2M",
+            "url": "https://server.smithery.ai/evozim-hv/legacy-migrator/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ]
+      }
+    },
+    "web_search": {
+      "required_capabilities": {
+        "web_search_fetch": [
+          {
+            "name": "exa",
+            "useCount": 40759,
+            "type": "official",
+            "desc": "Fast, intelligent web search and web crawling. Get fresh inf",
+            "url": "https://server.smithery.ai/exa/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "intake-triage/steadyfetch",
+            "useCount": 12277,
+            "type": "community",
+            "desc": "Reliable web fetching MCP server with built-in retry logic, ",
+            "url": "https://server.smithery.ai/intake-triage/steadyfetch/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "brave",
+            "useCount": 10084,
+            "type": "official",
+            "desc": "Search the web with Brave's independent index — web, news, i",
+            "url": "https://server.smithery.ai/brave/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "Tavily",
+            "useCount": 4898,
+            "type": "official",
+            "desc": "Search the web with fast, accurate results optimized for AI.",
+            "url": "https://server.smithery.ai/Tavily/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "zlurp/zlurp",
+            "useCount": 4487,
+            "type": "community",
+            "desc": "Web scraping for AI agents. Convert any URL to clean markdow",
+            "url": "https://server.smithery.ai/zlurp/zlurp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "jina",
+            "useCount": 4243,
+            "type": "official",
+            "desc": "AI-powered search and retrieval platform. Search the web, re",
+            "url": "https://server.smithery.ai/jina/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "pinkpixel-dev/web-scout-mcp",
+            "useCount": 3617,
+            "type": "community",
+            "desc": "Search the web and extract clean, readable text from webpage",
+            "url": "https://server.smithery.ai/pinkpixel-dev/web-scout-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "naver/search",
+            "useCount": 3141,
+            "type": "community",
+            "desc": "Search Naver across news, blogs, books, encyclopedia, cafe p",
+            "url": "https://server.smithery.ai/naver/search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "parallel/search",
+            "useCount": 2486,
+            "type": "official",
+            "desc": "Highest accuracy web search for AIs",
+            "url": "https://server.smithery.ai/parallel/search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "OEvortex/ddg_search",
+            "useCount": 2101,
+            "type": "community",
+            "desc": "Provide fast, privacy-friendly web and AI-powered search cap",
+            "url": "https://server.smithery.ai/OEvortex/ddg_search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "google_search_console",
+            "useCount": 1308,
+            "type": "official",
+            "desc": "Google Search Console provides tools to monitor, maintain, a",
+            "url": "https://server.smithery.ai/google_search_console/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "keenable/web-search",
+            "useCount": 1094,
+            "type": "official",
+            "desc": "Docs: https://docs.keenable.ai/mcp-server\n\nKeenable is a fre",
+            "url": "https://server.smithery.ai/keenable/web-search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "brightdata",
+            "useCount": 939,
+            "type": "official",
+            "desc": "One (free) MCP for the Web. Easily search, crawl, navigate, ",
+            "url": "https://server.smithery.ai/brightdata/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ghostrouter/ghostrouter-web",
+            "useCount": 592,
+            "type": "community",
+            "desc": "Search the live web to retrieve up-to-date information and b",
+            "url": "https://server.smithery.ai/ghostrouter/ghostrouter-web/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "janwilmake/x-search-mcp",
+            "useCount": 568,
+            "type": "community",
+            "desc": "Search Twitter using advanced operators to find relevant twe",
+            "url": "https://server.smithery.ai/janwilmake/x-search-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "apify",
+            "useCount": 465,
+            "type": "official",
+            "desc": "Web scraping and automation platform. Run scrapers, extract ",
+            "url": "https://server.smithery.ai/apify/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "anysearch-ai/anysearch",
+            "useCount": 386,
+            "type": "community",
+            "desc": "Unified real-time search engine skill for AI agents.",
+            "url": "https://server.smithery.ai/anysearch-ai/anysearch/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "tetiai/pixserp",
+            "useCount": 182,
+            "type": "community",
+            "desc": "pixserp is an AI-native search MCP server. Add it to your cl",
+            "url": "https://server.smithery.ai/tetiai/pixserp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "kakao/daum-search",
+            "useCount": 138,
+            "type": "community",
+            "desc": "Search the Daum index across web, video, image, blog, book, ",
+            "url": "https://server.smithery.ai/kakao/daum-search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ScrapeGraphAI/scrapegraph-mcp",
+            "useCount": 123,
+            "type": "official",
+            "desc": "Enable language models to perform advanced AI-powered web sc",
+            "url": "https://server.smithery.ai/ScrapeGraphAI/scrapegraph-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "groundroute-ai/web-search",
+            "useCount": 110,
+            "type": "official",
+            "desc": "GroundRoute gives your AI agent web search across six engine",
+            "url": "https://server.smithery.ai/groundroute-ai/web-search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "refetch/web",
+            "useCount": 97,
+            "type": "community",
+            "desc": "Fetch pages, search the web, and extract structured data — b",
+            "url": "https://server.smithery.ai/refetch/web/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "kwp-lab/rss-reader-mcp",
+            "useCount": 77,
+            "type": "community",
+            "desc": "Track and browse RSS feeds with ease. Fetch the latest entri",
+            "url": "https://server.smithery.ai/kwp-lab/rss-reader-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "browserless/browserless-mcp",
+            "useCount": 63,
+            "type": "community",
+            "desc": "Scrape any webpage to extract content in formats like Markdo",
+            "url": "https://server.smithery.ai/browserless/browserless-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "DevEnterpriseSoftware/scrapi-mcp",
+            "useCount": 50,
+            "type": "community",
+            "desc": "Web scraping using ScrAPI. Extract website content that is d",
+            "url": "https://server.smithery.ai/DevEnterpriseSoftware/scrapi-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "scotia1973/api-hub2",
+            "useCount": 30,
+            "type": "community",
+            "desc": "334+ free MCP tools: weather, crypto, search, DNS, geocoding",
+            "url": "https://server.smithery.ai/scotia1973/api-hub2/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "apify/mcp",
+            "useCount": 28,
+            "type": "official",
+            "desc": "Apify is the world's largest marketplace of tools for web sc",
+            "url": "https://server.smithery.ai/apify/mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "axel-belfort/web-scraper",
+            "useCount": 11,
+            "type": "community",
+            "desc": "Web content extraction API for AI agents. Scrape any URL and",
+            "url": "https://server.smithery.ai/axel-belfort/web-scraper/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "talordata29/talordata-mcp",
+            "useCount": 8,
+            "type": "community",
+            "desc": "Talor SERP MCP provides web search, search history, and usag",
+            "url": "https://server.smithery.ai/talordata29/talordata-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mesquared/visibility",
+            "useCount": 8,
+            "type": "community",
+            "desc": "Check how visible a business website is to AI search engines",
+            "url": "https://server.smithery.ai/mesquared/visibility/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "dannydarko/hauntapi",
+            "useCount": 6,
+            "type": "community",
+            "desc": "Structured web extraction for AI agents. Pass any URL plus a",
+            "url": "https://server.smithery.ai/dannydarko/hauntapi/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "nimble/nimble-mcp",
+            "useCount": 3,
+            "type": "official",
+            "desc": "The Nimble MCP Server gives AI agents the ability to search,",
+            "url": "https://server.smithery.ai/nimble/nimble-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "caesar/web-search",
+            "useCount": 2,
+            "type": "community",
+            "desc": "Free, keyless web search and page-reading for AI agents.",
+            "url": "https://server.smithery.ai/caesar/web-search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "foundrynet/foundrynet-search",
+            "useCount": 2,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/foundrynet/foundrynet-search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "foundrynet/foundrynet-scrape",
+            "useCount": 2,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/foundrynet/foundrynet-scrape/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "artespraticas/scrape-agent-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Pay-per-use web scraping API built on x402. Extract clean te",
+            "url": "https://server.smithery.ai/artespraticas/scrape-agent-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "zenrows/zenrows-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Scrape any webpage and return clean, LLM-ready content using",
+            "url": "https://server.smithery.ai/zenrows/zenrows-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "fantastic/breeze-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Residential proxy mcp for AI agents — fetch, search, and acc",
+            "url": "https://server.smithery.ai/fantastic/breeze-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "cloudflare/browser-rendering",
+            "useCount": 1,
+            "type": "official",
+            "desc": "Browser rendering service. Fetch web pages, convert to markd",
+            "url": "https://server.smithery.ai/cloudflare/browser-rendering/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "hasdata/scraping",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Direct access to 40+ scraping and search tools. Extract stru",
+            "url": "https://server.smithery.ai/hasdata/scraping/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "acedatacloud-mcp/mcp-serp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/acedatacloud-mcp/mcp-serp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mastadoonprime/sylex-search",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Universal search engine for AI agents. Discover products, se",
+            "url": "https://server.smithery.ai/mastadoonprime/sylex-search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ceramic/search",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Web-scale search for AI thats 100x cheaper and 10x faster. S",
+            "url": "https://server.smithery.ai/ceramic/search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "spacefrontiers/search",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Full-text retrieval for AI agents over peer-reviewed papers,",
+            "url": "https://server.smithery.ai/spacefrontiers/search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "turbopuffer",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Search engine that combines vector search, full-text search,",
+            "url": "https://server.smithery.ai/turbopuffer/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "seekonme/product-discovery",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Natural-language catalog search and rich product lookups wit",
+            "url": "https://server.smithery.ai/seekonme/product-discovery/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "amplifyco/botbrowser",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Token-efficient web browser for LLM agents",
+            "url": "https://server.smithery.ai/amplifyco/botbrowser/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "CrawlForgeDEV/crawlforge-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "CrawlForge MCP is a production-ready MCP server that gives A",
+            "url": "https://server.smithery.ai/CrawlForgeDEV/crawlforge-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "scrapegraphai-inc/sgai",
+            "useCount": 0,
+            "type": "community",
+            "desc": "The ScrapeGraphAI MCP Server is a production-ready Model Con",
+            "url": "https://server.smithery.ai/scrapegraphai-inc/sgai/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "foura/mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Web scraping for AI agents. One smart tool fetches any publi",
+            "url": "https://server.smithery.ai/foura/mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "webpeel/webpeel",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Web data API that just works. Pass any URL, get clean markdo",
+            "url": "https://server.smithery.ai/webpeel/webpeel/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mifactory-bot/scraping-api",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Extract clean text and metadata from any URL to simplify web",
+            "url": "https://server.smithery.ai/mifactory-bot/scraping-api/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ]
+      }
+    },
+    "location_navigation": {
+      "required_capabilities": {
+        "maps_location": [
+          {
+            "name": "blake365/macrostrat-mcp",
+            "useCount": 3164,
+            "type": "community",
+            "desc": "Explore global geologic data to answer questions about bedro",
+            "url": "https://server.smithery.ai/blake365/macrostrat-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "google_maps",
+            "useCount": 821,
+            "type": "official",
+            "desc": "Integrate Google Maps to access location data, geocoding, di",
+            "url": "https://server.smithery.ai/google_maps/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "kakao/maps",
+            "useCount": 443,
+            "type": "community",
+            "desc": "Search Korean places, geocode addresses, and convert between",
+            "url": "https://server.smithery.ai/kakao/maps/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "thinair/geo",
+            "useCount": 296,
+            "type": "official",
+            "desc": "Location and routing intelligence for AI agents — geocoding,",
+            "url": "https://server.smithery.ai/thinair/geo/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "MOD_Vibes/mod-vibe-server",
+            "useCount": 39,
+            "type": "community",
+            "desc": "Share and discover location-specific atmosphere reports, cur",
+            "url": "https://server.smithery.ai/MOD_Vibes/mod-vibe-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "hithereiamaliff/mcp-grabmaps",
+            "useCount": 18,
+            "type": "community",
+            "desc": "Provide seamless access to GrabMaps geocoding and routing se",
+            "url": "https://server.smithery.ai/hithereiamaliff/mcp-grabmaps/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "heavysword1/agentgeo",
+            "useCount": 6,
+            "type": "community",
+            "desc": "Location intelligence — geocoding & reverse geocoding (OpenS",
+            "url": "https://server.smithery.ai/heavysword1/agentgeo/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "gener8v/mcp-geographic-data",
+            "useCount": 5,
+            "type": "community",
+            "desc": "U.S. demographics, housing, mortgage, migration, and employm",
+            "url": "https://server.smithery.ai/gener8v/mcp-geographic-data/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "kakao/mobility",
+            "useCount": 4,
+            "type": "community",
+            "desc": "Driving directions for Korea: A-to-B routing, scheduled-depa",
+            "url": "https://server.smithery.ai/kakao/mobility/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "foundrynet/foundrynet-geo",
+            "useCount": 2,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/foundrynet/foundrynet-geo/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mapbox",
+            "useCount": 0,
+            "type": "official",
+            "desc": "Maps and location platform for developers. Search places, re",
+            "url": "https://server.smithery.ai/mapbox/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "footstep/footstep-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Footstep gives agents the location layer they need to act in",
+            "url": "https://server.smithery.ai/footstep/footstep-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "latlng-work/latlng",
+            "useCount": 0,
+            "type": "community",
+            "desc": "LatLng MCP server for geocoding, reverse geocoding, places s",
+            "url": "https://server.smithery.ai/latlng-work/latlng/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "indoor/everguide",
+            "useCount": 0,
+            "type": "community",
+            "desc": "MCP server for accessible indoor navigation and building man",
+            "url": "https://server.smithery.ai/indoor/everguide/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mfukushim/map-traveler-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Create immersive travel experiences by instructing an avatar",
+            "url": "https://server.smithery.ai/mfukushim/map-traveler-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "guleki/geolocate-me",
+            "useCount": 0,
+            "type": "community",
+            "desc": "# Geolocate Me\n\n**Give any AI assistant real-time access to ",
+            "url": "https://server.smithery.ai/guleki/geolocate-me/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ],
+        "weather": [
+          {
+            "name": "smithery-ai/national-weather-service",
+            "useCount": 69143,
+            "type": "community",
+            "desc": "Provide real-time and forecast weather information for locat",
+            "url": "https://server.smithery.ai/smithery-ai/national-weather-service/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "MoneyChoice_MCP/MoneyChoice",
+            "useCount": 33,
+            "type": "community",
+            "desc": "Provides institutional macroeconomic forecasts across commod",
+            "url": "https://server.smithery.ai/MoneyChoice_MCP/MoneyChoice/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "valentinlemaire/climate-impacts",
+            "useCount": 18,
+            "type": "community",
+            "desc": "This MCP server connects to the [Climate Impacts Explorer](h",
+            "url": "https://server.smithery.ai/valentinlemaire/climate-impacts/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "emmanuel/weatherdemo",
+            "useCount": 9,
+            "type": "community",
+            "desc": "Access authoritative U.S. weather alerts, forecasts, radar, ",
+            "url": "https://server.smithery.ai/emmanuel/weatherdemo/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "haomingkoo/japan-seasons-mcp",
+            "useCount": 9,
+            "type": "community",
+            "desc": "Live Japan seasonal travel data — cherry blossom forecasts, ",
+            "url": "https://server.smithery.ai/haomingkoo/japan-seasons-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "meteomatics/meteomatics",
+            "useCount": 4,
+            "type": "community",
+            "desc": "The Meteomatics MCP (Model Context Protocol) server allows A",
+            "url": "https://server.smithery.ai/meteomatics/meteomatics/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "axel-belfort/weather-api",
+            "useCount": 4,
+            "type": "community",
+            "desc": "Weather data API for AI agents. Current conditions and 7-day",
+            "url": "https://server.smithery.ai/axel-belfort/weather-api/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "weathermap",
+            "useCount": 0,
+            "type": "official",
+            "desc": "WeatherMap provides visual weather data, forecasts, and mapp",
+            "url": "https://server.smithery.ai/weathermap/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "emmanuel/weathernws",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Get real-time U.S. weather alerts, forecasts, radar, and sta",
+            "url": "https://server.smithery.ai/emmanuel/weathernws/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ayebeeare/water-conditions",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Get real-time water temperature and tide predictions for any",
+            "url": "https://server.smithery.ai/ayebeeare/water-conditions/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "swamy.fwd/av-weatheropen-api-secure",
+            "useCount": 0,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/swamy.fwd/av-weatheropen-api-secure/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "kishore.venkata.m/weathermcpmvk",
+            "useCount": 0,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/kishore.venkata.m/weathermcpmvk/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ]
+      }
+    },
+    "financial_analysis": {
+      "required_capabilities": {
+        "stock_finance": [
+          {
+            "name": "zwldarren/akshare-one-mcp",
+            "useCount": 7875,
+            "type": "community",
+            "desc": "Provide access to Chinese stock market data including histor",
+            "url": "https://server.smithery.ai/zwldarren/akshare-one-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mansamarkets/mansa",
+            "useCount": 3575,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/mansamarkets/mansa/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "shibui/finance",
+            "useCount": 2472,
+            "type": "community",
+            "desc": "## Server Description\n\nScreen 9,900+ US equities across 64 y",
+            "url": "https://server.smithery.ai/shibui/finance/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "wtf-just-happened/stock-moves-explained",
+            "useCount": 2225,
+            "type": "community",
+            "desc": "Analyze significant price movements in US stocks to provide ",
+            "url": "https://server.smithery.ai/wtf-just-happened/stock-moves-explained/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "google/finance",
+            "useCount": 1450,
+            "type": "community",
+            "desc": "Get stock quotes, prices, and financial data via Google Fina",
+            "url": "https://server.smithery.ai/google/finance/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "nexgendata-apify/yahoo-finance-mcp-server",
+            "useCount": 525,
+            "type": "community",
+            "desc": "When you need company fundamentals (earnings, P/E, analyst t",
+            "url": "https://server.smithery.ai/nexgendata-apify/yahoo-finance-mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "chirag127/yahoo-finance",
+            "useCount": 339,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/chirag127/yahoo-finance/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "nexgendata-apify/finance-mcp-server",
+            "useCount": 209,
+            "type": "community",
+            "desc": "Quick market data for AI workflows: real-time quotes, crypto",
+            "url": "https://server.smithery.ai/nexgendata-apify/finance-mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "traderhc/agenthc",
+            "useCount": 164,
+            "type": "community",
+            "desc": "Access comprehensive market intelligence across stocks, cryp",
+            "url": "https://server.smithery.ai/traderhc/agenthc/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "kontakt-qy0g/nordic-financial-mcp",
+            "useCount": 135,
+            "type": "community",
+            "desc": "Semantic search across 1+ million vectors across Nordic fina",
+            "url": "https://server.smithery.ai/kontakt-qy0g/nordic-financial-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "loved0543/kdata-gate",
+            "useCount": 108,
+            "type": "community",
+            "desc": "Korean market data for AI agents and e-commerce sellers sour",
+            "url": "https://server.smithery.ai/loved0543/kdata-gate/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "imbenrabi/financial-modeling-prep-mcp-server",
+            "useCount": 88,
+            "type": "community",
+            "desc": "Complete financial market access for AI assistants - Real-ti",
+            "url": "https://server.smithery.ai/imbenrabi/financial-modeling-prep-mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "zev/lastlook-data",
+            "useCount": 50,
+            "type": "official",
+            "desc": "LastLook Data gives AI agents real-time access to US financi",
+            "url": "https://server.smithery.ai/zev/lastlook-data/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "cfocoder/financial-modeling-prep-mcp-server",
+            "useCount": 40,
+            "type": "community",
+            "desc": "Access comprehensive market data to research stocks, compani",
+            "url": "https://server.smithery.ai/cfocoder/financial-modeling-prep-mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "truss44/mcp-crypto-price",
+            "useCount": 35,
+            "type": "community",
+            "desc": "Provide real-time cryptocurrency price data and market analy",
+            "url": "https://server.smithery.ai/truss44/mcp-crypto-price/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "falazuki/finance-br",
+            "useCount": 31,
+            "type": "community",
+            "desc": "Calculadoras financeiras e dados econômicos do Brasil. 25 to",
+            "url": "https://server.smithery.ai/falazuki/finance-br/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "g-scorpiosky/hpsilab-quantum-finance",
+            "useCount": 24,
+            "type": "community",
+            "desc": "Options analytics MCP for detecting IV mispricing and direct",
+            "url": "https://server.smithery.ai/g-scorpiosky/hpsilab-quantum-finance/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "rishavdutta-kgp/sentimatix",
+            "useCount": 17,
+            "type": "community",
+            "desc": "# Sentimatix: Indian Stock Market Intelligence\n\nSentimatix i",
+            "url": "https://server.smithery.ai/rishavdutta-kgp/sentimatix/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "anthonypuggs/ausecon-mcp",
+            "useCount": 13,
+            "type": "official",
+            "desc": "MCP server for retrieval of Australian economic and financia",
+            "url": "https://server.smithery.ai/anthonypuggs/ausecon-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "janmacher02-xl8y/sec-edgar-mcp",
+            "useCount": 11,
+            "type": "community",
+            "desc": "Access SEC EDGAR financial data through your AI assistant. S",
+            "url": "https://server.smithery.ai/janmacher02-xl8y/sec-edgar-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "tokenbel/financial-data",
+            "useCount": 11,
+            "type": "community",
+            "desc": "Read-only MCP server providing access to Belarusian securiti",
+            "url": "https://server.smithery.ai/tokenbel/financial-data/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "axel-belfort/stock-price",
+            "useCount": 5,
+            "type": "community",
+            "desc": "Stock market price API for AI agents. Real-time quotes: curr",
+            "url": "https://server.smithery.ai/axel-belfort/stock-price/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ta-mcp/technical-analysis-mcp",
+            "useCount": 5,
+            "type": "community",
+            "desc": "AI-powered technical analysis server for stocks, crypto, and",
+            "url": "https://server.smithery.ai/ta-mcp/technical-analysis-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "vdineshk/sg-finance-data-mcp",
+            "useCount": 4,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/vdineshk/sg-finance-data-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "heavysword1/agentmarket",
+            "useCount": 3,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/heavysword1/agentmarket/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "toolstem/toolstem-mcp-server",
+            "useCount": 3,
+            "type": "community",
+            "desc": "Agent-ready financial intelligence MCP server. Three curated",
+            "url": "https://server.smithery.ai/toolstem/toolstem-mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "tickdb/tickdb-market-data-mcp",
+            "useCount": 2,
+            "type": "community",
+            "desc": "TickDB-MCP is a Python MCP server implementation that connec",
+            "url": "https://server.smithery.ai/tickdb/tickdb-market-data-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "financial-data/financial-data",
+            "useCount": 2,
+            "type": "community",
+            "desc": "A comprehensive MCP server delivering real-time and historic",
+            "url": "https://server.smithery.ai/financial-data/financial-data/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "vishalmdi/indian-stocks-mcp",
+            "useCount": 2,
+            "type": "community",
+            "desc": "Ask Claude about Indian stocks. Minute-by-minute. No setup.\n",
+            "url": "https://server.smithery.ai/vishalmdi/indian-stocks-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "deepsearch/korean-stocks",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Real-time Korean stock market intelligence for AI agents. Ac",
+            "url": "https://server.smithery.ai/deepsearch/korean-stocks/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mcp-dir/mercado-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "# Mercado Financeiro BR\n\nDados do mercado financeiro brasile",
+            "url": "https://server.smithery.ai/mcp-dir/mercado-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "tiger",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Trade stocks, options, and futures across US, HK, CN, and SG",
+            "url": "https://server.smithery.ai/tiger/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ak123aryan/nse-market-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Dalal Street MCP server connects to Indian stock market data",
+            "url": "https://server.smithery.ai/ak123aryan/nse-market-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "evozim-hv/helium-financial",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Helium Financial is a premium micro-service from the M2MCent",
+            "url": "https://server.smithery.ai/evozim-hv/helium-financial/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "longbridge-official/longbridge-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "US/HK markets — 133 tools: quotes, options, orders, fundamen",
+            "url": "https://server.smithery.ai/longbridge-official/longbridge-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "marketflux/marketflux-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Connect Claude to a 33 million article financial news databa",
+            "url": "https://server.smithery.ai/marketflux/marketflux-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "service-c09f/riskmodels",
+            "useCount": 0,
+            "type": "official",
+            "desc": "**Clean US equity total returns + institutional risk decompo",
+            "url": "https://server.smithery.ai/service-c09f/riskmodels/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "danelfin/ai-scores",
+            "useCount": 0,
+            "type": "community",
+            "desc": "**Danelfin MCP server.** Bring AI Scores for US stocks, US E",
+            "url": "https://server.smithery.ai/danelfin/ai-scores/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "dehyinbox/dehy",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Real time SEC and market intelligence, structured at the sou",
+            "url": "https://server.smithery.ai/dehyinbox/dehy/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "jer-bouma/financetoolkit",
+            "useCount": 0,
+            "type": "community",
+            "desc": "The Finance Toolkit gives AI assistants access to **200+ fin",
+            "url": "https://server.smithery.ai/jer-bouma/financetoolkit/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "coinvest/coinvest",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Co-Invest lets you trade directly from ChatGPT, Claude, or y",
+            "url": "https://server.smithery.ai/coinvest/coinvest/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "drillr/drillr",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Drillr is the official financial MCP for AI agents. One host",
+            "url": "https://server.smithery.ai/drillr/drillr/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "nyuvlab/vlab",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Financial-risk data from NYU Stern's Volatility and Risk Ins",
+            "url": "https://server.smithery.ai/nyuvlab/vlab/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "get-cotrader/cotrader-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Analyze the stock market using natural language screening an",
+            "url": "https://server.smithery.ai/get-cotrader/cotrader-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "sentisense/market-intelligence",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Bring SentiSense market intelligence into Claude and ChatGPT",
+            "url": "https://server.smithery.ai/sentisense/market-intelligence/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "jamie-vw4h/aletaindex",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Financial narrative intelligence for AI agents — real-time n",
+            "url": "https://server.smithery.ai/jamie-vw4h/aletaindex/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "milesnee-e/data-rail",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Agent-safe crypto financial data access layer. Provides vali",
+            "url": "https://server.smithery.ai/milesnee-e/data-rail/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "axiora/japan-financials",
+            "useCount": 0,
+            "type": "community",
+            "desc": "33 tools for Japanese financial data. Financials, ownership ",
+            "url": "https://server.smithery.ai/axiora/japan-financials/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "flatlandfi/flatland",
+            "useCount": 0,
+            "type": "official",
+            "desc": "Financial reasoning infrastructure for AI agents - typed mod",
+            "url": "https://server.smithery.ai/flatlandfi/flatland/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "fenglucc/ko-financial-data",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Real SEC, 13F, insider, congress & macro data your AI agent ",
+            "url": "https://server.smithery.ai/fenglucc/ko-financial-data/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "paperandbeyond23/edgrapi",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Clean SEC EDGAR company financials for AI agents. Normalizes",
+            "url": "https://server.smithery.ai/paperandbeyond23/edgrapi/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ],
+        "calculator": [
+          {
+            "name": "EthanHenrickson/math-mcp",
+            "useCount": 113093,
+            "type": "community",
+            "desc": "Enable your LLMs to perform accurate numerical calculations ",
+            "url": "https://server.smithery.ai/EthanHenrickson/math-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "AITutor3/calculator-mcp-test",
+            "useCount": 3462,
+            "type": "community",
+            "desc": "Perform quick, reliable arithmetic including addition, subtr",
+            "url": "https://server.smithery.ai/AITutor3/calculator-mcp-test/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "QuantOracle/quantoracle",
+            "useCount": 167,
+            "type": "community",
+            "desc": "63 deterministic quant computation tools for AI agents. Blac",
+            "url": "https://server.smithery.ai/QuantOracle/quantoracle/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "NutriBalance/nutribalance-mcp",
+            "useCount": 20,
+            "type": "community",
+            "desc": "  Free nutrition tools for AI assistants — calculate TDEE &\n",
+            "url": "https://server.smithery.ai/NutriBalance/nutribalance-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "tradingcalc/tradingcalc-mcp",
+            "useCount": 18,
+            "type": "community",
+            "desc": "19 deterministic crypto futures calculators and workflows ac",
+            "url": "https://server.smithery.ai/tradingcalc/tradingcalc-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "info-07of/property-finance-mcp",
+            "useCount": 6,
+            "type": "community",
+            "desc": "Four UK property finance calculators for AI assistants: brid",
+            "url": "https://server.smithery.ai/info-07of/property-finance-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "flopsindex/flopsindex",
+            "useCount": 5,
+            "type": "community",
+            "desc": "FLOPS Compute Intelligence publishes settlement-grade GPU + ",
+            "url": "https://server.smithery.ai/flopsindex/flopsindex/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "info-07of/property-mortgage-mcp",
+            "useCount": 5,
+            "type": "community",
+            "desc": "UK mortgage calculators from [Fox Davidson](https://www.foxd",
+            "url": "https://server.smithery.ai/info-07of/property-mortgage-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "rodriguezb-martin/hacecuentas",
+            "useCount": 4,
+            "type": "community",
+            "desc": "Run 2,300+ practical calculators (finance, taxes ARCA/SAT, h",
+            "url": "https://server.smithery.ai/rodriguezb-martin/hacecuentas/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "Arithym/Arithym",
+            "useCount": 2,
+            "type": "community",
+            "desc": "Exact arithmetic engine for AI agents. 62 tools across 22 do",
+            "url": "https://server.smithery.ai/Arithym/Arithym/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "pb-vladislav/arcflow-destiny-matrix",
+            "useCount": 2,
+            "type": "community",
+            "desc": "ArcFlow exposes the Destiny Matrix numerology calculator as ",
+            "url": "https://server.smithery.ai/pb-vladislav/arcflow-destiny-matrix/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "euclid/tools",
+            "useCount": 0,
+            "type": "community",
+            "desc": "AI models do not calculate. They predict the most probable n",
+            "url": "https://server.smithery.ai/euclid/tools/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "naruto0414/osk-calculators",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Precision calculators for AI agents (medical, finance, engin",
+            "url": "https://server.smithery.ai/naruto0414/osk-calculators/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "open-ephemeris/openephemeris",
+            "useCount": 0,
+            "type": "community",
+            "desc": "The most complete astronomical computation engine available ",
+            "url": "https://server.smithery.ai/open-ephemeris/openephemeris/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "vedintel/astro-api",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Live Vedic astrology computations for AI agents — Swiss Ephe",
+            "url": "https://server.smithery.ai/vedintel/astro-api/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "OjasKord/quantum-suitability-validator-mcp-server",
+            "useCount": 0,
+            "type": "community",
+            "desc": "AI triage for quantum computing POC proposals. Screens befor",
+            "url": "https://server.smithery.ai/OjasKord/quantum-suitability-validator-mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "quantumskils/african-fintech-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "African fintech toolkit: mobile money fee calculator (M-Pesa",
+            "url": "https://server.smithery.ai/quantumskils/african-fintech-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "jjbot1/Computer-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/jjbot1/Computer-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ]
+      }
+    },
+    "browser_automation": {
+      "required_capabilities": {
+        "browser_automation": [
+          {
+            "name": "zlurp/zlurp",
+            "useCount": 4487,
+            "type": "community",
+            "desc": "Web scraping for AI agents. Convert any URL to clean markdow",
+            "url": "https://server.smithery.ai/zlurp/zlurp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "brightdata",
+            "useCount": 939,
+            "type": "official",
+            "desc": "One (free) MCP for the Web. Easily search, crawl, navigate, ",
+            "url": "https://server.smithery.ai/brightdata/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "apify",
+            "useCount": 465,
+            "type": "official",
+            "desc": "Web scraping and automation platform. Run scrapers, extract ",
+            "url": "https://server.smithery.ai/apify/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "browserbase",
+            "useCount": 286,
+            "type": "official",
+            "desc": "Provides cloud browser automation capabilities using Stageha",
+            "url": "https://server.smithery.ai/browserbase/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ScrapeGraphAI/scrapegraph-mcp",
+            "useCount": 123,
+            "type": "official",
+            "desc": "Enable language models to perform advanced AI-powered web sc",
+            "url": "https://server.smithery.ai/ScrapeGraphAI/scrapegraph-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "browser_tool",
+            "useCount": 80,
+            "type": "official",
+            "desc": "Composio enables AI Agents and LLMs to authenticate and inte",
+            "url": "https://server.smithery.ai/browser_tool/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "browserless/browserless-mcp",
+            "useCount": 63,
+            "type": "community",
+            "desc": "Scrape any webpage to extract content in formats like Markdo",
+            "url": "https://server.smithery.ai/browserless/browserless-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "DevEnterpriseSoftware/scrapi-mcp",
+            "useCount": 50,
+            "type": "community",
+            "desc": "Web scraping using ScrAPI. Extract website content that is d",
+            "url": "https://server.smithery.ai/DevEnterpriseSoftware/scrapi-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "kernel",
+            "useCount": 21,
+            "type": "official",
+            "desc": "Deploy and manage Kernel apps, automate browsers, and search",
+            "url": "https://server.smithery.ai/kernel/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "snaprender/snaprender",
+            "useCount": 19,
+            "type": "community",
+            "desc": "Capture high-quality screenshots and PDFs of any website wit",
+            "url": "https://server.smithery.ai/snaprender/snaprender/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "axel-belfort/screenshot-pdf",
+            "useCount": 14,
+            "type": "community",
+            "desc": "Web capture API for AI agents. Take full-page screenshots (P",
+            "url": "https://server.smithery.ai/axel-belfort/screenshot-pdf/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "noncelogic/rove",
+            "useCount": 11,
+            "type": "community",
+            "desc": "Hosted Playwright browser automation for AI agents. Returns ",
+            "url": "https://server.smithery.ai/noncelogic/rove/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "scrayle/web-scraper",
+            "useCount": 6,
+            "type": "community",
+            "desc": "Scrayle.com gives AI agents full web access through 35 tools",
+            "url": "https://server.smithery.ai/scrayle/web-scraper/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "hshintelligence/agentscrape",
+            "useCount": 6,
+            "type": "community",
+            "desc": "**Pay-per-call web scraping for AI agents — no signup, no AP",
+            "url": "https://server.smithery.ai/hshintelligence/agentscrape/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mailerlite",
+            "useCount": 3,
+            "type": "official",
+            "desc": "Email marketing and automation platform. Create campaigns, m",
+            "url": "https://server.smithery.ai/mailerlite/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "opengraph/opengraph",
+            "useCount": 2,
+            "type": "community",
+            "desc": "Extract OpenGraph metadata, scrape website content, and take",
+            "url": "https://server.smithery.ai/opengraph/opengraph/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "protostatis-dev/unbrowser",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Lightweight MCP browser for LLM agents. One native binary, n",
+            "url": "https://server.smithery.ai/protostatis-dev/unbrowser/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "cloudflare/browser-rendering",
+            "useCount": 1,
+            "type": "official",
+            "desc": "Browser rendering service. Fetch web pages, convert to markd",
+            "url": "https://server.smithery.ai/cloudflare/browser-rendering/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "zenrows/zenrows-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Scrape any webpage and return clean, LLM-ready content using",
+            "url": "https://server.smithery.ai/zenrows/zenrows-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "pshivapr/selenium-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Enable AI assistants and applications to perform automated w",
+            "url": "https://server.smithery.ai/pshivapr/selenium-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "relievedattention992-smithery/screenshotsmcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/relievedattention992-smithery/screenshotsmcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "xidik12/oculo",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Automate complex web browsing tasks like navigation, form fi",
+            "url": "https://server.smithery.ai/xidik12/oculo/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "glazyr/glazyr-viz",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Glazyr Viz bypasses fragile DOM scraping and Cloudflare bloc",
+            "url": "https://server.smithery.ai/glazyr/glazyr-viz/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "asteroid/asteroid",
+            "useCount": 0,
+            "type": "community",
+            "desc": "  **Asteroid** lets you build, run, and manage AI **browser ",
+            "url": "https://server.smithery.ai/asteroid/asteroid/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "foura/mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Web scraping for AI agents. One smart tool fetches any publi",
+            "url": "https://server.smithery.ai/foura/mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "krishpavulur/remote-device-server",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Drive real Android & iOS devices and web browsers from natur",
+            "url": "https://server.smithery.ai/krishpavulur/remote-device-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "methia-farid2001/screenshotrender",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Take screenshots of any public website from Claude, Cursor, ",
+            "url": "https://server.smithery.ai/methia-farid2001/screenshotrender/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "contentful",
+            "useCount": 0,
+            "type": "official",
+            "desc": "Contentful is a headless CMS allowing developers to create, ",
+            "url": "https://server.smithery.ai/contentful/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "geromesportelli/snapforge",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Screenshots, PDFs & Markdown for AI agents",
+            "url": "https://server.smithery.ai/geromesportelli/snapforge/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "scrapegraphai-inc/sgai",
+            "useCount": 0,
+            "type": "community",
+            "desc": "The ScrapeGraphAI MCP Server is a production-ready Model Con",
+            "url": "https://server.smithery.ai/scrapegraphai-inc/sgai/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ]
+      }
+    },
+    "3d_design": {
+      "required_capabilities": {
+        "blender_3d": [
+          {
+            "name": "promptibus/mcp",
+            "useCount": 102,
+            "type": "community",
+            "desc": "Model intelligence for AI agents — syntax, parameters, prici",
+            "url": "https://server.smithery.ai/promptibus/mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "sceneview/gateway",
+            "useCount": 90,
+            "type": "community",
+            "desc": "Cross-platform 3D & AR for Android (Compose + Filament), iOS",
+            "url": "https://server.smithery.ai/sceneview/gateway/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "OjasKord/local-model-suitability-mcp",
+            "useCount": 41,
+            "type": "official",
+            "desc": "AI model router. Checks whether to use local Ollama or cloud",
+            "url": "https://server.smithery.ai/OjasKord/local-model-suitability-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "am-1m1k/muapi",
+            "useCount": 20,
+            "type": "community",
+            "desc": "Access 400+ generative AI models directly from your AI assis",
+            "url": "https://server.smithery.ai/am-1m1k/muapi/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "snaprender/snaprender",
+            "useCount": 19,
+            "type": "community",
+            "desc": "Capture high-quality screenshots and PDFs of any website wit",
+            "url": "https://server.smithery.ai/snaprender/snaprender/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "caliper/caliper",
+            "useCount": 16,
+            "type": "community",
+            "desc": "Caliper is an MCP server that accepts 3D geometry files and ",
+            "url": "https://server.smithery.ai/caliper/caliper/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "Vivek-k3/modelsplus",
+            "useCount": 12,
+            "type": "community",
+            "desc": "Discover and compare models and providers with up-to-date pr",
+            "url": "https://server.smithery.ai/Vivek-k3/modelsplus/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "antoinebou12/uml",
+            "useCount": 10,
+            "type": "community",
+            "desc": "UML-MCP Server is an MCP (Model Context Protocol) powered di",
+            "url": "https://server.smithery.ai/antoinebou12/uml/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "beforeyouship/cost-model",
+            "useCount": 3,
+            "type": "community",
+            "desc": "Model the realistic monthly cost of an LLM app **before you ",
+            "url": "https://server.smithery.ai/beforeyouship/cost-model/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "cloudflare/browser-rendering",
+            "useCount": 1,
+            "type": "official",
+            "desc": "Browser rendering service. Fetch web pages, convert to markd",
+            "url": "https://server.smithery.ai/cloudflare/browser-rendering/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "gaopengbin/cesium-mcp-runtime",
+            "useCount": 1,
+            "type": "community",
+            "desc": "AI-powered 3D globe control via MCP — 59 tools for camera, l",
+            "url": "https://server.smithery.ai/gaopengbin/cesium-mcp-runtime/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "scrappycmo/share-of-model",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Track how often AI models mention and recommend your brand. ",
+            "url": "https://server.smithery.ai/scrappycmo/share-of-model/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "evozim-hv/3d-meshweaver",
+            "useCount": 0,
+            "type": "community",
+            "desc": "3D-MeshWeaver is a premium micro-service from the M2MCent fa",
+            "url": "https://server.smithery.ai/evozim-hv/3d-meshweaver/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "evozim-hv/threejs-weaver",
+            "useCount": 0,
+            "type": "community",
+            "desc": "ThreeJS Weaver is a premium micro-service from the M2MCent f",
+            "url": "https://server.smithery.ai/evozim-hv/threejs-weaver/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "francis-ros/rostro-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Turn any language model into a multimodal powerhouse that ca",
+            "url": "https://server.smithery.ai/francis-ros/rostro-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "sudomock/sudomcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "## SudoMock MCP Server\n\nRender photorealistic product mockup",
+            "url": "https://server.smithery.ai/sudomock/sudomcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "dragoneye/mcp-server",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Computer vision models with no training required. Create and",
+            "url": "https://server.smithery.ai/dragoneye/mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "service-c09f/riskmodels",
+            "useCount": 0,
+            "type": "official",
+            "desc": "**Clean US equity total returns + institutional risk decompo",
+            "url": "https://server.smithery.ai/service-c09f/riskmodels/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "NextCut/nextcut",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Automate video creation and editing workflows by rendering s",
+            "url": "https://server.smithery.ai/NextCut/nextcut/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "glianalabs/gliana-ai",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Pay-per-call generative AI — 60+ models (image, video, music",
+            "url": "https://server.smithery.ai/glianalabs/gliana-ai/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "methia-farid2001/screenshotrender",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Take screenshots of any public website from Claude, Cursor, ",
+            "url": "https://server.smithery.ai/methia-farid2001/screenshotrender/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ]
+      },
+      "note": "无真 BlenderMCP;下列仅 3D 生成/渲染,非 Blender 脚本操作。建议本地起 Blender。"
+    }
+  },
+  "tau3": {
+    "retail": {
+      "required_capabilities": {
+        "ecommerce_order": [
+          {
+            "name": "theagenttimes/ucp-gateway",
+            "useCount": 15514,
+            "type": "official",
+            "desc": "AI Shopping tools for product search, comparison, and safe c",
+            "url": "https://server.smithery.ai/theagenttimes/ucp-gateway/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "hegetiby-jwao/woocommerce-mcp-hegetiby",
+            "useCount": 654,
+            "type": "community",
+            "desc": "Give Claude full control of your WooCommerce store. Browse p",
+            "url": "https://server.smithery.ai/hegetiby-jwao/woocommerce-mcp-hegetiby/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "huangmy157/ddd",
+            "useCount": 603,
+            "type": "community",
+            "desc": "Search SFR’s catalog using natural language and refine resul",
+            "url": "https://server.smithery.ai/huangmy157/ddd/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "regenique/elegance-commerce",
+            "useCount": 106,
+            "type": "community",
+            "desc": "AI-powered commerce API for luxury skincare shopping. Enable",
+            "url": "https://server.smithery.ai/regenique/elegance-commerce/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "hola-ps65/siil-ostomy-store",
+            "useCount": 40,
+            "type": "community",
+            "desc": "Browse and purchase premium ostomy bag covers, support belts",
+            "url": "https://server.smithery.ai/hola-ps65/siil-ostomy-store/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "thibault/ecomgraph",
+            "useCount": 14,
+            "type": "community",
+            "desc": "**Independent Shopify app discovery for AI agents.** Search,",
+            "url": "https://server.smithery.ai/thibault/ecomgraph/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "refund-decide/notary",
+            "useCount": 9,
+            "type": "community",
+            "desc": "Determine refund eligibility for popular US consumer subscri",
+            "url": "https://server.smithery.ai/refund-decide/notary/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "bikefuchs/stub",
+            "useCount": 7,
+            "type": "community",
+            "desc": "Bikefuchs is a bicycle parts price comparison and cart optim",
+            "url": "https://server.smithery.ai/bikefuchs/stub/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "agenticshelf/agentic-shelf",
+            "useCount": 5,
+            "type": "community",
+            "desc": "**Real-time product catalog, inventory, and pricing for AI a",
+            "url": "https://server.smithery.ai/agenticshelf/agentic-shelf/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mdenius/titan-store",
+            "useCount": 5,
+            "type": "community",
+            "desc": "TitanStore provides AI agents with programmatic access to co",
+            "url": "https://server.smithery.ai/mdenius/titan-store/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ucpchecker/ucp-checker",
+            "useCount": 1,
+            "type": "community",
+            "desc": "A universal commerce gateway for AI agents to interact with ",
+            "url": "https://server.smithery.ai/ucpchecker/ucp-checker/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mcp-dir/nuvemshop-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "# Nuvemshop\n\nPlataforma de e-commerce Nuvemshop (Tiendanube)",
+            "url": "https://server.smithery.ai/mcp-dir/nuvemshop-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mcp-dir/pagseguro-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "# PagSeguro\n\nPagamentos PagSeguro / PagBank, pedidos (orders",
+            "url": "https://server.smithery.ai/mcp-dir/pagseguro-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mcp-dir/olist-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "# Olist Tiny ERP\n\nERP de e-commerce Olist Tiny (ex-Tiny ERP)",
+            "url": "https://server.smithery.ai/mcp-dir/olist-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "michael-defon/merka2a",
+            "useCount": 1,
+            "type": "community",
+            "desc": "B2B commerce for AI agents: search wholesale electronics, ne",
+            "url": "https://server.smithery.ai/michael-defon/merka2a/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "shopify",
+            "useCount": 0,
+            "type": "official",
+            "desc": "Build and manage online stores. List products, process order",
+            "url": "https://server.smithery.ai/shopify/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "dsersx/product-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "🚀 The Professional Dropshipping MCP Server for DSers Automat",
+            "url": "https://server.smithery.ai/dsersx/product-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "diego-zjqo/wake-commerce",
+            "useCount": 0,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/diego-zjqo/wake-commerce/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "customblinds/shop",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Browse, price, configure and order custom-made blinds for So",
+            "url": "https://server.smithery.ai/customblinds/shop/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "vivaldoeuropes/vivaldo-product-discovery",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Public read-only MCP server for Vivaldo.shop, a European onl",
+            "url": "https://server.smithery.ai/vivaldoeuropes/vivaldo-product-discovery/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "eveoy/mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "**Eveoy brings real customers into real stores** — you pay $",
+            "url": "https://server.smithery.ai/eveoy/mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ask-ai/data-connector",
+            "useCount": 0,
+            "type": "community",
+            "desc": "# Ask AI Data Connector\n\n  Connect 18+ e-commerce and busine",
+            "url": "https://server.smithery.ai/ask-ai/data-connector/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "kamolc4/swagger-petstore-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "MCP server for the Swagger Petstore API with 19 tools. Gener",
+            "url": "https://server.smithery.ai/kamolc4/swagger-petstore-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "periskop-ai/shopping-discovery",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Product discovery for AI agents: ranked products and bundles",
+            "url": "https://server.smithery.ai/periskop-ai/shopping-discovery/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "doomscrollr/mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Build owned-audience websites: pages, posts, products, subsc",
+            "url": "https://server.smithery.ai/doomscrollr/mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "instacart",
+            "useCount": 0,
+            "type": "official",
+            "desc": "Instacart Developer Platform APIs to create shoppable lists/",
+            "url": "https://server.smithery.ai/instacart/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "zoho_inventory",
+            "useCount": 0,
+            "type": "official",
+            "desc": "Zoho Inventory helps businesses track stock, manage orders, ",
+            "url": "https://server.smithery.ai/zoho_inventory/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "OjasKord/hs-code-classifier-mcp-server",
+            "useCount": 0,
+            "type": "official",
+            "desc": "HS code classifier. Classifies products to official HS tarif",
+            "url": "https://server.smithery.ai/OjasKord/hs-code-classifier-mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ]
+      }
+    },
+    "airline": {
+      "required_capabilities": {
+        "flight_travel": [
+          {
+            "name": "kiwi",
+            "useCount": 4088,
+            "type": "official",
+            "desc": "Search flights, compare prices, and manage travel bookings. ",
+            "url": "https://server.smithery.ai/kiwi/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "punitarani/fli",
+            "useCount": 3921,
+            "type": "community",
+            "desc": "Search for Flights on Google Flights.\n\nYou can search for th",
+            "url": "https://server.smithery.ai/punitarani/fli/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ingrobertfodor/CHEAP_FLIGHTS_MCP",
+            "useCount": 327,
+            "type": "community",
+            "desc": "MCP server for searching cheap flights in real-time. Searche",
+            "url": "https://server.smithery.ai/ingrobertfodor/CHEAP_FLIGHTS_MCP/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ferryhopper",
+            "useCount": 166,
+            "type": "official",
+            "desc": "Ferry booking platform across Europe. Search routes, compare",
+            "url": "https://server.smithery.ai/ferryhopper/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "agonzalez/prueba-mcp-seeker",
+            "useCount": 64,
+            "type": "community",
+            "desc": "Search hotels by city, state, country, or geolocation and ex",
+            "url": "https://server.smithery.ai/agonzalez/prueba-mcp-seeker/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "Stayker/hotel-booking",
+            "useCount": 55,
+            "type": "community",
+            "desc": "The first MCP server that completes real hotel reservations ",
+            "url": "https://server.smithery.ai/Stayker/hotel-booking/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "InfoseekAI/google-flight-search",
+            "useCount": 46,
+            "type": "community",
+            "desc": "Search flights with Google Flights.\n\nGet the mcp server url ",
+            "url": "https://server.smithery.ai/InfoseekAI/google-flight-search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "gordgus/ignav-flights",
+            "useCount": 43,
+            "type": "community",
+            "desc": "Hosted MCP server providing live flight prices, booking link",
+            "url": "https://server.smithery.ai/gordgus/ignav-flights/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "albert-dwqs/viatsy-mcp",
+            "useCount": 41,
+            "type": "community",
+            "desc": "Search Asia travel tours, browse guides, request quotes, fin",
+            "url": "https://server.smithery.ai/albert-dwqs/viatsy-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "shokjak/travel-deals-mcp",
+            "useCount": 39,
+            "type": "community",
+            "desc": "Travel Deals MCP is a Model Context Protocol server that let",
+            "url": "https://server.smithery.ai/shokjak/travel-deals-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "tripuck894/tripuck",
+            "useCount": 37,
+            "type": "community",
+            "desc": "Tripuck — Flight Meta-Search & Meeting Point..",
+            "url": "https://server.smithery.ai/tripuck894/tripuck/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "onetrip/pulse",
+            "useCount": 34,
+            "type": "community",
+            "desc": "Access comprehensive travel and location data to streamline ",
+            "url": "https://server.smithery.ai/onetrip/pulse/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "google/hotels",
+            "useCount": 32,
+            "type": "community",
+            "desc": "Search hotels and vacation rentals on Google Hotels. No API ",
+            "url": "https://server.smithery.ai/google/hotels/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "hello-3ubk/booboooking",
+            "useCount": 26,
+            "type": "community",
+            "desc": "booboooking is a booking app. As a provider you can set up y",
+            "url": "https://server.smithery.ai/hello-3ubk/booboooking/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "rowhint-ntm5/RowHint",
+            "useCount": 25,
+            "type": "community",
+            "desc": "# RowHint MCP Server\n\nAirline seat quality intelligence via ",
+            "url": "https://server.smithery.ai/rowhint-ntm5/RowHint/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "award-flight-daily/mcp-server",
+            "useCount": 20,
+            "type": "community",
+            "desc": "Official Industry Standard MCP for Travel Awards, Points, an",
+            "url": "https://server.smithery.ai/award-flight-daily/mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "info-00wt/hemmabo-mcp-server",
+            "useCount": 19,
+            "type": "official",
+            "desc": "HemmaBo MCP server for AI-ready direct booking on host-owned",
+            "url": "https://server.smithery.ai/info-00wt/hemmabo-mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "greg/Agentorist",
+            "useCount": 16,
+            "type": "community",
+            "desc": "The booking layer for AI agents. Search, discover, and book ",
+            "url": "https://server.smithery.ai/greg/Agentorist/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "moodtrip/Adin-Flights-search",
+            "useCount": 13,
+            "type": "community",
+            "desc": "AI-powered flight search and booking, by MoodTrip.Ai.\n\nAdin ",
+            "url": "https://server.smithery.ai/moodtrip/Adin-Flights-search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "steve-gi45/pixie-vacations-mcp",
+            "useCount": 12,
+            "type": "community",
+            "desc": "**Pixie Vacations** — the first U.S. travel agency MCP serve",
+            "url": "https://server.smithery.ai/steve-gi45/pixie-vacations-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "trip1/trip1",
+            "useCount": 10,
+            "type": "community",
+            "desc": "[Trip1](https://trip1.com) lets you search and book hotels w",
+            "url": "https://server.smithery.ai/trip1/trip1/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "easyweek/easyweek",
+            "useCount": 8,
+            "type": "official",
+            "desc": "EasyWeek is an all-in-one booking and business management pl",
+            "url": "https://server.smithery.ai/easyweek/easyweek/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "AITutor3/icn-mcp",
+            "useCount": 6,
+            "type": "community",
+            "desc": "Get real-time departure hall congestion, flight statuses, an",
+            "url": "https://server.smithery.ai/AITutor3/icn-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "xltnapps/octotrip-rental-cars",
+            "useCount": 4,
+            "type": "community",
+            "desc": "# OctoTrip Rental Cars MCP Server\n\nFree, no-login MCP server",
+            "url": "https://server.smithery.ai/xltnapps/octotrip-rental-cars/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "moodtrip/moodtrip-hotel-search",
+            "useCount": 4,
+            "type": "community",
+            "desc": "MoodTrip is an AI-powered hotel search that understands natu",
+            "url": "https://server.smithery.ai/moodtrip/moodtrip-hotel-search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "letsfg",
+            "useCount": 2,
+            "type": "community",
+            "desc": "Agent-native flight search. 102 airline connectors fire in p",
+            "url": "https://server.smithery.ai/letsfg/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "heavysword1/agentflight",
+            "useCount": 2,
+            "type": "community",
+            "desc": "",
+            "url": "https://server.smithery.ai/heavysword1/agentflight/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "sunrays-dev/booking",
+            "useCount": 2,
+            "type": "community",
+            "desc": "Book real local tradespeople — plumber, electrician, HVAC, a",
+            "url": "https://server.smithery.ai/sunrays-dev/booking/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "InfoseekAI/bookingdotcom",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Search flights on Booking.com\n\nGet the mcp server url @ http",
+            "url": "https://server.smithery.ai/InfoseekAI/bookingdotcom/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "takecarsdd/italy-transfers",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Real-time train, bus, ferry and private transfer prices betw",
+            "url": "https://server.smithery.ai/takecarsdd/italy-transfers/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "tripadvisor/search",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Search Tripadvisor for hotels, restaurants, and attractions.",
+            "url": "https://server.smithery.ai/tripadvisor/search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "xltnapps/octotrip-flights",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Free, no-login MCP server for searching and comparing flight",
+            "url": "https://server.smithery.ai/xltnapps/octotrip-flights/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "InfoseekAI/flight-agent-matrix",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Search Google, Skyscanner, Skiplagged, Booking.com in real t",
+            "url": "https://server.smithery.ai/InfoseekAI/flight-agent-matrix/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "agentgateway/agentgateway-marketplace",
+            "useCount": 0,
+            "type": "community",
+            "desc": "AI commerce platform — WooCommerce store products, flights, ",
+            "url": "https://server.smithery.ai/agentgateway/agentgateway-marketplace/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "untap/claims",
+            "useCount": 0,
+            "type": "community",
+            "desc": "**Untap** finds money UK travellers are already owed and sur",
+            "url": "https://server.smithery.ai/untap/claims/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "airport-pickups-london/London-airport-transfers",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Provide instant quotes and bookings for private transfers be",
+            "url": "https://server.smithery.ai/airport-pickups-london/London-airport-transfers/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "flightdb/flight-history",
+            "useCount": 0,
+            "type": "community",
+            "desc": "### FlightDB (`flightdb`)\n\n- **URL:** https://flightdb.org\n-",
+            "url": "https://server.smithery.ai/flightdb/flight-history/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ahmednegm-1711/maqami-travel",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Book hotels worldwide — search, price, prebook & book across",
+            "url": "https://server.smithery.ai/ahmednegm-1711/maqami-travel/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "plany/plany-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Organize travel itineraries by creating detailed trips with ",
+            "url": "https://server.smithery.ai/plany/plany-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "floyd/mcp-server",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Booking infrastructure with the guarantees agents need: temp",
+            "url": "https://server.smithery.ai/floyd/mcp-server/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ]
+      },
+      "note": "仅搜索/预订,缺闭世界'改我的预订'"
+    },
+    "telecom": {
+      "required_capabilities": {
+        "helpdesk_support": [
+          {
+            "name": "hubspot",
+            "useCount": 470,
+            "type": "official",
+            "desc": "Access your HubSpot CRM through AI assistants. Search contac",
+            "url": "https://server.smithery.ai/hubspot/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "intercom",
+            "useCount": 132,
+            "type": "official",
+            "desc": "Chat with customers via live messaging, manage support ticke",
+            "url": "https://server.smithery.ai/intercom/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "favcrm/favcrm",
+            "useCount": 68,
+            "type": "official",
+            "desc": "**Agentic CRM for service businesses** — 136 typed tools acr",
+            "url": "https://server.smithery.ai/favcrm/favcrm/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "gorgias",
+            "useCount": 1,
+            "type": "official",
+            "desc": "Gorgias is a helpdesk and live chat platform specializing in",
+            "url": "https://server.smithery.ai/gorgias/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "recursive/support",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Query the Recursive AI support agent platform — pricing, fea",
+            "url": "https://server.smithery.ai/recursive/support/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mcp-dir/ifood-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "# iFood\n\nInsights da sua loja no iFood direto no chat do seu",
+            "url": "https://server.smithery.ai/mcp-dir/ifood-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "support-9ef4/Wayforth",
+            "useCount": 1,
+            "type": "official",
+            "desc": "The API runtime for AI agents.\nOne tool call. Any API. No se",
+            "url": "https://server.smithery.ai/support-9ef4/Wayforth/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "zendesk",
+            "useCount": 0,
+            "type": "official",
+            "desc": "Manage support tickets, help center articles, and customer c",
+            "url": "https://server.smithery.ai/zendesk/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "plain",
+            "useCount": 0,
+            "type": "community",
+            "desc": "AI-powered customer support platform. Manage threads, custom",
+            "url": "https://server.smithery.ai/plain/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "spark1security/n0s1-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Scan Jira, Confluence, Slack, GitHub, GitLab, Zendesk, Linea",
+            "url": "https://server.smithery.ai/spark1security/n0s1-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "pierre/htt",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Create instant call links for Snapcall conversations. Start ",
+            "url": "https://server.smithery.ai/pierre/htt/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "cod-gb2l/StudioMeyer-CRM",
+            "useCount": 0,
+            "type": "community",
+            "desc": "AI-native CRM as MCP Server. 33 tools for contacts, pipeline",
+            "url": "https://server.smithery.ai/cod-gb2l/StudioMeyer-CRM/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ],
+        "billing_subscription": [
+          {
+            "name": "coal/coal-payments",
+            "useCount": 42,
+            "type": "community",
+            "desc": "# Coal\n\nCoal gives AI agents a real checkout.\n\nDiscover merc",
+            "url": "https://server.smithery.ai/coal/coal-payments/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "umg-gpt/moltpe",
+            "useCount": 26,
+            "type": "community",
+            "desc": "AI-native payment infrastructure that gives AI agents isolat",
+            "url": "https://server.smithery.ai/umg-gpt/moltpe/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "harvest",
+            "useCount": 5,
+            "type": "official",
+            "desc": "Log billable hours, manage projects, and send invoices. Trac",
+            "url": "https://server.smithery.ai/harvest/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "runpay/marketplace",
+            "useCount": 5,
+            "type": "community",
+            "desc": "Stripe-native marketplace where AI agents autonomously disco",
+            "url": "https://server.smithery.ai/runpay/marketplace/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "aiamindennapokban/billingo-mcp",
+            "useCount": 3,
+            "type": "community",
+            "desc": "Manage invoices, partners, and business expenses through the",
+            "url": "https://server.smithery.ai/aiamindennapokban/billingo-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "xqb/vibe-pay",
+            "useCount": 2,
+            "type": "community",
+            "desc": "Platform access code. Email coryhigham@gmail.com with subjec",
+            "url": "https://server.smithery.ai/xqb/vibe-pay/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "promptfax/promptfax",
+            "useCount": 1,
+            "type": "community",
+            "desc": "PromptFax is a pay-per-use remote MCP server that lets an AI",
+            "url": "https://server.smithery.ai/promptfax/promptfax/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "stripe",
+            "useCount": 0,
+            "type": "official",
+            "desc": "",
+            "url": "https://server.smithery.ai/stripe/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "zoho_invoice",
+            "useCount": 0,
+            "type": "official",
+            "desc": "Zoho Invoice simplifies billing, recurring payments, and exp",
+            "url": "https://server.smithery.ai/zoho_invoice/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "square",
+            "useCount": 0,
+            "type": "official",
+            "desc": "Process payments, manage subscriptions, send invoices, and h",
+            "url": "https://server.smithery.ai/square/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "paypal",
+            "useCount": 0,
+            "type": "official",
+            "desc": "Create and share payment links, send invoices, and view rece",
+            "url": "https://server.smithery.ai/paypal/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "sacha/swiss-qr-bill",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Generate and validate Swiss QR-Bills (Swiss Payment Standard",
+            "url": "https://server.smithery.ai/sacha/swiss-qr-bill/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "support-ivr7/invoicexml",
+            "useCount": 0,
+            "type": "community",
+            "desc": "InvoiceXML brings e-invoice compliance to your AI agent. Cre",
+            "url": "https://server.smithery.ai/support-ivr7/invoicexml/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "aiamindennapokban/nav-online-invoice-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Manage and query Hungarian invoice data directly through the",
+            "url": "https://server.smithery.ai/aiamindennapokban/nav-online-invoice-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "segawa4321/agent-budget-guard",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Pre-payment budget check and post-payment invoice routing fo",
+            "url": "https://server.smithery.ai/segawa4321/agent-budget-guard/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ]
+      },
+      "note": "helpdesk+账单,缺运营商设备排障"
+    },
+    "banking": {
+      "required_capabilities": {
+        "banking_account": [
+          {
+            "name": "jonathan-7udh/inferventis-finance",
+            "useCount": 24,
+            "type": "community",
+            "desc": "19 production-ready financial tools for AI agents. Covers cu",
+            "url": "https://server.smithery.ai/jonathan-7udh/inferventis-finance/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "douglas/banco-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "# Banco MCP — Open Finance Brasil\n\nConecte 30+ bancos brasil",
+            "url": "https://server.smithery.ai/douglas/banco-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mcp-dir/wise-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "# Wise\n\nMCP da Wise (https://wise.com), acesso à conta multi",
+            "url": "https://server.smithery.ai/mcp-dir/wise-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "aa-9xxm/ohmyfin",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Cross-border payment and banking intelligence for AI agents:",
+            "url": "https://server.smithery.ai/aa-9xxm/ohmyfin/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mcp-dir/nubank-mcp",
+            "useCount": 1,
+            "type": "community",
+            "desc": "# Nubank MCP\n\nConecte sua conta do **Nubank** ao Claude, Cha",
+            "url": "https://server.smithery.ai/mcp-dir/nubank-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "hiro",
+            "useCount": 0,
+            "type": "official",
+            "desc": "Manage personal finances by aggregating bank accounts, inves",
+            "url": "https://server.smithery.ai/hiro/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "banksync/banksync-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Connect AI agents to real bank accounts — transactions, bala",
+            "url": "https://server.smithery.ai/banksync/banksync-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "aequitas-labs/matcha-money",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Develop your ritual for financial wellness.\n\nConnect your ac",
+            "url": "https://server.smithery.ai/aequitas-labs/matcha-money/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mercury",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Online business banking services. Businesses can apply for a",
+            "url": "https://server.smithery.ai/mercury/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "appfinkai/finkai",
+            "useCount": 0,
+            "type": "community",
+            "desc": "FinkAI is a personal-finance MCP server for the authenticate",
+            "url": "https://server.smithery.ai/appfinkai/finkai/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ]
+      },
+      "note": "多为真账户连接器,闭世界 banking 无原生对应"
+    },
+    "banking_knowledge": {
+      "required_capabilities": {
+        "rag_knowledge": [
+          {
+            "name": "jina",
+            "useCount": 4243,
+            "type": "official",
+            "desc": "AI-powered search and retrieval platform. Search the web, re",
+            "url": "https://server.smithery.ai/jina/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "lanonasis/lanonasis-mcp",
+            "useCount": 85,
+            "type": "community",
+            "desc": "Manage long-term memory across projects with fast semantic s",
+            "url": "https://server.smithery.ai/lanonasis/lanonasis-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "infranodus/mcp-server-infranodus",
+            "useCount": 48,
+            "type": "official",
+            "desc": "Map text into knowledge graphs to create a structured repres",
+            "url": "https://server.smithery.ai/infranodus/mcp-server-infranodus/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "lanonasis/lano-enterprise-mcp",
+            "useCount": 31,
+            "type": "community",
+            "desc": "Store and retrieve semantic memories using advanced vector s",
+            "url": "https://server.smithery.ai/lanonasis/lano-enterprise-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "omegamemory/omega-memory",
+            "useCount": 26,
+            "type": "community",
+            "desc": "Maintain persistent project context by storing decisions, le",
+            "url": "https://server.smithery.ai/omegamemory/omega-memory/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "node2flow/gemini-file-search-rag",
+            "useCount": 24,
+            "type": "community",
+            "desc": "MCP server for Google's Gemini File Search and RAG (Retrieva",
+            "url": "https://server.smithery.ai/node2flow/gemini-file-search-rag/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mem0ai/mem0-memory-mcp",
+            "useCount": 21,
+            "type": "official",
+            "desc": "Save, search, and manage long-term memories across users and",
+            "url": "https://server.smithery.ai/mem0ai/mem0-memory-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "docfork/docfork",
+            "useCount": 14,
+            "type": "official",
+            "desc": "Search and retrieve documentation from GitHub repositories a",
+            "url": "https://server.smithery.ai/docfork/docfork/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "purmemo/purmemo-mcp",
+            "useCount": 14,
+            "type": "community",
+            "desc": "AI conversation memory that works everywhere. Save and recal",
+            "url": "https://server.smithery.ai/purmemo/purmemo-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "velarynai/ragora",
+            "useCount": 3,
+            "type": "community",
+            "desc": "Search across all your knowledge bases to retrieve relevant ",
+            "url": "https://server.smithery.ai/velarynai/ragora/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "supermemory",
+            "useCount": 1,
+            "type": "official",
+            "desc": "Supermemory's universal Memory MCP will save and bring your ",
+            "url": "https://server.smithery.ai/supermemory/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "dejaview",
+            "useCount": 1,
+            "type": "community",
+            "desc": "Store and retrieve facts about entities through a persistent",
+            "url": "https://server.smithery.ai/dejaview/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "kulkarnianirudha8/byteaskai",
+            "useCount": 1,
+            "type": "community",
+            "desc": "# ByteAsk Embedded Docs MCP\n\nPage-cited retrieval over embed",
+            "url": "https://server.smithery.ai/kulkarnianirudha8/byteaskai/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "cloudflare/ai-search",
+            "useCount": 0,
+            "type": "official",
+            "desc": "AI Search (AutoRAG) management. List and search documents ac",
+            "url": "https://server.smithery.ai/cloudflare/ai-search/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "knowledge-raven/RAV3N",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Make your knowledge agent-ready. Connect docs from Confluenc",
+            "url": "https://server.smithery.ai/knowledge-raven/RAV3N/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "pquattro-3b11/memoraeu",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Personal memory layer for AI assistants. Store, search and r",
+            "url": "https://server.smithery.ai/pquattro-3b11/memoraeu/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "evozim-hv/repo-to-rag",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Repo-to-RAG is a premium micro-service from the M2MCent fact",
+            "url": "https://server.smithery.ai/evozim-hv/repo-to-rag/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "team-sw2r/myaitwin",
+            "useCount": 0,
+            "type": "community",
+            "desc": "A personal RAG database you build from chat. Store your know",
+            "url": "https://server.smithery.ai/team-sw2r/myaitwin/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "remembra-ai/remembra",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Persistent memory for AI agents. Store context, recall seman",
+            "url": "https://server.smithery.ai/remembra-ai/remembra/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "pulsomex/agentmemo",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Give your AI agents a shared memory pool.\n\nWhen Agent A lear",
+            "url": "https://server.smithery.ai/pulsomex/agentmemo/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "support-0vd1/llmtomd",
+            "useCount": 0,
+            "type": "community",
+            "desc": "**LLMtoMD is the memory layer for AI coding agents.** It con",
+            "url": "https://server.smithery.ai/support-0vd1/llmtomd/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "captureai/capturemcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "capture is a memory layer that ingests emails, Slack threads",
+            "url": "https://server.smithery.ai/captureai/capturemcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "agentbay/memory",
+            "useCount": 0,
+            "type": "community",
+            "desc": "                                                \nPersistent ",
+            "url": "https://server.smithery.ai/agentbay/memory/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "plurality-network/ai-context-flow",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Universal memory for AI agents and tools. Save, organize and",
+            "url": "https://server.smithery.ai/plurality-network/ai-context-flow/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "ai-jcce/mcp-contexta",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Contexta gives AI assistants a persistent, typed memory laye",
+            "url": "https://server.smithery.ai/ai-jcce/mcp-contexta/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "james-esah/ultramemory",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Cross-tool memory for your AI that recalls first every turn ",
+            "url": "https://server.smithery.ai/james-esah/ultramemory/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "hifriendbot/cogmemai",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Persistent cloud memory for Ai coding assistants. 33 MCP too",
+            "url": "https://server.smithery.ai/hifriendbot/cogmemai/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "cherkavskyi/memplato",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Personal MCP memory server that runs on your Android phone v",
+            "url": "https://server.smithery.ai/cherkavskyi/memplato/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "xmemo/xmemo",
+            "useCount": 0,
+            "type": "community",
+            "desc": "XMemo is the cloud memory layer for AI agents: a hosted, use",
+            "url": "https://server.smithery.ai/xmemo/xmemo/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "eve/eve-mcp",
+            "useCount": 0,
+            "type": "community",
+            "desc": "One Memory. Every Agent.\nEve gives teams one managed memory ",
+            "url": "https://server.smithery.ai/eve/eve-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "mifactory-bot/agent-memory",
+            "useCount": 0,
+            "type": "community",
+            "desc": "Store and retrieve persistent information across different s",
+            "url": "https://server.smithery.ai/mifactory-bot/agent-memory/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          },
+          {
+            "name": "OjasKord/document-integrity-validator-mcp",
+            "useCount": 0,
+            "type": "official",
+            "desc": "AI reasoning checks any document against named international",
+            "url": "https://server.smithery.ai/OjasKord/document-integrity-validator-mcp/mcp?api_key={SMITHERY_API_KEY}&profile={SMITHERY_PROFILE}"
+          }
+        ]
+      },
+      "note": "通用 RAG,非银行专用库"
+    }
+  }
+}

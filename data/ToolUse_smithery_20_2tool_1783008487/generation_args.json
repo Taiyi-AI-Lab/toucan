@@ -1,0 +1,16 @@
+{
+  "total_prompts": 20,
+  "source": "smithery",
+  "num_tools": 2,
+  "mode": "single_server",
+  "multi_server_allocated_servers": null,
+  "multi_server_allocation_strategy": "random",
+  "max_featured_servers_per_prompt": null,
+  "sampling_strategy": "random",
+  "samples_per_server": 5,
+  "power_law_alpha": 0.5,
+  "output_folder": "../data",
+  "job_name": null,
+  "timestamp": 1783008487,
+  "seed": 42
+}

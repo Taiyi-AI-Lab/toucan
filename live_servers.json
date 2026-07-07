@@ -1,0 +1,72 @@
+[
+ {
+  "name": "0046.@mikechao_metmuseum-mcp_labeled.json",
+  "url": "https://server.smithery.ai/@mikechao/metmuseum-mcp/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0028.@JackKuo666_pubmed-mcp-server_labeled.j",
+  "url": "https://server.smithery.ai/@JackKuo666/pubmed-mcp-server/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0109.@geobio_wikipedia-mcp_labeled.json",
+  "url": "https://server.smithery.ai/@geobio/wikipedia-mcp/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0001.exa_exa-search_labeled.json",
+  "url": "https://server.smithery.ai/exa/mcp?config={config_b64}&api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0051.fetch-mcp_fetch-mcp-server_labeled.json",
+  "url": "https://server.smithery.ai/fetch-mcp/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0002.@upstash_context7-mcp_labeled.json",
+  "url": "https://server.smithery.ai/@upstash/context7-mcp/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0113.@isdaniel_mcp_weather_server_labeled.js",
+  "url": "https://server.smithery.ai/@isdaniel/mcp_weather_server/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0033.@hamid-vakilzadeh_mcpsemanticscholar_la",
+  "url": "https://server.smithery.ai/@hamid-vakilzadeh/mcpsemanticscholar/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0012.@chirag127_clear-thought-mcp-server_lab",
+  "url": "https://server.smithery.ai/@chirag127/clear-thought-mcp-server/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0059.@smithery-ai_national-weather-service_l",
+  "url": "https://server.smithery.ai/@smithery-ai/national-weather-service/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0043.@openags_paper-search-mcp_labeled.json",
+  "url": "https://server.smithery.ai/@openags/paper-search-mcp/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0019.@nickclyde_duckduckgo-mcp-server_labele",
+  "url": "https://server.smithery.ai/@nickclyde/duckduckgo-mcp-server/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0009.@xinzhongyouhai_mcp-sequentialthinking-",
+  "url": "https://server.smithery.ai/@xinzhongyouhai/mcp-sequentialthinking-tools/mcp?api_key={smithery_api_key}",
+  "use": 0
+ },
+ {
+  "name": "0091.@flrngel_mcp-painter_labeled.json",
+  "url": "https://server.smithery.ai/@flrngel/mcp-painter/mcp?config={config_b64}&api_key={smithery_api_key}",
+  "use": 0
+ }
+]

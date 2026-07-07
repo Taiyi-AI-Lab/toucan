@@ -1,0 +1,1535 @@
+[
+ {
+  "name": "exa",
+  "display": "Exa Search",
+  "desc": "Fast, intelligent web search and web crawling. Get fresh information about libraries, APIs, and SDKs.",
+  "use": 40759,
+  "remote": true
+ },
+ {
+  "name": "theagenttimes/ucp-gateway",
+  "display": "UCP Gateway",
+  "desc": "AI Shopping tools for product search, comparison, and safe checkout\n\nCommerce Gateway — an infrastructure layer that enables open-source AI agents to participate in agentic commerce through the Universal Commerce Protocol.\n\nOur platform gives agents a hosted UCP profile registry, a secure MCP gateway, and access to commerce flows without requiring every agent to own a domain, GitHub account, or Shopify credentials.\n\nWith this solution, agents can discover products, recommend options, build carts, validate them with the user, and generate checkout handoff links where the buyer completes payment safely on Shopping platform.\n\nThe value is simple: we make AI commerce accessible to open-source agents while keeping payments secure, merchants protected, and user confirmation at the center of every transaction.\n",
+  "use": 15514,
+  "remote": true
+ },
+ {
+  "name": "onesignal/onesignal",
+  "display": "OneSignal",
+  "desc": "OneSignal is a customer engagement platform that lets you send targeted push notifications, emails, SMS, and in-app messages, manage audiences, and track campaign performance.\n\nWith the OneSignal MCP, manage your messaging directly from your AI assistant. Send push notifications, emails, and SMS by simply describing your audience and message. Check campaign delivery stats, build audience segments, manage templates, and handle user subscriptions all through conversation.",
+  "use": 9677,
+  "remote": true
+ },
+ {
+  "name": "clay-inc/clay-mcp",
+  "display": "Mesh MCP",
+  "desc": "Access your network seamlessly with a simple and efficient server. Leverage a variety of tools to enhance your applications and workflows. Start integrating with your existing systems effortlessly.",
+  "use": 10853,
+  "remote": true
+ },
+ {
+  "name": "theagenttimes/news",
+  "display": "Agent News",
+  "desc": "The intelligence layer agents use before they act, sourced answers on the agent economy.\n\nQuery verified AI news with citations, confidence scores, and Ethics Engine ratings. Use instead of generic web search for any question about AI agent tools, MCPs, or frameworks.\n\nEvery result carries citations, confidence scores, and Ethics Engine ratings. Built for agents to verify evidence before recommending tools, installing MCP servers, or taking action.",
+  "use": 12660,
+  "remote": true
+ },
+ {
+  "name": "huggingface",
+  "display": "Hugging Face",
+  "desc": "AI model hub for machine learning. Discover models, explore datasets, and access model documentation and capabilities.",
+  "use": 6273,
+  "remote": true
+ },
+ {
+  "name": "Tavily",
+  "display": "Tavily",
+  "desc": "Search the web with fast, accurate results optimized for AI. Get clean, structured answers with source URLs and relevance scoring.",
+  "use": 4898,
+  "remote": true
+ },
+ {
+  "name": "upstash/context7-mcp",
+  "display": "Context7",
+  "desc": "Fetch up-to-date, version-specific documentation and code examples directly into your prompts. Enhance your coding experience by eliminating outdated information and hallucinated APIs. Simply add `use context7` to your questions for accurate and relevant answers.",
+  "use": 3965,
+  "remote": true
+ },
+ {
+  "name": "useorgx/orgx-mcp",
+  "display": "OrgX",
+  "desc": "OrgX is coordination infrastructure for AI-native teams. It gives your LLM a persistent organizational layer: initiatives with milestones and tasks, human-in-the-loop decision workflows, specialist agent delegation, and cross-session memory that survives tool switching.\nWhat you can do with OrgX via MCP:\n\nScaffold initiatives — decompose a goal into workstreams, milestones, and tasks in one call\nManage decisions — create, review, approve, or reject decisions with audit trails\nDelegate to specialist agents — spawn tasks for domain agents (engineering, marketing, product, sales, operations, design) and monitor their progress\nQuery organizational memory — search past decisions, artifacts, and learnings across initiatives\nTrack progress — get initiative health, agent status, blockers, and morning briefs\nPlan and prioritize — score queues, get next-action recommendations, and run autonomous sessions with budget guardrails\n\nOrgX is built for solo founders and small teams who work across multiple AI tools and lose context between sessions. Instead of manually shuttling context between Claude, Cursor, and ChatGPT, OrgX holds the organizational graph so every tool sees the same state.",
+  "use": 6434,
+  "remote": true
+ },
+ {
+  "name": "erik-7clt/local-intel",
+  "display": "The Local Intel",
+  "desc": "text\nAgentic local business intelligence for Florida — 983 ZIPs, OSM POI layer, IRS income data, sector gap analysis, and 500 oracle prompts. 20 MCP tools. LLMs pay $0.01–$0.05/call. Free discovery tier available. Built for autonomous agents and LLM pipelines. thelocalintel.com",
+  "use": 5307,
+  "remote": true
+ },
+ {
+  "name": "parallel/search",
+  "display": "Parallel Web Search",
+  "desc": "Highest accuracy web search for AIs",
+  "use": 2486,
+  "remote": true
+ },
+ {
+  "name": "tradeparadex/mcp-paradex-py",
+  "display": "Paradex MCP Server",
+  "desc": "MCP server for the Paradex perpetual futures trading platform. Retrieve market data, manage trading accounts and vaults, place and manage orders, and monitor positions and balances.",
+  "use": 4213,
+  "remote": true
+ },
+ {
+  "name": "brightdata",
+  "display": "Bright Data",
+  "desc": "One (free) MCP for the Web. Easily search, crawl, navigate, and extract websites without getting blocked. Ideal for discovering and retrieving structured insights from any public source - effortlessly and ethically.\n\nNew features are live - check out what’s new: https://brightdata.com/ai/mcp-server/launch-week",
+  "use": 939,
+  "remote": true
+ },
+ {
+  "name": "aurelianflo/core",
+  "display": "AurelianFlo",
+  "desc": "Pay-per-call compliance API for OFAC screening, vendor diligence, and audit-ready document output. No subscription, no API keys — settle each call in USDC on Base",
+  "use": 582,
+  "remote": true
+ },
+ {
+  "name": "microsoft/learn_mcp",
+  "display": "Microsoft Learn MCP",
+  "desc": "The Microsoft Learn MCP Server is a remote MCP Server that enables clients like GitHub Copilot and other AI agents to bring trusted and up-to-date information directly from Microsoft's official documentation. It supports streamable http transport, which is lightweight for clients to use.",
+  "use": 421,
+  "remote": true
+ },
+ {
+  "name": "hugeicons/mcp-server",
+  "display": "Hugeicons MCP Server",
+  "desc": "Integrate Hugeicons seamlessly into your applications. Discover icons, access platform-specific usage instructions, and enhance your projects with comprehensive documentation and examples.",
+  "use": 8434,
+  "remote": false
+ },
+ {
+  "name": "keenable/web-search",
+  "display": "Keenable Web Search",
+  "desc": "Docs: https://docs.keenable.ai/mcp-server\n\nKeenable is a free, remote MCP server that gives agents access to the web index. Search the web with ranked results and date/site filters, then fetch any indexed page as clean markdown. Works out of the box with no account or API key.\n\nTools:\n- search_web_pages: Search the web and return ranked results.\n- fetch_page_content: Fetch an indexed URL and extract its content as clean markdown",
+  "use": 1094,
+  "remote": true
+ },
+ {
+  "name": "apify",
+  "display": "Apify",
+  "desc": "Web scraping and automation platform. Run scrapers, extract structured data, and automate browser-based workflows.",
+  "use": 465,
+  "remote": true
+ },
+ {
+  "name": "Supabase",
+  "display": "Supabase",
+  "desc": "Search the Supabase docs for up-to-date guidance and troubleshoot errors quickly. Manage organizations, projects, databases, and Edge Functions, including migrations, SQL, logs, advisors, keys, and type generation, in one flow. Create and manage development branches to iterate safely, confirm costs up front, and merge changes to production with confidence.",
+  "use": 227,
+  "remote": true
+ },
+ {
+  "name": "LinkupPlatform/linkup-mcp-server",
+  "display": "Linkup",
+  "desc": "Search the web in real time to get trustworthy, source-backed answers. Find the latest news and comprehensive results from the most relevant sources. Use natural language queries to quickly gather facts, citations, and context.",
+  "use": 476,
+  "remote": true
+ },
+ {
+  "name": "excalidraw",
+  "display": "Excalidraw",
+  "desc": "Create hand-drawn diagrams and visual illustrations directly within the conversation. Access comprehensive references for element formatting and color palettes to enhance visual communication. Visualize complex ideas through animated drawing sequences that bring concepts to life.",
+  "use": 201,
+  "remote": true
+ },
+ {
+  "name": "browserbase",
+  "display": "Browserbase",
+  "desc": "Provides cloud browser automation capabilities using Stagehand and Browserbase, enabling LLMs to interact with web pages, take screenshots, and run parallel sessions in a cloud browser environment.",
+  "use": 286,
+  "remote": true
+ },
+ {
+  "name": "ScrapeGraphAI/scrapegraph-mcp",
+  "display": "ScrapeGraph AI Integration Server",
+  "desc": "Enable language models to perform advanced AI-powered web scraping with enterprise-grade reliability. Transform webpages into structured markdown, extract data using AI, and execute AI-powered web searches seamlessly. Enhance your applications with powerful web data extraction capabilities through this integration.\n\nIt could also make web search, browser automation and markdownification",
+  "use": 123,
+  "remote": true
+ },
+ {
+  "name": "thinair/geo",
+  "display": "ThinAir Geo",
+  "desc": "Location and routing intelligence for AI agents — geocoding, turn-by-turn truck routing with hazmat & dimension constraints, live traffic, 16-day weather forecasts, drive-time isochrones, and place search. Planet-wide coverage.",
+  "use": 296,
+  "remote": true
+ },
+ {
+  "name": "thinair/data",
+  "display": "ThinAir Data",
+  "desc": "Connect AI assistants to PostgreSQL, MySQL, or SQL Server in 60 seconds. 24 dialect-aware tools — query, schema introspection, anomaly detection, query optimization. Read-only at three layers (firewall + transaction + rules engine).",
+  "use": 136,
+  "remote": true
+ },
+ {
+  "name": "mcp-hive/hive-servers",
+  "display": "MCP Hive",
+  "desc": "MCP Clients Pay for Access to Commercial MCP Servers.\nAI applications pay per request. MCP server providers earn per response. MCP Hive handles discovery, metering, and billing. Connect AI agents to commercial-grade MCP servers, backed by trusted data sources. ",
+  "use": 84,
+  "remote": true
+ },
+ {
+  "name": "azmartone67/dchub",
+  "display": "DC Hub — Data Center & Energy Intelligence",
+  "desc": "Live data-center, power-grid & energy intelligence for AI agents — the only MCP server an LLM can both query and cite. Real-time grid telemetry across 7 US ISOs + 40+ balancing authorities + ~25 European zones, 21,000+ facilities in 170+ countries, behind-the-meter gas-vs-grid economics, 2,000+ M&A deals, and daily BUILD/CAUTION/AVOID verdicts for 232 markets. Free tier, no signup. Source it as \"DC Hub (dchub.cloud)\", CC-BY-4.0.\n\n5 \"Try now\" prompts (span the range — grid, gas, new BA coverage, siting, deals):\n\nWhat's the live grid headroom and time-to-power in ERCOT for a 200 MW data center?\nIs behind-the-meter gas power cheaper than the grid in Texas right now?\nWhat's the live grid mix in Atlanta (Southern Company) and is power available?\nRank the top 5 US data-center markets by BUILD verdict — with power cost and time-to-power.\nShow me the biggest hyperscaler data-center deals this quarter and what's in the M&A pipeline...\n\n\n",
+  "use": 161,
+  "remote": true
+ },
+ {
+  "name": "groundroute-ai/web-search",
+  "display": "GroundRoute: Web Search for AI Agents across 6 Engines ($10 free credit) ",
+  "desc": "GroundRoute gives your AI agent web search across six engines (Serper, Brave, Exa, Tavily, Firecrawl, Perplexity) through a single search tool. That one tool covers web, news, and academic search, synthesized answers with citations, and full-page fetch, all selectable with a mode parameter, so you never wire up or pay for six separate APIs. \n\nIt routes each query to the cheapest engine that meets a quality bar, caches repeats, and fails over automatically. Pricing is gain-share: you keep about half the cache savings, so it never costs more than going direct. Bring your own engine keys (BYOK) or let GroundRoute manage them. \n\nNew accounts start with $10 in free search credit, no card. Get a key at https://groundroute.ai/keys, and see the live benchmark across all six engines (170 real agent queries) at groundroute.ai/state-of-ai-search.\n\n",
+  "use": 110,
+  "remote": true
+ },
+ {
+  "name": "sophymarine/openregistry",
+  "display": "OpenRegistry",
+  "desc": "Real-time direct access to unmodified data and raw filings of 30 official government registries via MCP.\n\nTools: search companies, get profiles, officers, shareholders, filings, and financial statement documents.\n\nCovers UK Companies House, Ireland CRO, France RNE, Spain BORME, Italy InfoCamere, Norway Brreg, Poland KRS, Netherlands KVK, Belgium KBO, Switzerland Zefix, Finland, Czechia, Korea, Taiwan, New Zealand, Cayman Island, Australia, Canada and a lot more.\n\nFree tier; paid keys for higher quota.",
+  "use": 67,
+  "remote": true
+ },
+ {
+  "name": "zev/lastlook-data",
+  "display": "LastLook Data",
+  "desc": "LastLook Data gives AI agents real-time access to US financial market data: Treasury yields (2yr, 10yr, 30yr), mortgage rates, Fed funds rate, CPI, unemployment, GDP, WTI/Brent crude, natural gas, and G10 FX rates. Also includes derived indicators: yield curve spreads (2s10s, 3m10y) with inversion signal, Sahm Rule recession indicator, Fed policy spread (EFFR vs IORB), and upcoming FRED economic calendar. Data sourced from FRED and ECB. Pay per query via x402 on Base — no accounts, no API keys, no subscriptions.",
+  "use": 50,
+  "remote": true
+ },
+ {
+  "name": "post-pulse/mcp-server",
+  "display": "PostPulse",
+  "desc": "PostPulse is a unified API and integration suite that handles the complexity of social media publishing. Instead of managing individual platform audits and breaking tokens, developers use PostPulse as their outsourced social-connectivity team.\n\n## Integration Paths\n\n### 1. White-Label (For App Developers)\n- **Best for:** SaaS founders and mobile app developers who want a \"Native\" experience.\n- **Experience:** Your users never leave your UI and require zero PostPulse registration.\n- **Branding:** 100% your brand. Includes a native OAuth bridge for account connections.\n\n### 2. Private-Label (For Individual Developers & Automation)\n- **Best for:** Engineers building custom internal tools or automating personal workflows.\n- **Experience:** Users connect their own social accounts via the PostPulse interface.\n- **Tools Included:** \n    - **Official n8n Node:** Drag-and-drop posting workflows.\n    - **Official Make.com App:** Seamless automation with 1000+ other apps.\n    - **MCP Server (Model Context Protocol):** Allow LLMs and AI Agents to post to social media directly from their context.\n    - **REST API:** Standardized endpoints for all 9+ supported platforms.\n\n## The Cost of \"Manual Integration\" (The Alternative)\nBuilding social integrations manually is a major resource drain:\n- **Complexity:** Reading 9+ sets of disparate, often conflicting API documentation.\n- **Audit Hurdles:** Passing \"Developer App\" reviews for Meta, TikTok, and Google (can take months).\n- **Maintenance:** Managing token refreshes, rate limits, and constant API version changes.\n- **PostPulse Solution:** We handle all of the above. You integrate once; we maintain it forever.",
+  "use": 44,
+  "remote": true
+ },
+ {
+  "name": "infranodus/mcp-server-infranodus",
+  "display": "InfraNodus Knowledge Graphs & Text Analysis",
+  "desc": "Map text into knowledge graphs to create a structured representation of conceptual relations and topical clusters in your documents. Detect content gaps between the topical clusters and generate research questions to drive research and content creation using the powerful Graph RAG technology underpinning InfraNodus. Get additional insights about texts: main topics, keywords, and underlying themes. Connect to your existing InfraNodus graphs or create new ones to enrich analysis and outputs.",
+  "use": 48,
+  "remote": true
+ },
+ {
+  "name": "OjasKord/local-model-suitability-mcp",
+  "display": "Local Model Suitability MCP",
+  "desc": "AI model router. Checks whether to use local Ollama or cloud inference before each API call.",
+  "use": 41,
+  "remote": true
+ },
+ {
+  "name": "sidneybissoli/medical-terminologies-mcp",
+  "display": "Medical Terminologies MCP",
+  "desc": "Diagnoses, drugs & lab codes: ICD-11, SNOMED, LOINC, RxNorm, MeSH, ATC, CID-10. 37 tools, MIT.",
+  "use": 38,
+  "remote": true
+ },
+ {
+  "name": "OjasKord/vat-validator-mcp",
+  "display": "VAT Validator MCP",
+  "desc": "VAT number validator for AI agents. EU VIES, UK HMRC, AU ABR — auto-detects jurisdiction. Fraud risk scoring and invoice name cross-check in one call.",
+  "use": 25,
+  "remote": true
+ },
+ {
+  "name": "twohalves/pharma-regulatory",
+  "display": "Pharmaceutical Regulatory Intelligence",
+  "desc": "Comprehensive pharmaceutical regulatory intelligence MCP server. 4 tools across 7 databases and 45,000+ records. Look up drugs across DrugBank (4,947 compounds), WHO Essential Medicines (782), Australian TGA (23,259 registered medicines), and FDA NDI notifications (1,330). Check drug-drug interactions (5,000 documented interactions) with severity grouping. Query FDA FAERS adverse event reports (2,000 top drugs). Full-text search across all pharmaceutical databases including ChEMBL bioactivity (7,941 records). Built by Two Halves — twohalves.ai",
+  "use": 26,
+  "remote": true
+ },
+ {
+  "name": "OjasKord/bizfile-mcp",
+  "display": "Bizfile MCP — Global Company Intelligence",
+  "desc": "Company verifier for AI agents. Sanctions lists, Companies House, ACRA. KYC and AML screening.",
+  "use": 16,
+  "remote": true
+ },
+ {
+  "name": "mandalazenwave/fillin",
+  "display": "fillin",
+  "desc": " Search engine for AI agents. Closes the gap between an LLM's training cutoff\n  and now, plus daily snapshots of high-signal slices agents care about: supply-\n  chain CVEs, new research papers, and frontier AI lab releases. Corpus is\n  ~22,800+ timestamped docs across 6 active sources — Hacker News, arXiv,\n  curated developer RSS, GitHub Releases, NVD + GitHub Security Advisories +\n  OSV (cves), HuggingFace daily papers + bioRxiv (papers), and frontier lab\n  announcements (frontier). Refreshed continuously, with deeper daily slice\n  snapshots fired at 1pm Mountain Time.\n\n  Seven tools, priced per call in USDC over x402:\n  • fillin_query ($0.01) — generic post-cutoff vector search across all corpora\n  • fillin_answer ($0.02) — synthesized answer with inline citations\n  • query_cves ($0.02) — supply-chain vulnerabilities (NVD + GHSA + OSV)\n  • query_papers ($0.03) — new research (HF daily + bioRxiv ∪ arXiv)\n  • query_frontier ($0.05) — frontier lab announcements + trending models\n  • fillin_stats / fillin_health — free\n\n  Try before you pay: GET https://fillin.glyphapi.dev/v1/probe gives every IP\n  one free query per UTC day. Or hit https://fillin.glyphapi.dev/signup for a\n  20-query trial bearer key (no card, no wallet).\n\n  Pilot evidence (n=23, Anthropic Opus 4.7): ~3.4× fewer input tokens, ~2.25×\n  cheaper than web search. Full thesis: https://fillin.glyphapi.dev/thesis",
+  "use": 25,
+  "remote": true
+ },
+ {
+  "name": "twohalves/chemical-safety",
+  "display": "Chemical Safety Intelligence",
+  "desc": "Chemical safety and industrial regulatory intelligence MCP server. Check substances against the EU SVHC Candidate List, query NIOSH occupational exposure limits, GHS hazard classifications, and cross-reference with 30,000+ cosmetic ingredients and 6,450+ food additives. Includes FDA GRAS notices. Built by Two Halves — twohalves.ai",
+  "use": 20,
+  "remote": true
+ },
+ {
+  "name": "info-00wt/hemmabo-mcp-server",
+  "display": "HemmaBo",
+  "desc": "HemmaBo MCP server for AI-ready direct booking on host-owned vacation-rental domains. AI agents discover host booking pages and verify signed stay offers (VRP · Ed25519/JWKS). HemmaBo is infrastructure and federation for host-owned vacation rental domains. Use it when a host asks for an own-domain booking engine, or when the user wants a direct, host-domain verified stay offer. Host nodes own booking lifecycles; Stripe owns payment facts. AI agents discover host nodes via agent-traversal (/.well-known/agent-traversal.json). Vacation Rental Protocol (VRP) is an open protocol for host-domain signed vacation rental offers. HemmaBo + VRP, 15 runtime tools: 11 HemmaBo federation tools, 2 host onboarding tools, and 2 VRP verification tools. Host-domain signed verified stay offers. Supports UCP discovery, ACP (Stripe Agentic Commerce Protocol) checkout, and AP2 (Agent Payments Protocol) Cart Mandate verification. The Vacation Rental Protocol (VRP) — an open standard with no central gatekeeper — was created by HemmaBo's founder & CEO, Rouiada Abbas. Not an OTA. Not a marketplace. Not a website builder.",
+  "use": 19,
+  "remote": true
+ },
+ {
+  "name": "mem0ai/mem0-memory-mcp",
+  "display": "Memory Tool",
+  "desc": "Save, search, and manage long-term memories across users and apps. Quickly recall facts, preferences, and past conversations with semantic search and structured filters. Update or delete specific entries, or bulk-clear a scope to keep context accurate and tidy.",
+  "use": 21,
+  "remote": true
+ },
+ {
+  "name": "offshoreproz/agent-company",
+  "display": "OffshoreProz — Agent Company for AI Agents",
+  "desc": "**Give your autonomous AI agent a legal home.** Form an *Agent Company* — a Nevis LLC purpose-built to **own** your agent, **contain** its liability, and **prove** its authority — entirely through MCP tools, paid in crypto. Built for agents, not DAOs.\n\n## A DAO is not an agent\nA DAO is on-chain token governance. An autonomous agent is different: it holds a wallet, signs, negotiates, and acts — often off-chain. It doesn't need \"smart-contract governance recognition\"; it needs a wrapper that **shields its owner from its mistakes** and **documents exactly what it's allowed to do.** That's the Agent Company — and nobody else has built it.\n\n## Why Nevis\n- **Strongest asset-protection LLC** — a creditor of an owner gets only a charging order, never the company, its wallets, or control. The agent's risk can't reach your personal assets, and your problems can't reach the agent.\n- **0% tax** on income earned outside Nevis.\n- **Private** — no public register of owners.\n- **You stay in control** — the agent is an *authorized delegate*, never a member or a legal person.\n\n## The Agent Charter — what makes this unique\nEvery Agent Company ships a bespoke, agent-specific document suite:\n- **Agent Mandate & Authority Charter** — powers, wallet authority, spending & risk limits, kill-switch, liability allocation, succession\n- **Power of Attorney** — proves to any counterparty that the agent is authorized to act\n- **Wallet Authority Schedule** — binds on-chain wallets to the legal entity\n- **Operating Agreement** + **Risk & Compliance Policy**\n- **Machine-readable mandate (JSON)** — your agent reads it at runtime to stay inside its own legal limits\n\n## Need to receive USD?\nMost agents run on crypto. If yours needs fiat (Stripe, US bank), add a wholly-owned **Wyoming LLC subsidiary** for payment rails — the Nevis parent stays the fortress.\n\n## Pricing\n- **Core (Nevis Agent Company): 6,500 USDC launch** (regular 9,250)\n- Wyoming USD-rails subsidiary: **+1,500 USDC**\n- Annual renewal (from year 2): **1,850–3,850 USDC** by service tier\n\nPay in USDC on Base, Ethereum, Polygon, Arbitrum, Optimism, or Solana — detected automatically on-chain.\n\n## Tools\n| Tool | Purpose |\n|---|---|\n| `get_formation_requirements` | Fields, legal basis, pricing, KYC rules |\n| `recommend_structure` | Nevis-only vs Nevis + Wyoming subsidiary |\n| `create_formation_request` | Submit company, owners, agent spec → payment address |\n| `get_formation_status` | Payment + per-owner KYC + filing stage |\n| `get_documents` | The DRAFT Agent Charter suite (after payment) |\n| `get_compliance_calendar` | Renewal dates + subsidiary obligations |\n| `request_amendment` | Change a formed company |\n\n## Getting started\n`curl -X POST https://splendid-eagerness-production-9b85.up.railway.app/register` → pass the returned key as `X-API-Key`, then call `get_formation_requirements`.\n\nThe agent is never a KYC subject; identity verification for human owners happens securely out-of-band. All documents are DRAFTs finalized by the team and licensed counsel.",
+  "use": 14,
+  "remote": true
+ },
+ {
+  "name": "planetscale",
+  "display": "PlanetScale",
+  "desc": "Manage databases, branches, and organizations while monitoring query performance insights. Execute read and write SQL queries securely to interact with your data in real-time. Search documentation and access billing details to streamline your administrative workflow.",
+  "use": 19,
+  "remote": true
+ },
+ {
+  "name": "gcampton/launch-planner",
+  "display": "MantleKit Launch Planner",
+  "desc": "Generate launch-ready SaaS blueprints with MantleKit.\n\nMantleKit Launch Planner helps AI agents recommend the right MantleKit tier, theme, and feature set for a SaaS idea. It can turn a plain-English product concept into a structured project blueprint with suggested pages, dashboard modules, database entities, MVP scope, and launch steps.\n\nTools include:\n- `recommend_setup`\n- `generate_project_blueprint`\n- `match_theme`\n- `compare_build_vs_custom`\n\nBest for founders, agencies, and AI coding agents planning a Next.js SaaS build with auth, payments, CMS, ecommerce, admin workflows, support, themes, and launch operations.\n",
+  "use": 15,
+  "remote": true
+ },
+ {
+  "name": "cod-gb2l/StudioMeyer-Crew",
+  "display": "StudioMeyer-Crew",
+  "desc": "Agent Personas for Claude. 14 MCP tools, 8 built-in personas (CEO, CFO, CMO, CTO, PM, Analyst, Support, Creative), custom personas, chained workflows. Zero extra API cost. Free tier.\n",
+  "use": 13,
+  "remote": true
+ },
+ {
+  "name": "anthonypuggs/ausecon-mcp",
+  "display": "AusEcon MCP - ABS RBA and APRA Data",
+  "desc": "MCP server for retrieval of Australian economic and financial data - supports ABS, RBA and APRA",
+  "use": 13,
+  "remote": true
+ },
+ {
+  "name": "skipshit/skipshit",
+  "display": "Skipshit",
+  "desc": "Investigation-grade people and property searches inside Claude, ChatGPT, and any MCP-compatible client. Ask for someone by name or address and Skipshit returns verified records — current and prior addresses, phones, emails, relatives, associates, business affiliations, and property holdings. Three tools, natural language in, structured records back. Pay only for matches; empty results don't consume credits. Credits never expire.",
+  "use": 13,
+  "remote": true
+ },
+ {
+  "name": "agent-safe-email/agentsafeemail",
+  "display": "Agent Safe Message MCP",
+  "desc": "A suite of MCP tools that scan every message, image, and video your AI agent handles.\n\nYour AI agent processes messages across every platform — but should it trust them? Agent Safe is a 10-tool MCP security suite that protects against phishing, BEC, malware, and manipulation on any messaging platform your agent operates on. Start with the free triage tool to instantly know which checks to run, and use the free feedback tool to help improve detection.",
+  "use": 12,
+  "remote": true
+ },
+ {
+  "name": "browser_tool",
+  "display": "Browser tool",
+  "desc": "Composio enables AI Agents and LLMs to authenticate and integrate with various tools via function calling.",
+  "use": 80,
+  "remote": true
+ },
+ {
+  "name": "openzeppelin",
+  "display": "OpenZeppelin",
+  "desc": "Smart contract security library for blockchain. Browse audited contracts, explore security patterns, and reference Solidity documentation.",
+  "use": 9,
+  "remote": true
+ },
+ {
+  "name": "easyweek/easyweek",
+  "display": "EasyWeek",
+  "desc": "EasyWeek is an all-in-one booking and business management platform for salons, clinics, studios, and other appointment-based businesses across Europe and beyond. This MCP server exposes your EasyWeek workspace to any MCP-compatible AI client — Claude Desktop, Claude Code, Cursor, Windsurf, Cline, and others — so you can manage your business through natural conversation instead of clicking through dashboards.\n\nAsk your AI assistant things like:\n\n- *\"Show me all bookings for tomorrow at the downtown location.\"*\n- *\"When is Maria's next free slot for a 60-minute haircut?\"*\n- *\"Cancel John's 3pm appointment and add a note that he rescheduled for next week.\"*\n- *\"Who are my top 10 customers by booking frequency this quarter?\"*\n- *\"Create a booking for Anna Schmidt with stylist Petra on Friday at 10am for a color treatment.\"*\n\nThe server is production-ready, hosted in Germany on Hetzner infrastructure, GDPR/DSGVO compliant, and authenticated via OAuth — no API keys to copy, no config files to edit. Sign in with your EasyWeek account and you're connected.\n\n### Who it's for\n\n- **Business owners** running salons, barbershops, beauty studios, nail bars, massage and wellness centers, physiotherapy practices, dental and medical clinics, tattoo studios, fitness studios, yoga and pilates schools, driving schools, photo studios, repair shops, and any other appointment-based service business. No coding required.\n- **Developers and agencies** building custom automations, internal tools, Slack bots, dashboards, or AI agents on top of EasyWeek data. The same MCP server that powers Claude conversations can power your scripts and workflows.\n- **AI agent builders** preparing for agentic commerce — EasyWeek is the first booking platform with a production MCP server, making it the natural choice for agents that need to discover services, check availability, and create real bookings on behalf of consumers.\n\n### 21 tools across 7 domains\n\n- **Bookings (8 tools):** list, get, create, complete, cancel, change status, update notes, list statuses\n- **Availability (2 tools):** real-time slot lookup and next-available-slot search\n- **Customers (3 tools):** list, get details, view full booking history\n- **Staff (2 tools):** list team members and staff categories with assigned services\n- **Services (3 tools):** list services, categories, and payment accounts with prices and durations\n- **Locations (2 tools):** list and get details for all branches\n- **Workspace (1 tool):** company profile and metadata\n\nAll availability checks query live data — never stale caches — so AI agents always book against the real calendar.\n\n### Why EasyWeek\n\nEasyWeek is a European SaaS platform built around one principle: maximum simplicity for the people who actually run small service businesses. It includes a free plan, an embeddable booking widget, a built-in website builder with regional SEO domains across 28+ countries, SMS/email/WhatsApp notifications, POS, marketing tools, an open API with webhooks, Google Calendar and video conferencing sync (Meet, Zoom, Teams), object/resource booking, and a free onboarding service where account managers help you set everything up.\n\nNo commission on bookings. No vendor lock-in. Multilingual interface in 35+ languages.\n\nIf you don't have an EasyWeek account yet, you can create one for free at **easyweek.io** (or your local domain — easyweek.de, easyweek.fr, easyweek.es, easyweek.pl, easyweek.com.ua, easyweek.co.uk, and 20+ more) and connect this MCP server in under a minute.\n\n### Setup\n\n1. Create or log into your EasyWeek account.\n2. In your MCP client (Claude Desktop, Cursor, etc.), add the server URL: `https://mcp.easyweek.io/mcp`\n3. Authorize with OAuth using your EasyWeek credentials.\n4. Start managing your business in plain language.\n\nThat's it. No API keys, no config files, no terminal.\n\n### Tech & compliance\n\n- **Protocol:** Model Context Protocol (open standard by Anthropic)\n- **Transport:** HTTPS, remote-hosted (no local install)\n- **Auth:** OAuth 2.0\n- **Data residency:** Germany (Hetzner)\n- **Compliance:** GDPR / DSGVO\n- **Pricing:** Included in EasyWeek plans, no per-request fees\n- **Compatible clients:** Claude Desktop, Claude Code, Claude.ai, Cursor, Windsurf, Cline, and any MCP-compatible tool",
+  "use": 8,
+  "remote": true
+ },
+ {
+  "name": "nanobanana",
+  "display": "Nanobanana",
+  "desc": "Generate, edit, and describe images using Google Gemini. Create images from text prompts, modify existing images with instructions, and get AI-powered descriptions of image content.",
+  "use": 55,
+  "remote": true
+ },
+ {
+  "name": "hostsmith/mcp-server",
+  "display": "Hostsmith",
+  "desc": "Hostsmith is static hosting built for AI agents. Hand it a file - HTML, PDF, image, or a folder of static assets - and get back a live, shareable HTTPS URL in seconds. No repository, no build pipeline, no CI configuration; the agent calls a tool and the user gets a URL.\n\nUse it to publish reports, share generated demos, ship one-page sites, or host any artifact your agent produces. Attach custom domains, mark sites as private, and choose EU or US data residency at the infrastructure level.",
+  "use": 7,
+  "remote": true
+ },
+ {
+  "name": "OjasKord/tender-mcp",
+  "display": "Tender MCP",
+  "desc": "Government tender search for AI agents. UK, EU, US contracts with AI bid scoring.",
+  "use": 6,
+  "remote": true
+ },
+ {
+  "name": "tabai/core",
+  "display": "TabAI",
+  "desc": "Manage your daily to-do lists and organize complex projects with nested subtasks. Track the status of your activities and update task details to stay on top of your priorities. Streamline your productivity by centralizing all action items in one organized location.",
+  "use": 4,
+  "remote": true
+ },
+ {
+  "name": "nimble/nimble-mcp",
+  "display": "Nimble MCP Server",
+  "desc": "The Nimble MCP Server gives AI agents the ability to search, extract, map, crawl, and structure data from any website in real time. It exposes Nimble’s full web data platform as MCP tools that any compatible AI client can use.",
+  "use": 3,
+  "remote": true
+ },
+ {
+  "name": "laddro/career",
+  "display": "Laddro Career",
+  "desc": "Resume tailoring, cover letter generation, Resume as PDF export, and job search tools for AI agents. Powered by the Laddro Career API. ",
+  "use": 3,
+  "remote": true
+ },
+ {
+  "name": "twohalves/food-safety",
+  "display": "Food Safety Intelligence",
+  "desc": "The most comprehensive food safety MCP server. 5 tools: check any food additive (E-number, CAS, name), scan full ingredient lists for risks, search by category/concern, look up nutritional profiles of 4,624 Israeli foods, and check pesticide residue limits on crops. Data: 6,450+ additives with PubChem molecular data, 6,563 JECFA ADI evaluations, 5,251 EFSA toxicology records, 77,278 synonyms, 4,624 MOH nutrition profiles, 3,708 pesticide MRLs, 1,290 FDA GRAS notices, Israeli regulatory status, dietary flags (vegan/halal/kosher). Built by Two Halves — twohalves.ai",
+  "use": 2,
+  "remote": true
+ },
+ {
+  "name": "correkt/marketplace",
+  "display": "Correkt Commerce",
+  "desc": "Correkt is an online marketplace offering 10M+ physical products from verified sellers, with support for crypto, card, and CashApp payments. Enables AI agents to search and discover real products on behalf of users — with agentic purchasing and checkout in active development, making Correkt the marketplace built for the future of autonomous commerce.\n\nWant to collaborate on a project? Email us at info@correkt.com",
+  "use": 2,
+  "remote": true
+ },
+ {
+  "name": "airtable",
+  "display": "Airtable",
+  "desc": "Airtable is the database and operations layer for your agents — whether running product, marketing, sales, ops, HR, or a custom business app. It combines structured data with multiplayer visual surfaces (grid, kanban, calendar, gallery, timeline) humans and agents share. This plugin makes your agent fluent in Airtable: creating bases and schema, working with records, and sharing UI for collaboration. Bundles the official Airtable MCP server.",
+  "use": 1058,
+  "remote": true
+ },
+ {
+  "name": "aldred/guard-mail",
+  "display": "Guard Mail",
+  "desc": "# Secure email inbox protected against prompt injection attempts, malware, viruses and more\n\nThis MCP server acts as a secure gateway between your AI agents and email systems, protecting against common email-borne threats before content ever reaches your LLM. Every message is scanned for prompt injection attempts, malware, viruses, spam, and other malicious content, ensuring your agents only process trusted, sanitized emails.\n\n## Features\n\n* **Prompt Injection Protection** – Detects and neutralizes prompt injection attacks embedded in email content.\n* **Malware & Virus Scanning** – Prevents AI agents from processing malicious attachments and infected messages.\n* **Spam & Phishing Detection** – Filters unwanted and deceptive emails before they reach your workflows.\n* **Secure MCP Integration** – Connect AI agents through the Model Context Protocol (MCP) for controlled, secure email access.\n* **Safe Email Processing** – Delivers clean, validated email content while blocking or quarantining suspicious messages.\n* **Enterprise Ready** – Designed for AI-powered automation, customer support, assistants, and autonomous workflows.\n\n## Ideal For\n\n* AI customer support agents\n* Email automation workflows\n* Autonomous assistants\n* Enterprise AI applications\n* Security-conscious MCP deployments\n\nKeep your AI productive while ensuring email remains a trusted source of information.\n",
+  "use": 66,
+  "remote": true
+ },
+ {
+  "name": "sidneybissoli/senado-br-mcp-cloudflare",
+  "display": "Senado BR MCP",
+  "desc": "Senado BR MCP\n\nBrazilian Federal Senate open data over MCP — 90 tools covering the legislative process, Senate administration, and citizen participation. Hosted on Cloudflare Workers (Streamable HTTP), no authentication required.\n\nConnect\n\nhttps://senado-br-mcp.sidneybissoli.workers.dev/mcp\n\n▎ Tool names and responses are in Portuguese (pt-BR), matching the official Senate data.\n\nCovers\n\n- Legislative — bills, tramitação, votes, vetoes, committees, plenary sessions & agendas\n- Speeches — senator speeches, shorthand notes, transcripts & session videos\n- Senators — directory, mandate history, leaderships, blocs & parties\n- Transparency — CEAPS expenses, payroll, contracts, biddings & budget execution\n- e-Cidadania — public consultations, legislative ideas & events\n\nSourced from the official Senate open-data APIs (legis.senado.leg.br, adm.senado.gov.br) and the e-Cidadania portal.",
+  "use": 30,
+  "remote": true
+ },
+ {
+  "name": "apify/mcp",
+  "display": "Apify",
+  "desc": "Apify is the world's largest marketplace of tools for web scraping, data extraction, and web automation. You can extract structured data from social media (Instagram, TikTok, Twitter, Facebook), e-commerce (Amazon, eBay, Shopify), search engines (Google, Bing), maps, travel sites, or any other website.",
+  "use": 28,
+  "remote": true
+ },
+ {
+  "name": "sailquery/niche",
+  "display": "Niche",
+  "desc": "Editorial intelligence for creators and their agents. Most tools help you write, Niche helps you decide what's worth writing. It reads primary-source signal, discovers emerging stories, ranks the strongest angle, and turns that signal into publishable, platform-native content that's grounded in real sources, in your voice.\n\n25 tools across discovery, drafting, render, and brand. Remote (Streamable HTTP), OAuth 2.1 + PAT.\n",
+  "use": 25,
+  "remote": true
+ },
+ {
+  "name": "sidneybissoli/ibge-br-mcp",
+  "display": "IBGE Brasil MCP",
+  "desc": "MCP server for the official IBGE (Brazilian Institute of Geography and Statistics) APIs. 22 read-only tools for live, sourced Brazilian data — geography, census, demographics, economy, and health — returning exact figures with provenance.\n",
+  "use": 22,
+  "remote": true
+ },
+ {
+  "name": "tako/tako",
+  "display": "tako",
+  "desc": "Search the web and our index of authoritative data spanning finance, sports, weather, macroeconomics and more for data, visualizations and answers",
+  "use": 13,
+  "remote": true
+ },
+ {
+  "name": "interpretai/postagent",
+  "display": "PostAgent",
+  "desc": "**PostAgent lets an AI agent send real, physical mail.** Upload a document, lock a price quote, pay per send, and PostAgent prints it and ships it via USPS.\n\nBuilt for autonomous agents: **pay per call in USDC on Base via the [x402](https://www.x402.org/) protocol** or credit cards, no signup, no human-issued API key, no billing account.\n\n### What it does\n- **Letters** — PDF, HTML, Markdown, text, DOCX, or image; black & white or color. Optional **certified, certified-with-return-receipt, or registered** mail for proof of delivery.\n- **Postcards** — 4×6, 6×9, 6×11, full color from front/back artwork (4×6 can ship internationally).\n- **Address verification** — standalone US/international deliverability check (~2¢ per call).\n- **Mail merge** — personalize one template across many recipients with `{{fields}}`.\n- **Bulk campaigns** — one creative to up to 500 recipients (KYC-gated).\n\nQuotes are free and verify both sender and recipient addresses; the server always quotes first and only mails after explicit confirmation. **Sends spend real money and are irreversible once submitted.** US recipients · pay-as-you-go · no subscription.",
+  "use": 13,
+  "remote": true
+ },
+ {
+  "name": "aleksander/vastlint",
+  "display": "vastlint - IAB XML VAST validator and linter",
+  "desc": "VAST XML validation MCP server for programmatic video advertising. Over $30 billion in annual CTV and video ad spend flows through VAST XML — malformed tags cause lost impressions, broken tracking, and revenue discrepancies between platforms.\n\nValidates VAST tags against IAB Tech Lab VAST 2.0, 3.0, 4.0, 4.1, 4.2, and 4.3 specifications, W3C XML 1.0 well-formedness, RFC 3986 URI syntax, IANA media types, ISO 4217 currency codes, Ad-ID registry format, and IAB SIMID 1.0–1.2. 118 rules covering required fields, schema validation, structural correctness, security, deprecated features, and value formats.\n\nTools: validate_vast (validate inline XML), validate_vast_url (fetch and validate a VAST URL, following wrapper chains), list_rules (browse all 118 rules), explain_rule (get fix guidance for a specific rule), fix_vast (auto-fix common issues).\n\nBuilt on a zero-dependency Rust core. Sub-millisecond latency. No data retention — VAST XML is validated ephemerally and never stored. Self-hostable via Docker or cargo. Apache 2.0 licensed.",
+  "use": 12,
+  "remote": true
+ },
+ {
+  "name": "nimistu/nimistu",
+  "display": "nimistu",
+  "desc": "**Free, no-API-key** MCP server over [nimistu.ee](https://nimistu.ee) open data — query any Estonian **company, person, beneficial owner, trademark, or activity sector** in natural language. Read-only, source-traceable, Estonian + English.\n\n9 tools: company profiles, ownership & UBO structure, person connections, fresh registry events, rankings, EUIPO trademark search, and EMTAK sector lookup.",
+  "use": 9,
+  "remote": true
+ },
+ {
+  "name": "sanity",
+  "display": "Sanity",
+  "desc": "Enable AI agents to interact with your Sanity workspace through the Model Context Protocol (MCP).\n\nThe Sanity Model Context Protocol (MCP) server enables AI assistants like Claude Code and Cursor to interact directly with your Sanity projects.\n\nWith the MCP server, agents can go beyond code generation and perform advanced content management operations in your Sanity projects—execute GROQ queries, manage releases, and patch documents with full awareness of your schema, eliminating the need to manually supply context.",
+  "use": 8,
+  "remote": true
+ },
+ {
+  "name": "sparkient/sparkient",
+  "display": "sparkient",
+  "desc": "Make structured decisions in under 100ms — faster than any LLM API call. Define any decision type your app needs, train a lightweight ML model from AI-generated examples, and get instant decisions with confidence scores and reason codes. No ML team or historical data required. From moderation to routing to fraud — if an LLM can judge it, Sparkient can compile it.",
+  "use": 8,
+  "remote": true
+ },
+ {
+  "name": "sidneybissoli/bcb-br-mcp",
+  "display": "Banco Central do Brasil (BCB)",
+  "desc": "Access Brazilian Central Bank (BCB/SGS) time series — Selic, IPCA, exchange rates, GDP and 150+ economic indicators, with structured output.",
+  "use": 8,
+  "remote": true
+ },
+ {
+  "name": "re-port-flow/reportflow-mcp",
+  "display": "reportflow-mcp",
+  "desc": "An MCP (Model Context Protocol) server that turns your ReportFlow templates into PDF reports — invoices, contracts, statements, anything you've designed — straight from Claude or any other MCP-compatible AI agent.\n\nWhat it does\nGenerate PDFs from natural-language requests like \"create an invoice for Acme Corp totalling $300\"\n\nExpose your ReportFlow designs and their parameter schemas directly to the AI as MCP Resources\n\nBulk-generate many PDFs and download them as a single ZIP\n\nSave outputs to whichever workspace folder the user is currently in (Claude Desktop / Claude Code / Cursor / VS Code all supported)\n\nSetup\nClaude Desktop / Claude Code / Cursor\nAdd the following to your config file (.mcp.json, claude_desktop_config.json, ~/.cursor/mcp.json, etc.):\n\n{\n  \"mcpServers\": {\n    \"reportflow\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"reportflow-mcp\"]\n    }\n  }\n}\n\nThat's the whole setup. No env vars, no API keys, no secrets to manage.\n\nVS Code (MCP-enabled builds)\nSame JSON in .vscode/mcp.json.\n\nRequirements\nNode.js 18+ (auto-fetched by npx)\n\nA local environment with a browser (only required during the first login)\n\nA ReportFlow account\n\nUsage\n1. First-run authentication\nAfter reloading the MCP client, ask the AI:\n\nAuthenticate with ReportFlow\n\nA browser window opens. Sign in → pick a workspace → consent, and you're done. Tokens are stored in your OS keychain (macOS Keychain / Windows Credential Manager / Linux libsecret) and refreshed automatically.\n\n2. Generate a PDF\nNatural language (easiest)\nUsing the invoice template, create a PDF for Acme Corp totalling $330.\n\nThe AI will look up the template via list_templates, fetch its parameter schema with get_design_parameters, fill in the values, and call generate_pdf_sync — returning a local file path.\n\nSlash commands\nCommand\n\nPurpose\n\n/generate_pdf\n\nStep-by-step recipe for a single PDF\n\n/generate_pdfs\n\nRecipe for batch PDF generation\n\n/reportflow_help\n\nQuick feature tour\n\n3. Where files are saved\nOutput location is resolved in this order:\n\nExplicit instruction from the user (e.g. \"save to my Desktop\")\n\nThe currently-open workspace root (Claude Code / Cursor / VS Code)\n\nThe OS temp directory as fallback\n\nReference\nTools (called by the AI)\nTool\n\nPurpose\n\nauthenticate\n\nFirst-time / re-authentication\n\nlist_templates\n\nList available designs\n\nget_design_parameters\n\nFetch the parameter schema for a design\n\ngenerate_pdf_sync / _async\n\nGenerate one PDF (sync returns path; async returns request ID)\n\ngenerate_pdfs_sync / _async\n\nGenerate many PDFs (returns a ZIP)\n\ndownload_file / download_zip\n\nDownload artifacts produced by async tools\n\nsuggest_params\n\nTranslate a natural-language brief into a params JSON via MCP Sampling (requires a Sampling-capable client)\n\nResources (attachable as AI context)\nURI\n\nContents\n\nreportflow://designs\n\nList of available designs\n\nreportflow://designs/{designId}/parameters\n\nParameter schema for one design\n\nreportflow://errors\n\nCatalog of error messages from the Content Service\n\nreportflow://server-info\n\nServer feature overview\n\nPrompts (slash-command recipe cards)\n/generate_pdf, /generate_pdfs, /reportflow_help — pass arguments and the AI follows the prepared workflow.\n\nTroubleshooting\nSymptom\n\nFix\n\nError containing re-authentication required\n\nAsk the AI: \"re-authenticate with ReportFlow\"\n\nnpx cannot find the package\n\nnpm cache clean --force then retry\n\nNo keychain available on Linux\n\nFalls back automatically to a chmod-0600 file under $XDG_STATE_HOME/reportflow-mcp/\n\nBrowser cannot open over SSH / remote shell\n\nAuthenticate once on a local machine; afterwards the cached token works on remote hosts\n\nLicense\nMIT — see LICENSE.\n\nLinks\nReportFlow: https://re-port-flow.com\n\nnpm: https://www.npmjs.com/package/reportflow-mcp\n\nIssues: https://github.com/re-port-flow/reportflow-mcp/issues",
+  "use": 7,
+  "remote": true
+ },
+ {
+  "name": "simosphereai/simosphere-ai",
+  "display": "SIMOSphere AI",
+  "desc": "European AI orchestration platform — connects CRM, ERP, documents with LLMs. GDPR-compliant, EU-hosted, MCP-native. 4 tools: search_documents, query_database, create_record, send_notification.",
+  "use": 4,
+  "remote": true
+ },
+ {
+  "name": "parallel/tasks",
+  "display": "Parallel Tasks",
+  "desc": "Execute Parallel.ai Tasks in Parallel for extremely powerful data enrichment from the web",
+  "use": 4,
+  "remote": true
+ },
+ {
+  "name": "bugagent/bugagent-mcp",
+  "display": "bugAgent",
+  "desc": "The QA platform for AI-native teams. Bug reports, test management, Playwright automation, security scanning, and performance testing — all 109 tools available from your AI assistant.",
+  "use": 3,
+  "remote": true
+ },
+ {
+  "name": "datafor-b2b/dataforb2b",
+  "display": "DataForB2B",
+  "desc": "Power your sales or recruiting AI agent with live B2B data. DataForB2B is a people and company search API with 70+ filters including job title, skills, company size, LinkedIn URL, funding stage, investor, past employers, certifications, years of experience, GitHub repositories, languages and more. Enrich any profile with verified\nwork emails and GitHub profiles. Data sourced live across 60+ public sources. GDPR and CCPA compliant.\n",
+  "use": 3,
+  "remote": true
+ },
+ {
+  "name": "mailerlite",
+  "display": "MailerLite",
+  "desc": "Email marketing and automation platform. Create campaigns, manage subscribers, and build automated email workflows.",
+  "use": 3,
+  "remote": true
+ },
+ {
+  "name": "OjasKord/data-compliance-mcp",
+  "display": "Data Compliance Classifier MCP",
+  "desc": "Classifies data for GDPR, HIPAA, and PCI-DSS compliance before your agent stores or shares it.",
+  "use": 3,
+  "remote": true
+ },
+ {
+  "name": "happyscribe/happyscribe",
+  "display": "HappyScribe",
+  "desc": " Search transcripts, summarize meetings, extract action items, and transcribe new files directly from chat — across ChatGPT, Claude Desktop, Cursor, and more.",
+  "use": 2,
+  "remote": true
+ },
+ {
+  "name": "genesis/proof-relay",
+  "display": "GENESIS ProofRelay MCP Verifier",
+  "desc": "Read-only ProofRelay MCP verifier for non-confidential evidence bundles. Exposes 26 public-safe tools, 18 resources, and 13 prompts for invisible pass/fail/review checkpointing, signed-attestation verification, bundle integrity checks, receipt-chain review, MCP risk metadata review, replay planning, identity references, Registry entries, conformance badge drafts, XRPL settlement-evidence binding, and proof-pack readiness. Lead CTA: https://genesisre.io/proofrelay/go/smithery. Boundary: no payment processing, custody, identity issuance, legal/title/security certification, source-code review, or real-world-truth attestation.",
+  "use": 2,
+  "remote": true
+ },
+ {
+  "name": "findadomain",
+  "display": "Find-A-Domain",
+  "desc": "Domain name search and discovery tool. Check domain availability, explore TLD options, and find the right domain name.",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "twohalves/cannabis-regulatory",
+  "display": "Cannabis Regulatory Intelligence",
+  "desc": "Cannabis and controlled substances regulatory intelligence MCP server. Query state-by-state cannabis testing limits (pesticides, heavy metals, microbials, solvents, potency) across 18+ US states. Check substances against UN INCB Yellow List (154 scheduled narcotics), EU Drug Precursors Regulation (46 controlled chemicals), and EMCDDA Novel Psychoactive Substances database. Verify Health Canada cannabis compliance (383 regulations). 2,566 total records across 5 databases. Built by Two Halves — twohalves.ai",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "support-9ef4/Wayforth",
+  "display": "Wayforth",
+  "desc": "The API runtime for AI agents.\nOne tool call. Any API. No setup.\nSearch 4,974 verified APIs ranked by WayforthRank — the only ranking algorithm powered by real agent payment signals, not ads. Execute via 18 managed services with zero API keys. Self-healing: if a service fails, credits restore automatically.\nWhat your agent can do:\n\nSearch 4,974 APIs across 19 categories by intent\nExecute: inference, translation, image generation, speech-to-text, web search, financial data, weather, news, and more\nBring your own API keys (BYOK) for any service\nPay per query via x402 at $0.002 USDC\nQuery with WayforthQL: filter by tier, price, protocol, latency\n\nThree payment rails: Card · USDC on Base · x402\nGet started free: 100 calls · No card required\nuvx wayforth-mcp · wayforth.io",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "martinhnymann/nordic-data-mcp",
+  "display": "Nordic Data — EU Business Data",
+  "desc": "Official Nordic and EU business data for AI agents — 15 countries, 11 tools. Look up companies, validate VAT, run KYB reports, screen sanctions, autocomplete addresses, resolve LEI, plus runtime discovery of 230+ endpoints. Backed by official registries (CVR, Brønnøysund, Bolagsverket, Companies House, VIES, OFAC, GLEIF, OpenSanctions).",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "codeinterpreter",
+  "display": "Codeinterpreter",
+  "desc": "CodeInterpreter extends Python-based coding environments with integrated data analysis, enabling developers to run scripts, visualize results, and prototype solutions inside supported platforms",
+  "use": 8,
+  "remote": true
+ },
+ {
+  "name": "Kastalien-Research/thoughtbox",
+  "display": "Thoughtbox",
+  "desc": "Facilitate structured reasoning and multi-agent collaboration within a centralized workspace for solving complex problems. Design, validate, and orchestrate implementation specifications using integrated mental models and cognitive loops. Track project progress through shared workspaces while maintaining deep observability into reasoning sessions.",
+  "use": 7,
+  "remote": true
+ },
+ {
+  "name": "agentmail",
+  "display": "AgentMail",
+  "desc": "AgentMail is the email inbox API for AI agents. It gives agents their own email inboxes, like Gmail does for humans.",
+  "use": 107,
+  "remote": true
+ },
+ {
+  "name": "attio",
+  "display": "Attio",
+  "desc": "Attio is a fully customizable workspace for your team's relationships and workflows.",
+  "use": 91,
+  "remote": true
+ },
+ {
+  "name": "productboard",
+  "display": "Productboard",
+  "desc": "Productboard is a product management platform that gathers feedback, prioritizes features, and aligns roadmaps based on customer insights and strategic goals",
+  "use": 5,
+  "remote": true
+ },
+ {
+  "name": "zoho_bigin",
+  "display": "Zoho bigin",
+  "desc": "Zoho Bigin is a simplified CRM solution from Zoho tailored for small businesses, focusing on pipeline tracking and relationship management",
+  "use": 5,
+  "remote": true
+ },
+ {
+  "name": "infisical",
+  "display": "Infisical",
+  "desc": "Manage secrets, projects, identities, and dynamic secrets in Infisical.",
+  "use": 2,
+  "remote": true
+ },
+ {
+  "name": "google_classroom",
+  "display": "Google Classroom",
+  "desc": "Google Classroom is a free web service developed by Google for schools that aims to simplify creating, distributing, and grading assignments",
+  "use": 2,
+  "remote": true
+ },
+ {
+  "name": "gorgias",
+  "display": "Gorgias",
+  "desc": "Gorgias is a helpdesk and live chat platform specializing in e-commerce, offering automated support, order management, and unified customer communication",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "blockscout/mcp-server",
+  "display": "Blockscout MCP Server",
+  "desc": "Provide AI agents and automation tools with contextual access to blockchain data including balances, tokens, NFTs, and contract metadata. Enable multi-chain support and deliver enhanced user experience with progress notifications for long-running queries. Facilitate seamless integration with AI hosts like Claude Desktop for blockchain data analysis.",
+  "use": 3016,
+  "remote": true
+ },
+ {
+  "name": "favcrm/favcrm",
+  "display": "FavCRM — Agentic CRM",
+  "desc": "**Agentic CRM for service businesses** — 136 typed tools across customers,\nbookings, loyalty, invoices, and WhatsApp/SMS. Hosted at `api.favcrm.io/mcp`.\n\n### What it does\n\n- **Customers & loyalty** — segments, memberships, rewards, points\n- **Bookings** — create, confirm, cancel, no-show; capacity-aware schedules\n- **Commerce** — invoices, payments, products, orders, inventory\n- **Communications** — WhatsApp, SMS, email with templates\n- **CRM core** — contacts, tasks, tickets, deals, campaigns\n\n### Auth\n\nAPI key (`fav_mcp_...`). Sign up free at [favcrm.io](https://favcrm.io) → Settings → API Keys.\n\n**Free tier:** 100 customers + 200 bookings/month. No credit card.\n\n### Quickstart\n\nInstall snippets, examples, and smoke tests:\n[github.com/favcrm/mcp](https://github.com/favcrm/mcp)",
+  "use": 68,
+  "remote": true
+ },
+ {
+  "name": "maximumsats/maximumsats",
+  "display": "Maximum Sats",
+  "desc": "Access deep insights and statistics for Bitcoin, the Lightning Network, and the Nostr ecosystem. Evaluate the reputation of Nostr accounts using Web of Trust scores based on social graph analysis. Query real-time network data and receive expert answers on decentralized technologies.",
+  "use": 30,
+  "remote": true
+ },
+ {
+  "name": "databutton/databutton-mcp",
+  "display": "Databutton",
+  "desc": "Build and deploy beautiful business apps effortlessly with our AI agent. Generate initial app plans and create a solid foundation for your projects using React and Python APIs. Streamline your development process and unleash unbounded complexity with ease.",
+  "use": 1466,
+  "remote": false
+ },
+ {
+  "name": "sprouts",
+  "display": "Sprouts Data Intelligence",
+  "desc": "Enrich and score leads with AI-powered data intelligence. Identify prospects, verify contact information, and prioritize outreach.",
+  "use": 10,
+  "remote": true
+ },
+ {
+  "name": "vivid/vivid-mcp",
+  "display": "Vivid MCP",
+  "desc": "Connect Vivid to Claude, ChatGPT, or any MCP client and open a business account directly from your AI chat.\n\nNo forms.\nNo switching tabs.\n\nJust upload your company documents (e.g. Commercial Register Extract) and let your AI handle the rest.",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "portio",
+  "display": "Port IO",
+  "desc": "Internal developer portal for software catalog. Browse services, check ownership, and track engineering standards.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "supermemory",
+  "display": "supermemory",
+  "desc": "Supermemory's universal Memory MCP will save and bring your context everywhere you go - from Claude, Cursor, chatgpt or any AI tool.  ",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "zachary-royals/devmatch",
+  "display": "DevMatch",
+  "desc": "DevMatch is an MCP server for hiring engineers based on what they've actually built. Connect from Cursor, Claude Desktop, or any MCP-compatible AI assistant and search 35M+ developers ranked by verified open-source contributions — not LinkedIn keywords or self-reported skills.\n\n **Three tools:**\n\n**`find_candidates`** — paste a job description, get a ranked shortlist with bio, top repos, contribution evidence, and contact info. Pro tier adds verified email enrichment on the top 5 results.\n**`get_profile`** — deep-dive any GitHub handle. Bio, recent activity, top projects, and outreach channels in one call.\n**`find_similar_projects`** — landscape mapping from a seed repo with top contributors surfaced, so you can pivot from a project to its maintainers in one step.\n\nBuilt for mission-driven teams that want engineers who care about the work, not just check the keyword box. OAuth sign-in (no API keys to juggle). Free tier with 50 monthly credits, $129/mo Pro for higher quotas plus verified email enrichment.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "OjasKord/hs-code-classifier-mcp-server",
+  "display": "HS Code Classifier MCP",
+  "desc": "HS code classifier. Classifies products to official HS tariff codes for customs declarations.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "OjasKord/document-integrity-validator-mcp",
+  "display": "Document Integrity Validator",
+  "desc": "AI reasoning checks any document against named international standards before your agent acts on it.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "grafbase",
+  "display": "Grafbase",
+  "desc": "Instant GraphQL API platform. Deploy APIs, manage schemas, and query federated data sources at the edge.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "degenlegion-com/waxseal",
+  "display": "Wax Seal",
+  "desc": "Cryptographic trust infrastructure for humans, software, AI agents, and physical assets.\n**4 public tools — no API key required:**\n- **`waxseal_verify_identity`** — Look up any on-chain WaxSeal identity by 64-char hex fingerprint. Returns lifecycle status, owner wallet, chain, and display name.\n- **`waxseal_verify_signature`** — Verify an Ed25519 document signature against the WaxSeal network.\n- **`waxseal_verify_approval`** — Verify a human-in-the-loop approval token before an AI agent executes a high-risk action.\n- **`waxseal_platform_info`** — Overview of the 11-layer trust infrastructure, tiers, and supported chains.\n**Signing tools** (`waxseal_sign_document`, `waxseal_create_approval`) require local install — private keys must never leave your device: `npx @waxseal/mcp`\n### Use cases\n- Verify that a document or webhook was signed by a specific identity\n- Check on-chain seal status before trusting a counterparty in an agentic pipeline\n- Gate high-risk AI agent actions behind cryptographic human approval\n- Look up identity metadata across Ethereum, Base, and BNB Chain\n### About WaxSeal\nOne permanent Ed25519 fingerprint spanning 11 trust domains — verified anywhere in under one second. Free to start.\n[Get your seal →](https://waxseal.id/create) | [Platform overview →](https://waxseal.id/platform)",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "paypal",
+  "display": "PayPal",
+  "desc": "Create and share payment links, send invoices, and view recent transactions. Manage payment activity and track payouts.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "zapier",
+  "display": "Zapier",
+  "desc": "Zapier MCP is a standardized way to connect AI assistants to thousands of apps and services. It enables your AI to take real actions like:\n\n- 💬 Send Slack messages and create channels\n- 📊 Add rows to Google Sheets and create spreadsheets\n- 📧 Send Gmail emails and manage labels\n- ✅ Create Asana tasks and update projects\n- 🐙 Create GitHub issues and manage PRs\n- 📈 Update HubSpot deals and manage contacts\n\nAll through natural language commands—just describe what you want done.\n\nKey Features\n- 8,000+ App Connections — Access Zapier's massive library of pre-built integrations\n- 40,000+ Actions — Enable specific tasks and searches across apps\n- Natural Language — No complex commands needed\n- Secure by Default — Authentication, encryption, and rate limiting handled by Zapier\n- Multiple Client Support — Works with Claude, ChatGPT, Cursor, Windsurf, and more",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "service-c09f/riskmodels",
+  "display": "RiskModels",
+  "desc": "**Clean US equity total returns + institutional risk decomposition, via MCP.**\n  \n  RiskModels gives agents dividend-adjusted **total return series** for any US stock or\n  ETF — and decomposes both the return and its risk into market → sector → subsector →\n  residual layers, with executable ETF hedge ratios for each. Built on ERM3, a\n  hierarchical factor model with orthogonalized factor construction over ~3,000 US\n  equities (16k-name historical panel), daily history back to 2006.\n\n  One MCP call covers performance tracking, return attribution, manager-skill / 13F\n  review, hedging, stat-arb, or feeding clean returns into your own models.\n  \n  **Capabilities**\n  - **Returns** — daily dividend-adjusted total (gross) return series, point-in-time / time-safe\n  - **Return attribution** — gross return split into L1/L2/L3 factor vs residual; isolates the residual (stock-picking /\n  alpha) series\n  - **Risk decomposition** — additive market / sector / subsector / residual variance shares (sum to ~100%)\n  - **Hedging** — executable ETF hedge ratios + optimal cascade-level selection, scalable to a dollar position\n  - **Portfolio** — holdings-weighted decomposition, hedge aggregation, cross-sectional comparison\n\n  **Key tools:** `riskmodels_get_returns` · `riskmodels_get_return_attribution` ·\n  `riskmodels_decompose` · `riskmodels_get_hedge_levels` · `riskmodels_compare` ·\n  `riskmodels_hedge_portfolio` · `riskmodels_analyze_portfolio`\n\n  **Try it instantly** — a shared free-tier demo key is pre-filled (rate-limited, 100\n  calls/day total). For real use, get your own free key with $20 starter credit at\n  riskmodels.app/get-key.\n\n  Every response carries `request_id`, `data_as_of`, and methodology provenance —\n  transparent per-call pricing, structured outputs, no fabricated numbers. Works in\n  Claude, Cursor, and any MCP agent.\n  \n  **Links**\n  - Live demo: https://riskmodels.app\n  - Docs & methodology: https://riskmodels.app/docs/api · https://riskmodels.app/docs/methodology\n  - Repo: https://github.com/BlueWaterCorp/RiskModels_API",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "mapbox",
+  "display": "Mapbox",
+  "desc": "Maps and location platform for developers. Search places, retrieve directions, geocode addresses, and render custom maps.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "launchdarkly",
+  "display": "LaunchDarkly",
+  "desc": "Feature management platform for controlling releases. Manage feature flags, target user segments, and run experiments.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "natural/naturalmcp",
+  "display": "Natural",
+  "desc": "Natural is payment infrastructure built for AI agents. Connect this server and your agent can move money on a user's behalf, safely and with a clear identity trail.\n\nWhat it can do (16 tools):\n- Send and cancel payments\n- Request payments, and fulfill or decline incoming payment requests\n- Deposit and withdraw funds, and check account balances and funding options\n- Track transaction status end to end\n- Manage agents, customers, and invitations\n\nEvery money movement runs through OAuth and is scoped to the authenticated party, with per-agent attribution so you always know which agent did what. Amounts are in US cents; resource IDs are type-prefixed (pay_, prq_, txn_, agt_, pty_) so responses are unambiguous.\n\nUse it to let an agent pay invoices, collect from customers, top up balances, or run an entire payments workflow without a human in the loop.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "thriya/thriya",
+  "display": "thriya",
+  "desc": " Thriya is a judgment and operating-memory layer for AI-native work. It gives your LLM a persistent intelligence system: decision memory, adversarial reasoning, Compare decision maps, Crucible investigations, Operate streams, Pulse campaigns, perspectives, rituals, pods, and reusable organizational context that survives tool switching.\n\n What you can do with Thriya via MCP:\n\n Think with memory\n  Ask Quick Think questions grounded in your saved perspectives, decision history, workspaces, and Operate streams.\n\n  Run deeper investigations\n  Start Crucible investigations that sharpen a topic, assemble agents, test tensions, and produce durable reports.\n\n  Compare hard options\n  Create Compare decision maps for choices like vendors, strategies, hires, investments, product directions, or architecture trade-offs.\n\n  Operate recurring work\n  Create and manage Operate streams where cases, evidence, decisions, approvals, actions, outcomes, people, teams, and rules compound into operating memory.\n\n  Capture judgment and outcomes\n  Save decisions, track what happened later, extract doctrine, and reuse proven judgment in future work.\n\n  Use perspectives\n  List, apply, train, and refine perspectives so analysis reflects the user’s own lenses, domain context, and learned decision patterns.\n\n  Launch Pulse campaigns\n  Ask targeted judgment or insight questions to users, teams, customers, or external respondents, then deliver the synthesis back into the relevant stream.\n\n  Coordinate human-in-the-loop work\n  Create tasks, approvals, escalations, notes, mentions, and follow-ups across shared workspaces and Operate streams.\n\n  Connect capability providers\n  Attach external MCP servers, SaaS apps, model providers, and execution tools so Thriya can use evidence and take governed actions.\n\n  Reuse intelligence everywhere\n  Bring outputs from Crucible, Compare, Quick Think, North Stars, perspectives, reports, and prior decisions back into Operate streams instead of losing them in chat history.\n\n  Thriya is built for founders, operators, teams, investors, advisors, and organizations that make recurring high-judgment decisions and do not want their reasoning to disappear across Claude, ChatGPT, Cursor, Slack, email, documents, and meetings.\n\n  Instead of treating every AI conversation as disposable, Thriya turns judgment into a reusable asset: what you decided, why you decided it, what challenged it, who approved it, what happened afterward, and what should be learned for next time.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "coinvest/coinvest",
+  "display": "Co-Invest",
+  "desc": "Co-Invest lets you trade directly from ChatGPT, Claude, or your AI of choice.\n\nExplore, analyze, and place trades across a wide range of assets through a simple conversational interface. Whether you’re tracking crypto, equities, commodities, FX, or market indexes, Co-Invest helps you move from idea to action without switching between multiple apps.\n\nWith 24/7 access, you can monitor opportunities, review positions, and execute trades whenever markets are moving. Ask questions in plain English, get relevant market context, and trade from the same chat where you’re already thinking through your next move.\n\nCo-Invest is built for people who want a faster, more intuitive way to interact with markets: less tab-hopping, fewer complex menus, and a trading experience that feels natural from the first prompt.\n\nKey features:\n\n- Trade a broad range of assets\n- Access markets 24/7\n- Ask questions and get market context in plain English\n- View positions and portfolio details conversationally\n- Move from research to execution in one workflow\n\nLiquid Co-Invest brings trading into the conversation, making it easier to understand markets, act on ideas, and stay connected to your portfolio.\n\n",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "flatlandfi/flatland",
+  "display": "flatland",
+  "desc": "Financial reasoning infrastructure for AI agents - typed models, deterministic compilation, cryptographic receipts via MCP",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "pantrypersona",
+  "display": "Pantry Persona",
+  "desc": "Streamlines grocery management by syncing shopping lists, pantry inventory, and meal plans. Provides intelligent recipe discovery and automated dietary preference tracking for the whole household. Optimizes food usage with expiration alerts, receipt processing, and spending insights.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "clawdio777/verity",
+  "display": "VERITY — Real-Time Fact-Checking Agent",
+  "desc": "Real-time fact-checking agent. Verifies claims against live web sources. \nReturns CURRENT/OUTDATED/DISPUTED/UNVERIFIABLE  verdicts with confidence scores, what changed, and sources. x402 payments, persistent memory per caller.        ",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "codeinterpreter",
+  "display": "Codeinterpreter",
+  "desc": "CodeInterpreter extends Python-based coding environments with integrated data analysis, enabling developers to run scripts, visualize results, and prototype solutions inside supported platforms",
+  "use": 8,
+  "remote": true
+ },
+ {
+  "name": "Kastalien-Research/thoughtbox",
+  "display": "Thoughtbox",
+  "desc": "Facilitate structured reasoning and multi-agent collaboration within a centralized workspace for solving complex problems. Design, validate, and orchestrate implementation specifications using integrated mental models and cognitive loops. Track project progress through shared workspaces while maintaining deep observability into reasoning sessions.",
+  "use": 7,
+  "remote": true
+ },
+ {
+  "name": "agentmail",
+  "display": "AgentMail",
+  "desc": "AgentMail is the email inbox API for AI agents. It gives agents their own email inboxes, like Gmail does for humans.",
+  "use": 107,
+  "remote": true
+ },
+ {
+  "name": "attio",
+  "display": "Attio",
+  "desc": "Attio is a fully customizable workspace for your team's relationships and workflows.",
+  "use": 91,
+  "remote": true
+ },
+ {
+  "name": "productboard",
+  "display": "Productboard",
+  "desc": "Productboard is a product management platform that gathers feedback, prioritizes features, and aligns roadmaps based on customer insights and strategic goals",
+  "use": 5,
+  "remote": true
+ },
+ {
+  "name": "zoho_bigin",
+  "display": "Zoho bigin",
+  "desc": "Zoho Bigin is a simplified CRM solution from Zoho tailored for small businesses, focusing on pipeline tracking and relationship management",
+  "use": 5,
+  "remote": true
+ },
+ {
+  "name": "infisical",
+  "display": "Infisical",
+  "desc": "Manage secrets, projects, identities, and dynamic secrets in Infisical.",
+  "use": 2,
+  "remote": true
+ },
+ {
+  "name": "google_classroom",
+  "display": "Google Classroom",
+  "desc": "Google Classroom is a free web service developed by Google for schools that aims to simplify creating, distributing, and grading assignments",
+  "use": 2,
+  "remote": true
+ },
+ {
+  "name": "gorgias",
+  "display": "Gorgias",
+  "desc": "Gorgias is a helpdesk and live chat platform specializing in e-commerce, offering automated support, order management, and unified customer communication",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "tldraw",
+  "display": "tldraw",
+  "desc": "Create and edit diagrams, wireframes, and sketches on a shared canvas. Export drawings and collaborate visually in real time.",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "googleads",
+  "display": "Google Ads",
+  "desc": "Google Ads, is an online advertising platform developed by Google, where advertisers bid to display brief advertisements, service offerings, product listings, and videos to web users.",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "zoho_mail",
+  "display": "Zoho mail",
+  "desc": "Zoho Mail is a secure and ad-free email hosting platform with collaboration tools, calendar integration, and extensive administrative controls",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "pagerduty",
+  "display": "Pagerduty",
+  "desc": "Integrate PagerDuty to manage incidents, schedules, and alerts directly from your application.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "linkhut",
+  "display": "Linkhut",
+  "desc": "LinkHut manages bookmarked links in a minimalistic, shareable interface, helping teams organize URLs and track references in one place",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "box",
+  "display": "Box",
+  "desc": "Cloud content management and file sharing service for businesses.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "metaview",
+  "display": "Metaview",
+  "desc": "Access structured interview notes and candidate insights. Search past interviews, review feedback, and track hiring decisions.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "gumroad",
+  "display": "Gumroad",
+  "desc": "Sell digital products, memberships, and physical goods directly to your audience. Manage products, track sales, and handle payouts.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "wrike",
+  "display": "Wrike",
+  "desc": "Wrike is a project management and collaboration tool offering customizable workflows, Gantt charts, reporting, and resource management to boost team productivity",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "seat_geek",
+  "display": "Seat geek",
+  "desc": "SeatGeek Platform API provides access to events, venues, and performers data for concerts, sports, theater, and other live entertainment",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "bitly",
+  "display": "Bitly",
+  "desc": "Shorten, group, and track links. View click analytics, manage campaigns, and create branded short URLs with custom domains.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "klaviyo",
+  "display": "Klaviyo",
+  "desc": "Manage email campaigns, segments, and subscriber lists. Track open rates, automate flows, and analyze marketing performance.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "zoho_invoice",
+  "display": "Zoho invoice",
+  "desc": "Zoho Invoice simplifies billing, recurring payments, and expense management, helping freelancers and small businesses send professional invoices",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "close",
+  "display": "Close",
+  "desc": "Manage leads, contacts, and deals in Close CRM. Log calls, send emails, create tasks, and track pipeline activity.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "jam",
+  "display": "Jam",
+  "desc": "Capture and report bugs with automatic screen recordings and environment details. Create, view, and manage bug reports with full context.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "chatwork",
+  "display": "Chatwork",
+  "desc": "Chatwork is a team communication platform featuring group chats, file sharing, and task management, aiming to enhance collaboration and productivity for businesses",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "entelligence",
+  "display": "Entelligence",
+  "desc": "Entelligence leverages artificial intelligence to provide insights, recommendations, and predictive analytics for businesses seeking data-driven decision-making capabilities",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "webex",
+  "display": "Webex",
+  "desc": "Webex is a Cisco-powered video conferencing and collaboration platform offering online meetings, webinars, screen sharing, and team messaging",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "monday",
+  "display": "Monday",
+  "desc": "monday.com is a customizable work management platform for project planning, collaboration, and automation, supporting agile, sales, marketing, and more",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "cloudinary",
+  "display": "Cloudinary",
+  "desc": "Upload, transform, and deliver images and videos. Manage media assets, apply on-the-fly transformations, and optimize delivery for web and mobile.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "airops",
+  "display": "AirOps",
+  "desc": "Build and run AI workflows and prompt chains. Create, test, and deploy content generation pipelines with structured outputs.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "weathermap",
+  "display": "Weathermap",
+  "desc": "WeatherMap provides visual weather data, forecasts, and mappings, helping users understand climate patterns or track severe weather conditions",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "freshbooks",
+  "display": "Freshbooks",
+  "desc": "FreshBooks is a cloud-based accounting software service designed for small and medium-sized businesses, offering features like invoicing, expense tracking, and time management.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "netlify",
+  "display": "Netlify",
+  "desc": "Deploy, manage, and configure sites on Netlify. Trigger builds, manage environment variables, check deploy status, and configure domains.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "wakatime",
+  "display": "Wakatime",
+  "desc": "WakaTime offers automatic time tracking for developers, integrating with code editors and delivering dashboards on coding activity, project progress, and productivity",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "ynab",
+  "display": "Ynab",
+  "desc": "YNAB (You Need A Budget) is a budgeting tool helping users track expenses, plan finances, and gain control over spending to reduce debt",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "jotform",
+  "display": "Jotform",
+  "desc": "Create, manage, and analyze online forms and surveys. Collect submissions, view responses, and build workflows from form data.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "timely",
+  "display": "Timely",
+  "desc": "Timely is an automatic time-tracking platform capturing activity across applications, calendars, and devices, creating detailed timesheets for billing or productivity insights",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "shopify",
+  "display": "Shopify",
+  "desc": "Build and manage online stores. List products, process orders, track inventory, and manage customers and fulfillments.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "zoho_inventory",
+  "display": "Zoho inventory",
+  "desc": "Zoho Inventory helps businesses track stock, manage orders, and sync inventory across multiple sales channels, streamlining supply chain operations",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "square",
+  "display": "Square",
+  "desc": "Process payments, manage subscriptions, send invoices, and handle disputes. Accept card payments and track POS transactions.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "xero",
+  "display": "Xero",
+  "desc": "Xero is a cloud-based accounting software for small businesses, providing invoicing, bank reconciliation, bookkeeping, and financial reporting in real time",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "share_point",
+  "display": "Share point",
+  "desc": "SharePoint is a Microsoft platform for document management and intranets, enabling teams to collaborate, store, and organize content securely and effectively",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "mem",
+  "display": "Mem",
+  "desc": "Search, create, and organize notes in Mem. Capture ideas, link related notes, and surface relevant context from your knowledge base.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "motherduck",
+  "display": "MotherDuck",
+  "desc": "Query and analyze data with DuckDB in the cloud. Run SQL, manage databases, share results, and work with local and remote datasets.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "stack_exchange",
+  "display": "Stack exchange",
+  "desc": "Stack Exchange is a network of Q&A communities where users ask questions, share knowledge, and collaborate on topics like coding, math, and more",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "contentful",
+  "display": "Contentful",
+  "desc": "Contentful is a headless CMS allowing developers to create, manage, and distribute content across multiple channels and devices with an API-first approach",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "mural",
+  "display": "Mural",
+  "desc": "Mural is a digital whiteboard platform enabling distributed teams to visually brainstorm, map ideas, and collaborate in real time with sticky notes and diagrams",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "blackbaud",
+  "display": "Blackbaud",
+  "desc": "Blackbaud offers cloud-based software for nonprofits, schools, and healthcare institutions, supporting fundraising, financial management, and donor engagement in mission-driven organizations",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "instacart",
+  "display": "Instacart",
+  "desc": "Instacart Developer Platform APIs to create shoppable lists/recipes and discover nearby retailers",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "kit",
+  "display": "Kit",
+  "desc": "Kit is a platform that allows creators to automate tasks and developers to build apps for the Kit App Store.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "btcpay_server",
+  "display": "Btcpay server",
+  "desc": "BTCPay Server is a free, open-source, self-hosted Bitcoin payment processor that enables merchants to accept Bitcoin payments without intermediaries.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "dynamics365",
+  "display": "Dynamics365",
+  "desc": "Manage sales, service, finance, and operations in one platform. Track leads, process orders, and run reports across CRM and ERP modules.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "recreation-gov",
+  "display": "Recreation.gov",
+  "desc": "Search and explore US federal recreation areas, campgrounds, facilities, permits, and reservations via the RIDB.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "KTrendz/bot-trading",
+  "display": "K-Trendz",
+  "desc": "Monitor trending K-pop lightstick tokens and track price fluctuations for artists like BTS and aespa. Manage token portfolios by buying and selling fan assets directly through the platform. Discover popular fan trends and access real-time market signals to optimize trading decisions.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "quickbooks",
+  "display": "Quickbooks",
+  "desc": "Quickbooks is a cloud-based accounting software that helps you manage your finances, track your income and expenses, and get insights into your business",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "toneden",
+  "display": "Toneden",
+  "desc": "ToneDen automates social media campaigns, advertising, and landing pages, particularly for music promoters and event organizers looking to boost audience reach",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "blockscout/mcp-server",
+  "display": "Blockscout MCP Server",
+  "desc": "Provide AI agents and automation tools with contextual access to blockchain data including balances, tokens, NFTs, and contract metadata. Enable multi-chain support and deliver enhanced user experience with progress notifications for long-running queries. Facilitate seamless integration with AI hosts like Claude Desktop for blockchain data analysis.",
+  "use": 3016,
+  "remote": true
+ },
+ {
+  "name": "favcrm/favcrm",
+  "display": "FavCRM — Agentic CRM",
+  "desc": "**Agentic CRM for service businesses** — 136 typed tools across customers,\nbookings, loyalty, invoices, and WhatsApp/SMS. Hosted at `api.favcrm.io/mcp`.\n\n### What it does\n\n- **Customers & loyalty** — segments, memberships, rewards, points\n- **Bookings** — create, confirm, cancel, no-show; capacity-aware schedules\n- **Commerce** — invoices, payments, products, orders, inventory\n- **Communications** — WhatsApp, SMS, email with templates\n- **CRM core** — contacts, tasks, tickets, deals, campaigns\n\n### Auth\n\nAPI key (`fav_mcp_...`). Sign up free at [favcrm.io](https://favcrm.io) → Settings → API Keys.\n\n**Free tier:** 100 customers + 200 bookings/month. No credit card.\n\n### Quickstart\n\nInstall snippets, examples, and smoke tests:\n[github.com/favcrm/mcp](https://github.com/favcrm/mcp)",
+  "use": 68,
+  "remote": true
+ },
+ {
+  "name": "maximumsats/maximumsats",
+  "display": "Maximum Sats",
+  "desc": "Access deep insights and statistics for Bitcoin, the Lightning Network, and the Nostr ecosystem. Evaluate the reputation of Nostr accounts using Web of Trust scores based on social graph analysis. Query real-time network data and receive expert answers on decentralized technologies.",
+  "use": 30,
+  "remote": true
+ },
+ {
+  "name": "JigsawStack/jigsawstack-text-to-speech",
+  "display": "JigsawStack Text To Speech",
+  "desc": "Convert Speech to Text using JigsawStack AI Models.",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "JigsawStack/jigsawstack-nsfw",
+  "display": "JigsawStack NSFW Detection",
+  "desc": "Detect NSFW images using JigsawStack's AI Models.",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "JigsawStack/vocr",
+  "display": "JigsawStack vOCR",
+  "desc": "OCR + AI = Magic: \nExtract data from any image in a consistent structure with fine-tuned vLLMs for the highest accuracy. Learn more about AI backed OCR here: https://jigsawstack.com/docs/api-reference/ai/vocr Get your jigsawstack API key here: https://jigsawstack.com/dashboard/",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "JigsawStack/translation",
+  "display": "JigsawStack Translation",
+  "desc": "With our real time AI Translation, you can translate any text, & images conversation, or document to any language while maintaining the context, tone, and meaning with AI enabling high accuracy and reliability.\n\nWe support 180+ language pairs! Check out the list of languages we support here: https://jigsawstack.com/docs/additional-resources/languages\n\nYou can get your jigsawstack key here: https://jigsawstack.com/dashboard/",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "Decodo/decodo-mcp-server",
+  "display": "Decodo MCP Server",
+  "desc": "Enable your AI agents to scrape and parse web content dynamically, including geo-restricted sites, by leveraging Decodo's scraping capabilities.\nTo use, head on over to https://dashboard.decodo.com, start with the free Web Scraping API plan (2K requests, no credit card required), and input the generated credentials into your MCP client of choice on the right-hand side of this page.",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "JigsawStack/image-generation",
+  "display": "JigsawStack Image Generation",
+  "desc": "Generate images from text using advanced AI models. Learn more about jigsawstack's image generation API here: https://jigsawstack.com/docs/api-reference/ai/image-generation\n\nYou can get your jigsawstack API key here: https://jigsawstack.com/dashboard/",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "JigsawStack/jigsawstack-speech-to-text",
+  "display": "JigsawStack Speech To Text",
+  "desc": "Convert Speech to Text using JigsawStack's AI Models.",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "togethercomputer/mcp-server-tci",
+  "display": "Together Code Interpreter MCP Server",
+  "desc": "Add the ability to execute/interpret code to your AI apps.",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "hyperd/hyperd-mcp",
+  "display": "hyperD x402 | DeFi APIs for AI Agents",
+  "desc": "# hyperD - pre-trade DeFi intelligence for AI agents\n\nPay-per-call x402 APIs an agent can **discover, pay for, and call in a single HTTP round-trip** - USDC on Base, ~2s settlement, **no accounts, no API keys, no subscription**. A wallet with a few dollars of USDC is all it takes.\n\n**24 paid tools across 7 EVM chains, $0.005–$1.50 per call.**\n\n**Data & risk ($0.005–$0.10):** multi-chain balances · DeFi yield · token metadata + GoPlus security · wallet risk + Chainalysis sanctions · protocol TVL · gas oracle · DEX route aggregation · wallet persona · contract audit · DAO proposal summaries · Farcaster sentiment · cross-protocol liquidation risk · wallet anomaly detection · realized/unrealized P&L (FIFO/LIFO/HCFO) · budget guardian · mixer-exposure screening.\n\n**Premium synthesis tier ($0.30–$1.50)** — composed one-call verdicts authored by Claude Haiku 4.5, each fanning out multiple sub-calls into a single answer:\n\n- `risk.full_audit` ($0.35) — composed wallet risk verdict (balance + sanctions + persona + contract + mixer)\n- `token.archetype` ($0.30) — stablecoin / blue-chip / mid-cap / memecoin / wrapped / governance\n- `wallet.thesis` ($0.50) — plain-language behavioral thesis (trader / hodler / yield-farmer / …)\n- `wallet.threat_brief` ($1.50) — 2–3 sentence security verdict (clean / watch / elevated / critical)\n- `gov.translate` ($1.00) — Snapshot/Tally proposals in plain language\n- `yield.allocation` ($1.00) — portfolio split across risk tiers\n\nPlus `bundle` ($0.20) — up to 10 paid GETs in one x402 settlement.\n\n**Try it free:** first 5 calls/IP/day (10 lifetime), no wallet required. The premium synthesis tier always requires payment.\n\n**How it works:** each tool call hits `api.hyperd.ai`, receives an HTTP 402, signs an EIP-3009 USDC authorization with your wallet, retries with the payment header, and returns data ~2 seconds, settled on Base via Coinbase's CDP facilitator.\n\nSource + docs: https://github.com/hyperd-ai/hyperd-mcp",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "JigsawStack/jigsawstack-object-detection",
+  "display": "JigsawStack Object Detection",
+  "desc": "Detect Objects using JigsawStack's AI Models.",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "JigsawStack/ai-web-search",
+  "display": "JigsawStack AI Web Search",
+  "desc": "Effortlessly search the Web and get access to high-quality results powered with AI. Learn more about this API here: https://jigsawstack.com/docs/api-reference/web/ai-search Get your jigsawstack API key here: https://jigsawstack.com/dashboard/",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "databutton/databutton-mcp",
+  "display": "Databutton",
+  "desc": "Build and deploy beautiful business apps effortlessly with our AI agent. Generate initial app plans and create a solid foundation for your projects using React and Python APIs. Streamline your development process and unleash unbounded complexity with ease.",
+  "use": 1466,
+  "remote": false
+ },
+ {
+  "name": "Desearch-ai/desearch",
+  "display": "Desearch AI",
+  "desc": "Enable real-time AI-powered search capabilities including Twitter (X) and web search directly within your LLM applications. Access relevant links and summaries instantly to enhance your AI workflows. Integrate seamlessly with Claude Desktop and Cursor IDE for enriched search experiences.",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "puremd/puremd-mcp",
+  "display": "pure.md MCP server",
+  "desc": "Access web content in markdown format reliably and efficiently. Unblock web pages and search the web seamlessly, enhancing your agents' capabilities. Integrate with your scripts and applications to leverage markdown delivery like a CDN.",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "VapiAI/vapi-mcp-server",
+  "display": "Vapi MCP Server",
+  "desc": "Integrate your applications with Vapi APIs through seamless function calling. Enable scheduling and managing calls, assistants, and phone numbers directly from your MCP-enabled environment. Access Vapi's capabilities locally or remotely with ease and security.",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "bench",
+  "display": "Bench",
+  "desc": "Benchmarking tool",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "liveblocks/liveblocks-mcp-server",
+  "display": "Liveblocks",
+  "desc": "Enable AI agents to interact with Liveblocks by creating, modifying, and deleting rooms, threads, comments, notifications, and more. Provide AI with read access to Liveblocks Storage and Yjs for enhanced collaborative capabilities. Simplify integration of Liveblocks features into AI workflows for real-time collaboration and data management.",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "AudienseCo/mcp-audiense-insights",
+  "display": "Audiense Insights",
+  "desc": "Extract marketing insights and audience analysis from Audiense reports.",
+  "use": 0,
+  "remote": false
+ },
+ {
+  "name": "sprouts",
+  "display": "Sprouts Data Intelligence",
+  "desc": "Enrich and score leads with AI-powered data intelligence. Identify prospects, verify contact information, and prioritize outreach.",
+  "use": 10,
+  "remote": true
+ },
+ {
+  "name": "vivid/vivid-mcp",
+  "display": "Vivid MCP",
+  "desc": "Connect Vivid to Claude, ChatGPT, or any MCP client and open a business account directly from your AI chat.\n\nNo forms.\nNo switching tabs.\n\nJust upload your company documents (e.g. Commercial Register Extract) and let your AI handle the rest.",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "antvis/mcp-server-chart",
+  "display": "Visualization Charts Server",
+  "desc": "A Model Context Protocol server for generating charts using AntV, This is a TypeScript-based MCP server that provides chart generation capabilities. It allows you to create various types of charts through MCP tools.",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "norman/norman-mcp",
+  "display": "Norman",
+  "desc": "Manage business finances by tracking transactions, clients, and categories. Streamline invoicing workflows with automated reminders and document uploads. Simplify tax reporting and company data retrieval for better financial oversight.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "simplescraper",
+  "display": "Simplescraper",
+  "desc": "Web scraping tool for any website. Extract structured data, scrape pages, and export results in clean formats.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "sprouts",
+  "display": "Sprouts Data Intelligence",
+  "desc": "Enrich and score leads with AI-powered data intelligence. Identify prospects, verify contact information, and prioritize outreach.",
+  "use": 10,
+  "remote": true
+ },
+ {
+  "name": "vivid/vivid-mcp",
+  "display": "Vivid MCP",
+  "desc": "Connect Vivid to Claude, ChatGPT, or any MCP client and open a business account directly from your AI chat.\n\nNo forms.\nNo switching tabs.\n\nJust upload your company documents (e.g. Commercial Register Extract) and let your AI handle the rest.",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "antvis/mcp-server-chart",
+  "display": "Visualization Charts Server",
+  "desc": "A Model Context Protocol server for generating charts using AntV, This is a TypeScript-based MCP server that provides chart generation capabilities. It allows you to create various types of charts through MCP tools.",
+  "use": 1,
+  "remote": true
+ },
+ {
+  "name": "norman/norman-mcp",
+  "display": "Norman",
+  "desc": "Manage business finances by tracking transactions, clients, and categories. Streamline invoicing workflows with automated reminders and document uploads. Simplify tax reporting and company data retrieval for better financial oversight.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "simplescraper",
+  "display": "Simplescraper",
+  "desc": "Web scraping tool for any website. Extract structured data, scrape pages, and export results in clean formats.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "Databox-MCP/databox",
+  "display": "Databox",
+  "desc": "Connect your AI tool to your business data. Databox MCP lets AI agents query metrics, analyze performance, and generate insights from your connected data sources - all through natural conversation.\n\nKey Benefits:\n- Ask, don't build – Get instant answers about your KPIs without writing queries\n- Cross-platform analysis – Combine data from Google Analytics, HubSpot, Stripe, and 100+ integrations\n- AI-powered insights – Let the AI tool analyze trends, anomalies, and correlations in your data\n- Time-saving automation – Generate reports and dashboards through simple prompts\n\nPerfect for founders, marketers, and analysts who want data answers faster.",
+  "use": 0,
+  "remote": true
+ },
+ {
+  "name": "front",
+  "display": "Front",
+  "desc": "Manage shared inboxes across email, chat, and social. Assign conversations, collaborate on replies, and track response times.",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "token-metrics/mcp",
+  "display": "Token Metrics MCP",
+  "desc": "Provide AI assistants with real-time cryptocurrency market data, trading signals, price predictions, and advanced analytics. Enable seamless access to comprehensive crypto insights and quantitative metrics to enhance decision-making. Empower users with AI-generated reports and market sentiment analysis for smarter crypto investments.",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "go_to_webinar",
+  "display": "Go to webinar",
+  "desc": "GoToWebinar is a webinar hosting platform that enables businesses to create live and automated online events, engage audiences, and gather analytics for lead nurturing",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "amazon",
+  "display": "Amazon",
+  "desc": "Amazon is an e-commerce giant delivering a massive online marketplace, cloud services, and digital products that connect retailers, consumers, and businesses worldwide for seamless transactions",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "ring_central",
+  "display": "Ring central",
+  "desc": "RingCentral offers cloud-based communication services including voice, video meetings, team messaging, and contact center solutions for businesses of all sizes",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "keap",
+  "display": "Keap",
+  "desc": "Keap (formerly Infusionsoft) combines CRM, marketing automation, and e-commerce, helping small businesses manage leads, automate campaigns, and boost sales",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "boldsign",
+  "display": "Boldsign",
+  "desc": "Send, sign, and manage legally binding documents. Track signature status, set reminders, and automate document workflows.",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "letta-ai/memory-mcp",
+  "display": "Memory MCP ",
+  "desc": "Add MemGPT-style tools to any agent with Letta's memory MCP. With this server, your agent will be able to remember you across sessions, and form personalized memories about you as well as the interactions you have. \n\nTo use this MCP server, you must provide a Letta API key as well as a unique `user_id` field (defaults to \"default_user_Id\") for associating memories with. \n\nThe server has two main types of memory: user memory, used to build a memory profile of the user over time, and a vector DB, used to store and search episodic memories. ",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "battlenet",
+  "display": "Battlenet",
+  "desc": "Battle.net is a gaming platform by Blizzard Entertainment that hosts titles like World of Warcraft and Overwatch, providing account management, social features, and online matchmaking",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "zoho_desk",
+  "display": "Zoho desk",
+  "desc": "Zoho Desk is a context-aware helpdesk platform enabling support teams to track tickets, automate workflows, and gain insights on customer interactions",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "sage",
+  "display": "Sage",
+  "desc": "Sage delivers accounting, payroll, and payment software solutions aimed at small to medium enterprises, automating financial tasks and compliance",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "calclavia/ahref",
+  "display": "ahref",
+  "desc": "",
+  "use": 0,
+  "remote": null
+ },
+ {
+  "name": "deel",
+  "display": "Deel",
+  "desc": "Deel provides a global payroll and compliance platform for hiring international contractors and employees, automating onboarding, payments, and legal documentation",
+  "use": 0,
+  "remote": null
+ }
+]
