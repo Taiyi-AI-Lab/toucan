@@ -239,7 +239,8 @@ Run final-answer correctness judging:
 python traj_qc_correctness.py <scored.jsonl> <correctness_scored.jsonl> <concurrency>
 ```
 
-This is a faithfulness check. Tool outputs are treated as ground truth.
+This is a faithfulness check. Tool outputs are treated as ground truth. It uses
+the same OpenAI-compatible judge configuration variables as `traj_qc_llm.py`.
 
 Labels:
 

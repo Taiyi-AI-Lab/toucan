@@ -3,16 +3,24 @@
 无需外部 ground-truth——工具返回就在轨迹里,当作事实基准。
 判:答案里的数值/结论是否都能从工具输出追溯(没编造)、解读对不对、推导算得对不对、有没有跟工具返回矛盾。
 用法: python traj_qc_correctness.py <in.jsonl> <out.jsonl> [CONC]
+
+LLM config:
+  LLM_BASE_URL / DIMCODE_BASE_URL, default https://dimcode.cn/v1
+  LLM_API_KEY / DIMCODE_API_KEY / DEEPSEEK_API_KEY
+  MODEL, default deepseek-v4-pro
 """
 import json, re, sys, os, asyncio
 from openai import AsyncOpenAI
 
-llm = AsyncOpenAI(
-    base_url=os.environ.get("DIMCODE_BASE_URL", "https://dimcode.cn/v1"),
-    api_key=os.environ.get("DIMCODE_API_KEY") or os.environ.get("DEEPSEEK_API_KEY"),
-)
-MODEL = "deepseek-v4-pro"
-ITEM_TIMEOUT = 200
+LLM_BASE_URL = os.environ.get("LLM_BASE_URL") or os.environ.get("DIMCODE_BASE_URL") or "https://dimcode.cn/v1"
+LLM_API_KEY = os.environ.get("LLM_API_KEY") or os.environ.get("DIMCODE_API_KEY") or os.environ.get("DEEPSEEK_API_KEY")
+if not LLM_API_KEY:
+    raise RuntimeError("missing LLM_API_KEY/DIMCODE_API_KEY/DEEPSEEK_API_KEY")
+llm = AsyncOpenAI(base_url=LLM_BASE_URL, api_key=LLM_API_KEY)
+MODEL = os.environ.get("MODEL", "deepseek-v4-pro")
+ITEM_TIMEOUT = int(os.environ.get("ITEM_TIMEOUT", "200"))
+LLM_MAX_TOKENS = int(os.environ.get("LLM_MAX_TOKENS", "6000"))
+LLM_TEMPERATURE = float(os.environ.get("LLM_TEMPERATURE", "0.1"))
 
 RATING_MAP = {"correct":5,"mostly_correct":4,"partially_correct":3,"incorrect":1,"unverifiable":0}
 
@@ -42,7 +50,9 @@ The tool results are the GROUND TRUTH. The assistant must derive its final answe
 {CONVERSATION}
 
 ## Output
-Give BRIEF reasoning that cites SPECIFIC tool-output values vs the answer, then the rating. Respond ONLY in this XML:
+Respond ONLY with the XML below. Do not include analysis before `<response>`.
+Keep `<reasoning>` under 80 words, citing the key tool-output values needed to
+justify the rating.
 <response>
   <correctness>
     <reasoning>...</reasoning>
@@ -95,7 +105,7 @@ async def score_one(rec):
     prompt = build_prompt(rec)
     resp = await llm.chat.completions.create(
         model=MODEL, messages=[{"role": "user", "content": prompt}],
-        max_tokens=6000, temperature=0.1)
+        max_tokens=LLM_MAX_TOKENS, temperature=LLM_TEMPERATURE)
     _m = resp.choices[0].message
     content = _m.content or ""
     if not content.strip():
@@ -103,7 +113,7 @@ async def score_one(rec):
     label, reason = parse(content)
     if label is None:
         return {"error": "parse_fail", "raw": content[:400]}
-    return {"correctness": label, "correctness_score": RATING_MAP[label], "correctness_reasoning": reason}
+    return {"correctness": label, "correctness_score": RATING_MAP[label], "correctness_reasoning": reason, "judge_model": MODEL}
 
 async def main():
     inp, out = sys.argv[1], sys.argv[2]
@@ -117,7 +127,7 @@ async def main():
             except Exception:
                 pass
     todo = [r for r in recs if (r.get("question"), r.get("server")) not in done]
-    print(f"总 {len(recs)}, 已质检 {len(done)}, 待质检 {len(todo)}, 并发 {CONC}", flush=True)
+    print(f"总 {len(recs)}, 已质检 {len(done)}, 待质检 {len(todo)}, 并发 {CONC}, 模型 {MODEL}", flush=True)
     sem = asyncio.Semaphore(CONC); lock = asyncio.Lock()
     fout = open(out, "a"); cnt = [0, 0]
 
