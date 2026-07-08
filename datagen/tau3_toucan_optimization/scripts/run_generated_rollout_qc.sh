@@ -10,6 +10,13 @@ PREFIX="${2:-${PKG}/data/generated_tau3_style}"
 ROLLOUT_CONC="${3:-128}"
 QC_CONC="${4:-128}"
 
+if [[ "${QUESTIONS}" != /* ]]; then
+  QUESTIONS="${PKG}/${QUESTIONS}"
+fi
+if [[ "${PREFIX}" != /* ]]; then
+  PREFIX="${PKG}/${PREFIX}"
+fi
+
 cd "$ROOT"
 
 echo "== Generated tau3-style Toucan rollout/QC =="
