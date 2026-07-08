@@ -455,7 +455,8 @@ def materialize_initial(rows, reviews):
     }
 
 
-def materialize_generated(rows, reviews):
+def materialize_generated(rows, reviews, input_path=GENERATED_INPUT, reviews_path=GENERATED_REVIEWS,
+                          out_rows_path=GENERATED_OUT_ROWS, out_sft_path=GENERATED_OUT_SFT):
     kept_rows, kept_sft = [], []
     stats, domains, cats = Counter(), Counter(), Counter()
     for idx, row in enumerate(rows, 1):
@@ -482,13 +483,13 @@ def materialize_generated(rows, reviews):
         kept_sft.append(sft)
         stats["kept"] += 1
         domains[row.get("domain") or "unknown"] += 1
-    write_jsonl(GENERATED_OUT_ROWS, kept_rows)
-    write_jsonl(GENERATED_OUT_SFT, kept_sft)
+    write_jsonl(out_rows_path, kept_rows)
+    write_jsonl(out_sft_path, kept_sft)
     return {
-        "input": str(GENERATED_INPUT),
-        "reviews": str(GENERATED_REVIEWS),
-        "output_rows": str(GENERATED_OUT_ROWS),
-        "output_sft": str(GENERATED_OUT_SFT),
+        "input": str(input_path),
+        "reviews": str(reviews_path),
+        "output_rows": str(out_rows_path),
+        "output_sft": str(out_sft_path),
         "rows": len(rows),
         "reviewed": len(reviews),
         "counts": dict(stats),
@@ -554,27 +555,31 @@ async def main_async(args):
         raise SystemExit("Missing DEEPSEEK_API_KEY or --api-key-file")
     client = AsyncOpenAI(api_key=api_key, base_url=args.base_url)
 
-    initial_rows = list(read_jsonl(INITIAL_INPUT))
-    generated_rows = list(read_jsonl(GENERATED_INPUT))
+    initial_rows = list(read_jsonl(args.initial_input)) if args.source in ("initial", "both") else []
+    generated_rows = list(read_jsonl(args.generated_input)) if args.source in ("generated", "both") else []
     if args.limit:
         initial_rows = initial_rows[: args.limit]
         generated_rows = generated_rows[: args.limit]
 
-    if args.source in ("initial", "both"):
-        await run_source(client, args, "initial", initial_rows, INITIAL_REVIEWS)
-    if args.source in ("generated", "both"):
-        await run_source(client, args, "generated", generated_rows, GENERATED_REVIEWS)
-
-    initial_manifest = materialize_initial(initial_rows, load_reviews(INITIAL_REVIEWS))
-    generated_manifest = materialize_generated(generated_rows, load_reviews(GENERATED_REVIEWS))
     manifest = {
         "selector": "tau_style_v4",
         "model": args.model,
         "base_url": args.base_url,
-        "initial": initial_manifest,
-        "generated": generated_manifest,
     }
-    manifest_path = DATA_DIR / "tau_style_v4_manifest.json"
+    if args.source in ("initial", "both"):
+        await run_source(client, args, "initial", initial_rows, Path(args.initial_reviews))
+        manifest["initial"] = materialize_initial(initial_rows, load_reviews(args.initial_reviews))
+    if args.source in ("generated", "both"):
+        await run_source(client, args, "generated", generated_rows, Path(args.generated_reviews))
+        manifest["generated"] = materialize_generated(
+            generated_rows,
+            load_reviews(args.generated_reviews),
+            input_path=args.generated_input,
+            reviews_path=args.generated_reviews,
+            out_rows_path=args.generated_out_rows,
+            out_sft_path=args.generated_out_sft,
+        )
+    manifest_path = Path(args.manifest)
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False, indent=2), flush=True)
 
@@ -582,6 +587,13 @@ async def main_async(args):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", choices=["initial", "generated", "both"], default="both")
+    ap.add_argument("--initial-input", type=Path, default=INITIAL_INPUT)
+    ap.add_argument("--initial-reviews", type=Path, default=INITIAL_REVIEWS)
+    ap.add_argument("--generated-input", type=Path, default=GENERATED_INPUT)
+    ap.add_argument("--generated-reviews", type=Path, default=GENERATED_REVIEWS)
+    ap.add_argument("--generated-out-rows", type=Path, default=GENERATED_OUT_ROWS)
+    ap.add_argument("--generated-out-sft", type=Path, default=GENERATED_OUT_SFT)
+    ap.add_argument("--manifest", type=Path, default=DATA_DIR / "tau_style_v4_manifest.json")
     ap.add_argument("--model", default="deepseek-v4-pro")
     ap.add_argument("--base-url", default="https://dimcode.cn/v1")
     ap.add_argument("--api-key-file", default="/tmp/dimcode_api_key")
