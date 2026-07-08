@@ -2,16 +2,24 @@
 """第2层:LLM 打分——只评 Completeness(完成度)。简洁度按用户要求移除(对SFT是误伤)。
 tool-call 准确率由第1层规则算好放在 qc_rule。可断点续跑;并发。
 用法: python traj_qc_llm.py <in_rulepass.jsonl> <out_scored.jsonl> [CONC]
+
+LLM config:
+  LLM_BASE_URL / DIMCODE_BASE_URL, default https://dimcode.cn/v1
+  LLM_API_KEY / DIMCODE_API_KEY / DEEPSEEK_API_KEY
+  MODEL, default deepseek-v4-pro
 """
 import json, re, sys, os, asyncio
 from openai import AsyncOpenAI
 
-llm = AsyncOpenAI(
-    base_url=os.environ.get("DIMCODE_BASE_URL", "https://dimcode.cn/v1"),
-    api_key=os.environ.get("DIMCODE_API_KEY") or os.environ.get("DEEPSEEK_API_KEY"),
-)
-MODEL = "deepseek-v4-pro"
-ITEM_TIMEOUT = 180
+LLM_BASE_URL = os.environ.get("LLM_BASE_URL") or os.environ.get("DIMCODE_BASE_URL") or "https://dimcode.cn/v1"
+LLM_API_KEY = os.environ.get("LLM_API_KEY") or os.environ.get("DIMCODE_API_KEY") or os.environ.get("DEEPSEEK_API_KEY")
+if not LLM_API_KEY:
+    raise RuntimeError("missing LLM_API_KEY/DIMCODE_API_KEY/DEEPSEEK_API_KEY")
+llm = AsyncOpenAI(base_url=LLM_BASE_URL, api_key=LLM_API_KEY)
+MODEL = os.environ.get("MODEL", "deepseek-v4-pro")
+ITEM_TIMEOUT = int(os.environ.get("ITEM_TIMEOUT", "180"))
+LLM_MAX_TOKENS = int(os.environ.get("LLM_MAX_TOKENS", "6000"))
+LLM_TEMPERATURE = float(os.environ.get("LLM_TEMPERATURE", "0.2"))
 
 # 完成度-only rubric(沿用 Toucan 的 completeness 判据,删掉 conciseness)
 TEMPLATE = """## Task
@@ -109,7 +117,7 @@ async def score_one(rec):
     prompt = build_prompt(rec)
     resp = await llm.chat.completions.create(
         model=MODEL, messages=[{"role": "user", "content": prompt}],
-        max_tokens=6000, temperature=0.2)
+        max_tokens=LLM_MAX_TOKENS, temperature=LLM_TEMPERATURE)
     _m = resp.choices[0].message
     content = _m.content or ""
     if not content.strip():
@@ -117,7 +125,7 @@ async def score_one(rec):
     cs, cr = parse_scores(content)
     if cs is None:
         return {"error": "parse_fail", "raw": content[:400]}
-    return {"completeness_score": cs, "overall_score": cs, "completeness_reasoning": cr}
+    return {"completeness_score": cs, "overall_score": cs, "completeness_reasoning": cr, "judge_model": MODEL}
 
 async def main():
     inp, out = sys.argv[1], sys.argv[2]
@@ -131,7 +139,7 @@ async def main():
             except Exception:
                 pass
     todo = [r for r in recs if r.get("_qid") not in done]
-    print(f"总 {len(recs)}, 已打分 {len(done)}, 待打分 {len(todo)}, 并发 {CONC}", flush=True)
+    print(f"总 {len(recs)}, 已打分 {len(done)}, 待打分 {len(todo)}, 并发 {CONC}, 模型 {MODEL}", flush=True)
     sem = asyncio.Semaphore(CONC); lock = asyncio.Lock()
     fout = open(out, "a"); cnt = [0, 0]
 

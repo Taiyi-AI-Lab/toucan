@@ -33,7 +33,7 @@ Required runtime/config files:
   metadata.
 - `live_servers_now.json`, `dead_servers.json`, `dead_servers_recent.json`:
   live/dead server filters.
-- DeepSeek-compatible API config for scripts that call LLM judges/generators.
+- OpenAI-compatible API config for scripts that call LLM judges/generators.
 
 Do not hardcode API keys into scripts. Prefer environment variables:
 
@@ -213,9 +213,10 @@ Run LLM completeness scoring:
 python traj_qc_llm.py <rulepass.jsonl> <scored.jsonl> <concurrency>
 ```
 
-This uses DeepSeek to score `completeness` from 1 to 5. Conciseness is not used
-as a hard filter because it caused false negatives for useful long tool-use
-trajectories.
+This uses an OpenAI-compatible LLM judge to score `completeness` from 1 to 5.
+Set `MODEL`, `LLM_BASE_URL`, and `LLM_API_KEY` to switch judges. Conciseness is
+not used as a hard filter because it caused false negatives for useful long
+tool-use trajectories.
 
 Optionally create score-tier files:
 
